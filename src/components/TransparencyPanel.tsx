@@ -49,11 +49,14 @@ export function TransparencyPanel() {
                 pool: result.poolSize,
                 bits: result.entropyBits.toFixed(1),
               })
-            : t('entropyChars', {
-                pool: result.poolSize,
-                length: result.value.length,
-                bits: result.entropyBits.toFixed(1),
-              })}
+            : mode === 'username' || mode === 'pronounceable'
+              ? // Kein Zeichen-Alphabet: die length×log2-Formel waere hier falsch.
+                t('entropyGeneric', { bits: result.entropyBits.toFixed(1) })
+              : t('entropyChars', {
+                  pool: result.poolSize,
+                  length: result.value.length,
+                  bits: result.entropyBits.toFixed(1),
+                })}
         </p>
         {result.constrained && <p className={styles.note}>{t('constrainedNote')}</p>}
 

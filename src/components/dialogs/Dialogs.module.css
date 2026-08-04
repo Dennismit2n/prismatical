@@ -155,10 +155,16 @@
 }
 
 .historyActions {
+  grid-column: 2;
   grid-row: 1 / 3;
   display: flex;
   gap: 4px;
   align-items: center;
+}
+
+.historyItem code,
+.historyItem .historyMeta {
+  grid-column: 1;
 }
 
 .historyActions button {

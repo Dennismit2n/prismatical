@@ -67,8 +67,8 @@
     "appendDigits": "Añadir dígitos al final",
     "leetify": "Leetify",
     "style": "Estilo",
-    "styleCamel": "CamelCase (HalconAmbar)",
-    "styleLower": "minúsculas (halconambar)"
+    "styleCamel": "CamelCase (TigreDorado)",
+    "styleLower": "minúsculas (tigredorado)"
   },
   "presets": {
     "standard": "Estándar (recomendado, 20 caracteres)",
@@ -91,7 +91,7 @@
   },
   "warnings": {
     "pronounceableEntropy": "Las contraseñas pronunciables tienen mucha menos entropía por carácter: hazlas más largas.",
-    "pinEntropy": "Un PIN es solo tan seguro como el bloqueo que lo respalda.",
+    "pinEntropy": "Un PIN solo es tan seguro como el bloqueo que lo respalda.",
     "deterministicNoRecovery": "Sin recuperación: sin la contraseña maestra, esta contraseña no puede regenerarse.",
     "usernamePurpose": "Los nombres de usuario no son contraseñas: no los uses como secreto."
   },
@@ -139,7 +139,7 @@
     "clearAll": "Eliminar todas las entradas"
   },
   "hibp": {
-    "checking": "Comprobando contra filtraciones conocidas…",
+    "checking": "Buscando en filtraciones conocidas…",
     "found_one": "Encontrada en {{count}} filtración conocida. ¡No la uses!",
     "found_other": "Encontrada en {{count}} filtraciones conocidas. ¡No la uses!",
     "notFound": "No aparece en ninguna filtración conocida.",
@@ -168,7 +168,7 @@
     "typeHere": "Escribe la frase de contraseña completa…",
     "checkBtn": "Comprobar",
     "correct": "¡Correcto! Siguiente ronda.",
-    "wrong": "Aún no: inténtalo de nuevo.",
+    "wrong": "No del todo: inténtalo de nuevo.",
     "done": "¡Conseguido! La frase ya está memorizada.",
     "restart": "Empezar de nuevo"
   },
@@ -179,11 +179,11 @@
     "login": "Login / nombre de usuario",
     "counter": "Contador",
     "warningTitle": "Modo sin estado: sin recuperación",
-    "warningBody": "De contraseña maestra + dominio + login se deriva siempre la misma contraseña (PBKDF2, 310 000 iteraciones). No se guarda nada: quien olvide la contraseña maestra no podrá recuperar las contraseñas derivadas.",
+    "warningBody": "De contraseña maestra + dominio + login se deriva siempre la misma contraseña (PBKDF2, 310 000 iteraciones). No se guarda nada: quien olvide la contraseña maestra no podrá recuperar las contraseñas derivadas.",
     "generateBtn": "Derivar contraseña",
     "deriving": "Derivando…"
   },
   "footer": {
-    "pledge": "100 % sin conexión · sin cuentas · sin rastreo: tus contraseñas se quedan en tu dispositivo."
+    "pledge": "100 % sin conexión · sin cuentas · sin rastreo: tus contraseñas se quedan en tu dispositivo."
   }
 }

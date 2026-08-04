@@ -85,7 +85,7 @@
     "score2": "przeciętne",
     "score3": "silne",
     "score4": "epickie",
-    "bits": "ok. {{bits}} bitów entropii",
+    "bits": "{{bits}} bitów entropii",
     "crackOnline": "Atak online (spowolniony)",
     "crackOffline": "Atak offline (szybkie funkcje skrótu)"
   },
@@ -137,7 +137,7 @@
   "history": {
     "title": "Historia",
     "empty": "Na razie brak wpisów.",
-    "disabledHint": "Historia jest wyłączona. Możesz ją włączyć w ustawieniach – dopiero wtedy cokolwiek zostanie zapisane.",
+    "disabledHint": "Historia jest wyłączona. Możesz ją włączyć w ustawieniach – dopiero wtedy będzie zapisywana.",
     "clearAll": "Usuń wszystkie wpisy"
   },
   "hibp": {
@@ -162,7 +162,7 @@
     "downloadFile": "Zapisz jako plik",
     "listLabel": "Wygenerowane hasła",
     "error": "Przy bieżących opcjach nie można wygenerować listy.",
-    "hint": "Lista nie jest nigdzie zapisywana i zostaje odrzucona po zamknięciu."
+    "hint": "Lista nie jest nigdzie zapisywana i po zamknięciu jest usuwana."
   },
   "trainer": {
     "title": "Trener pamięci",

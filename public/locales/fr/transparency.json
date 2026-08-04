@@ -1,22 +1,23 @@
 {
-  "title": "Transparence cryptographique : comment ce mot de passe a-t-il été créé ?",
-  "intro": "Prisma ne cache rien. Voici, en toute transparence, la source d'aléa, l'alphabet et le calcul qui se trouvent derrière le résultat actuel.",
-  "randomSourceTitle": "Source d'aléa",
-  "randomSourceBody": "le générateur aléatoire cryptographiquement sûr de votre système (CSPRNG). Le biais de modulo est évité par échantillonnage avec rejet : les valeurs aléatoires au-delà du plus grand multiple de la taille de l'alphabet sont rejetées et tirées à nouveau. Math.random() n'est jamais utilisé.",
+  "title": "Transparence cryptographique : comment ce mot de passe a-t-il été créé ?",
+  "intro": "Prisma ne cache rien. Voici, en toute transparence, la source d’aléa, l’alphabet et le calcul qui se trouvent derrière le résultat actuel.",
+  "randomSourceTitle": "Source d’aléa",
+  "randomSourceBody": "le générateur aléatoire cryptographiquement sûr de votre système (CSPRNG). Le biais de modulo est évité par échantillonnage avec rejet : les valeurs aléatoires au-delà du plus grand multiple de la taille de l’alphabet sont rejetées et tirées à nouveau. Math.random() n’est jamais utilisé.",
   "entropyTitle": "Entropie brute",
-  "entropyChars": "Alphabet : {{pool}} caractères, longueur : {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. C'est le nombre d'essais nécessaires à un attaquant qui connaît le procédé et essaie toutes les combinaisons.",
-  "entropyWords": "Liste de mots : {{pool}} mots → nombre de mots × log₂({{pool}}) ≈ {{bits}} bits (les extras comme les chiffres sont additionnés exactement).",
-  "constrainedNote": "Les règles supplémentaires actives (minimums, classes obligatoires, aucune répétition) réduisent légèrement l'entropie réelle – la formule est alors une borne supérieure légèrement optimiste.",
+  "entropyChars": "Alphabet : {{pool}} caractères, longueur : {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. C’est le nombre d’essais nécessaires à un attaquant qui connaît le procédé et essaie toutes les combinaisons.",
+  "entropyWords": "Liste de mots : {{pool}} mots → nombre de mots × log₂({{pool}}) ≈ {{bits}} bits (les extras comme les chiffres sont additionnés exactement).",
+  "entropyGeneric": "Entropie combinatoire de ce mode : ≈ {{bits}} bits – chaque choix aléatoire (mot, chiffres, caractères) est comptabilisé exactement.",
+  "constrainedNote": "Les règles supplémentaires actives (minimums, classes obligatoires, aucune répétition) réduisent légèrement l’entropie réelle – la formule est alors une borne supérieure légèrement optimiste.",
   "zxcvbnTitle": "Analyse de motifs (zxcvbn)",
-  "zxcvbnBody": "zxcvbn recherche des correspondances de dictionnaire, des motifs de clavier, des répétitions et des dates. Résultat : score {{score}} sur 4, nombre de tentatives estimé 10^{{guesses}}.",
+  "zxcvbnBody": "zxcvbn recherche des correspondances de dictionnaire, des motifs de clavier, des répétitions et des dates. Résultat : score {{score}} sur 4, nombre de tentatives estimé 10^{{guesses}}.",
   "zxcvbnLoading": "Les dictionnaires sont encore en cours de chargement…",
-  "scenariosTitle": "Temps de cassage selon quatre scénarios d'attaque",
+  "scenariosTitle": "Temps de cassage selon quatre scénarios d’attaque",
   "scenario": {
     "onlineThrottled": "En ligne, limité (100/heure)",
     "onlineFast": "En ligne, sans limitation (10/seconde)",
     "offlineSlow": "Hors ligne, hachages lents (10⁴/seconde)",
     "offlineFast": "Hors ligne, hachages rapides (10¹⁰/seconde)"
   },
-  "privacyTitle": "Qu'est-ce qui quitte votre appareil ?",
-  "privacyBody": "Rien. La génération, l'analyse et le code QR s'exécutent entièrement en local. Seule exception : la vérification de fuites optionnelle (opt-in dans les paramètres) envoie les 5 premiers caractères du hachage SHA-1 calculé localement – jamais le mot de passe lui-même."
+  "privacyTitle": "Qu’est-ce qui quitte votre appareil ?",
+  "privacyBody": "Rien. La génération, l’analyse et le code QR s’exécutent entièrement en local. Seule exception : la vérification de fuites optionnelle (opt-in dans les paramètres) envoie les 5 premiers caractères du hachage SHA-1 calculé localement – jamais le mot de passe lui-même."
 }

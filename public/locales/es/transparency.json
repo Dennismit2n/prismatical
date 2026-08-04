@@ -6,6 +6,7 @@
   "entropyTitle": "Entropía bruta",
   "entropyChars": "Alfabeto: {{pool}} caracteres, longitud: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. Esos son los intentos que necesitaría un atacante que conozca el método y lo pruebe todo.",
   "entropyWords": "Lista de palabras: {{pool}} palabras → número de palabras × log₂({{pool}}) ≈ {{bits}} bits (los extras, como los dígitos, se suman con exactitud).",
+  "entropyGeneric": "Entropía combinatoria de este modo: ≈ {{bits}} bits; cada decisión aleatoria (palabra, dígitos, caracteres) se suma con exactitud.",
   "constrainedNote": "Las reglas adicionales activas (mínimos, clases obligatorias, sin repeticiones) reducen ligeramente la entropía real: la fórmula pasa a ser entonces una cota superior aproximada.",
   "zxcvbnTitle": "Análisis de patrones (zxcvbn)",
   "zxcvbnBody": "zxcvbn busca coincidencias de diccionario, patrones de teclado, repeticiones y fechas. Resultado: puntuación {{score}} de 4, intentos estimados 10^{{guesses}}.",

@@ -102,7 +102,7 @@
     "minDigitsWithoutDigits": "Minimo di cifre impostato, ma le cifre sono deselezionate.",
     "minSpecialWithoutSpecial": "Minimo di caratteri speciali impostato, ma i caratteri speciali sono deselezionati.",
     "minimaExceedLength": "I requisiti minimi superano la lunghezza della password.",
-    "notEnoughUniqueChars": "Troppo pochi caratteri distinti per «nessun carattere ripetuto».",
+    "notEnoughUniqueChars": "Non ci sono abbastanza caratteri distinti per «nessun carattere ripetuto».",
     "wordlistUnavailable": "Impossibile caricare la lista di parole."
   },
   "settings": {
@@ -139,7 +139,7 @@
     "clearAll": "Elimina tutte le voci"
   },
   "hibp": {
-    "checking": "Controllo delle violazioni note…",
+    "checking": "Confronto con le violazioni note…",
     "found_one": "Trovata in {{count}} violazione nota: non usarla!",
     "found_other": "Trovata in {{count}} violazioni note: non usarla!",
     "notFound": "Non trovata in nessuna violazione nota.",
@@ -161,7 +161,7 @@
     "hint": "L’elenco non viene salvato da nessuna parte e viene scartato alla chiusura."
   },
   "trainer": {
-    "title": "Allenamento di memoria",
+    "title": "Allenamento della memoria",
     "intro": "Memorizza la passphrase. A ogni round viene nascosta una parola in più: digita ogni volta la frase completa. Tutto resta sul tuo dispositivo.",
     "phraseLabel": "Passphrase con parole nascoste",
     "round": "Round {{n}} di {{total}}",

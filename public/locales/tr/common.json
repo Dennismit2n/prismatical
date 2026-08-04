@@ -59,8 +59,8 @@
     "sepCustomLabel": "Kendi ayracın",
     "extras": "Ekstralar",
     "capitalizeWords": "Her kelimenin ilk harfini büyüt",
-    "includeDigit": "Araya bir rakam serpiştir",
-    "includeSpecial": "Araya bir özel karakter serpiştir",
+    "includeDigit": "Araya bir rakam ekle",
+    "includeSpecial": "Araya bir özel karakter ekle",
     "digitsCount": "Basamak sayısı",
     "pinNote": "PIN'ler ancak birkaç yanlış denemeden sonra devreye giren bir kilitle birlikte koruma sağlar (ör. SIM veya banka kartı).",
     "capitalize": "İlk harfi büyüt",
@@ -72,7 +72,7 @@
   },
   "presets": {
     "standard": "Standart (önerilen, 20 karakter)",
-    "nistLong": "NIST-uzun (32 karakter, zorunlu kural yok)",
+    "nistLong": "NIST uzun (32 karakter, zorunlu kural yok)",
     "lettersDigits": "Yalnızca harf + rakam (16)",
     "max16": "En fazla 16, sınırlı özel karakter",
     "bank": "Banka tarzı (10, harf + rakam)"
@@ -120,7 +120,7 @@
     "clipboardTimerLabel": "Otomatik temizleme süresi",
     "timerNever": "Hiçbir zaman",
     "timerSeconds": "{{s}} saniye",
-    "clipboardHint": "Not: Bir web uygulaması sistem pano geçmişlerini (ör. Windows Win+V) garantili olarak temizleyemez.",
+    "clipboardHint": "Not: Bir web uygulaması, sistem pano geçmişinin (ör. Windows'ta Win+V) temizleneceğini garanti edemez.",
     "history": "Geçmiş",
     "historyEnabled": "Geçmişi kaydet",
     "historyPersist": "Geçmişi kalıcı olarak sakla",

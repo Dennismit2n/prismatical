@@ -67,8 +67,8 @@
     "appendDigits": "Acrescentar dígitos",
     "leetify": "Leetify",
     "style": "Estilo",
-    "styleCamel": "CamelCase (FalcaoAmbar)",
-    "styleLower": "minúsculas (falcaoambar)"
+    "styleCamel": "CamelCase (TigreDourado)",
+    "styleLower": "minúsculas (tigredourado)"
   },
   "presets": {
     "standard": "Padrão (recomendado, 20 caracteres)",
@@ -130,7 +130,7 @@
     "hibp": "Verificação de vazamentos (Have I Been Pwned)",
     "hibpEnabled": "Ativar verificação de vazamentos",
     "hibpExplain": "Verifica por k-anonimato se uma senha aparece em vazamentos de dados conhecidos: o hash SHA-1 é calculado localmente e apenas os seus primeiros 5 caracteres são enviados a api.pwnedpasswords.com.",
-    "hibpPrivacy": "Sua senha e o hash completo nunca saem do seu dispositivo. Sem esse opt-in, o Prisma não faz nenhum pedido à internet."
+    "hibpPrivacy": "Sua senha e o hash completo nunca saem do seu dispositivo. Sem esse opt-in, o Prisma não faz nenhuma requisição à internet."
   },
   "history": {
     "title": "Histórico",
@@ -139,7 +139,7 @@
     "clearAll": "Apagar todas as entradas"
   },
   "hibp": {
-    "checking": "Verificando em vazamentos conhecidos…",
+    "checking": "Procurando em vazamentos conhecidos…",
     "found_one": "Encontrada em {{count}} vazamento conhecido – não use!",
     "found_other": "Encontrada em {{count}} vazamentos conhecidos – não use!",
     "notFound": "Não encontrada em nenhum vazamento conhecido.",
@@ -158,7 +158,7 @@
     "downloadFile": "Salvar como arquivo",
     "listLabel": "Senhas geradas",
     "error": "Não é possível gerar uma lista com as opções atuais.",
-    "hint": "A lista não é guardada em lugar nenhum e é descartada ao fechar."
+    "hint": "A lista não é salva em lugar nenhum e é descartada ao fechar."
   },
   "trainer": {
     "title": "Treinador de memorização",
@@ -174,12 +174,12 @@
   },
   "deterministic": {
     "master": "Senha mestra",
-    "masterHint": "Nunca é guardada nem enviada – existe apenas neste formulário.",
+    "masterHint": "Nunca é salva nem enviada – existe apenas neste formulário.",
     "site": "Site / domínio",
     "login": "Login / nome de usuário",
     "counter": "Contador",
     "warningTitle": "Modo sem estado – sem recuperação",
-    "warningBody": "De senha mestra + domínio + login deriva-se sempre a mesma senha (PBKDF2, 310.000 iterações). Nada é guardado: quem esquecer a senha mestra não poderá recuperar as senhas derivadas.",
+    "warningBody": "De senha mestra + domínio + login deriva-se sempre a mesma senha (PBKDF2, 310.000 iterações). Nada é salvo: quem esquecer a senha mestra não poderá recuperar as senhas derivadas.",
     "generateBtn": "Derivar senha",
     "deriving": "Derivando…"
   },

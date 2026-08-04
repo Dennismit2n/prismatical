@@ -6,6 +6,7 @@
   "entropyTitle": "Raw entropy",
   "entropyChars": "Alphabet: {{pool}} characters, length: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. That is how many attempts an attacker who knows the method would need to try them all.",
   "entropyWords": "Word list: {{pool}} words → word count × log₂({{pool}}) ≈ {{bits}} bits (extras such as digits are added exactly).",
+  "entropyGeneric": "Combinatorial entropy of this mode: ≈ {{bits}} bits – every single random choice (word pick, digits, characters) is added up exactly.",
   "constrainedNote": "Active extra rules (minimums, class requirement, no repeats) slightly reduce the real entropy – the formula is then a mild upper bound.",
   "zxcvbnTitle": "Pattern analysis (zxcvbn)",
   "zxcvbnBody": "zxcvbn searches for dictionary hits, keyboard patterns, repeats and dates. Result: score {{score}} of 4, estimated guesses 10^{{guesses}}.",
