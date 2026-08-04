@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Password Generator"
+  },
+  "display": {
+    "label": "Generated password",
+    "announceNew": "New password generated"
+  },
+  "actions": {
+    "generate": "Generate",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "reveal": "Show password",
+    "hide": "Hide password",
+    "close": "Close",
+    "delete": "Delete"
+  },
+  "clipboard": {
+    "countdown": "Clipboard clears in {{s}} s",
+    "clearFailed": "Could not clear the clipboard (window was not focused)."
+  },
+  "modes": {
+    "label": "Generator mode",
+    "password": "Password",
+    "passphrase": "Passphrase",
+    "pin": "PIN",
+    "pronounceable": "Pronounceable",
+    "username": "Username",
+    "deterministic": "Deterministic"
+  },
+  "options": {
+    "preset": "Website rule preset",
+    "presetCustom": "Custom",
+    "length": "Length",
+    "classes": "Character classes",
+    "upper": "Uppercase (A–Z)",
+    "lower": "Lowercase (a–z)",
+    "digits": "Digits (0–9)",
+    "special": "Special characters",
+    "rules": "Rules",
+    "excludeAmbiguous": "Exclude ambiguous characters",
+    "requireEachClass": "Each selected class at least once",
+    "noRepeats": "No repeated characters",
+    "minDigits": "Min. digits",
+    "minSpecial": "Min. special",
+    "charsets": "Character sets",
+    "specialChars": "Special character set",
+    "excludeChars": "Exclude these characters",
+    "wordCount": "Number of words",
+    "wordlist": "Word list",
+    "wordlistAuto": "Automatic (by language)",
+    "wordlistInfo": "{{label}}: {{size}} words ≈ {{bits}} bits per word",
+    "separator": "Separator",
+    "sepDash": "Hyphen (-)",
+    "sepDot": "Dot (.)",
+    "sepSpace": "Space",
+    "sepDigit": "Random digit",
+    "sepCustom": "Custom character",
+    "sepCustomLabel": "Custom separator",
+    "extras": "Extras",
+    "capitalizeWords": "Capitalize each word",
+    "includeDigit": "Sprinkle in a digit",
+    "includeSpecial": "Sprinkle in a special character",
+    "digitsCount": "Digits",
+    "pinNote": "PINs are only safe together with a lockout after a few wrong attempts (e.g. SIM or bank card).",
+    "capitalize": "Capitalize first letter",
+    "appendDigits": "Append digits",
+    "leetify": "Leetify",
+    "style": "Style",
+    "styleCamel": "CamelCase (AmberFalcon)",
+    "styleLower": "lowercase (amberfalcon)"
+  },
+  "presets": {
+    "standard": "Standard (recommended, 20 characters)",
+    "nistLong": "NIST-long (32 characters, no forced rules)",
+    "lettersDigits": "Letters + digits only (16)",
+    "max16": "Max. 16, limited special characters",
+    "bank": "Bank-style (10, letters + digits)"
+  },
+  "strength": {
+    "title": "Password strength",
+    "computing": "Analyzing …",
+    "score0": "very weak",
+    "score1": "weak",
+    "score2": "okay",
+    "score3": "strong",
+    "score4": "epic",
+    "bits": "{{bits}} bits of entropy",
+    "crackOnline": "Online attack (throttled)",
+    "crackOffline": "Offline attack (fast hashes)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Pronounceable passwords carry much less entropy per character – make them longer.",
+    "pinEntropy": "A PIN is only as safe as the lockout behind it.",
+    "deterministicNoRecovery": "No recovery: without the master password this password cannot be recreated.",
+    "usernamePurpose": "Usernames are not passwords – don't use them as secrets."
+  },
+  "errors": {
+    "noClasses": "Select at least one character class.",
+    "emptyAlphabet": "All characters are excluded – the alphabet is empty.",
+    "lengthOutOfRange": "Length is outside the allowed range.",
+    "minDigitsWithoutDigits": "Digit minimum set, but digits are deselected.",
+    "minSpecialWithoutSpecial": "Special-character minimum set, but specials are deselected.",
+    "minimaExceedLength": "The minimum requirements exceed the password length.",
+    "notEnoughUniqueChars": "Not enough distinct characters for “no repeats”.",
+    "wordlistUnavailable": "The word list could not be loaded."
+  },
+  "settings": {
+    "title": "Settings",
+    "languageLabel": "Language",
+    "theme": "Theme",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Appearance",
+    "schemeSystem": "System",
+    "schemeLight": "Light",
+    "schemeDark": "Dark",
+    "clipboardTimer": "Clipboard",
+    "clipboardTimerLabel": "Clear automatically after",
+    "timerNever": "Never",
+    "timerSeconds": "{{s}} seconds",
+    "clipboardHint": "Note: a web app cannot reliably clear system clipboard histories (e.g. Windows Win+V).",
+    "history": "History",
+    "historyEnabled": "Record history",
+    "historyPersist": "Keep history permanently",
+    "historyPersistHint": "Off = history is cleared when the app closes.",
+    "clearHistory_one": "Clear history ({{count}} entry)",
+    "clearHistory_other": "Clear history ({{count}} entries)",
+    "hibp": "Leak check (Have I Been Pwned)",
+    "hibpEnabled": "Enable leak check",
+    "hibpExplain": "Uses k-anonymity to check whether a password appears in known breaches: the SHA-1 hash is computed locally and only its first 5 characters are sent to api.pwnedpasswords.com.",
+    "hibpPrivacy": "Your password and the full hash never leave your device. Without this opt-in, Prisma makes no internet requests at all."
+  },
+  "history": {
+    "title": "History",
+    "empty": "No entries yet.",
+    "disabledHint": "History is off. You can enable it in the settings – nothing is recorded until then.",
+    "clearAll": "Delete all entries"
+  },
+  "hibp": {
+    "checking": "Checking against known breaches …",
+    "found_one": "Found in {{count}} known breach – do not use!",
+    "found_other": "Found in {{count}} known breaches – do not use!",
+    "notFound": "Not found in any known breach.",
+    "error": "Leak check is currently unreachable."
+  },
+  "qr": {
+    "title": "QR code",
+    "canvasLabel": "QR code of the password",
+    "warning": "Anyone who sees or photographs this QR code knows your password. It is generated entirely on your device."
+  },
+  "bulk": {
+    "title": "Bulk generation",
+    "count": "Count",
+    "generate": "Generate list",
+    "copyAll": "Copy all",
+    "downloadFile": "Save as file",
+    "listLabel": "Generated passwords",
+    "error": "No list can be generated with the current options.",
+    "hint": "The list is stored nowhere and discarded when you close this dialog."
+  },
+  "trainer": {
+    "title": "Memory trainer",
+    "intro": "Memorize the passphrase. Each round hides one more word – type the full phrase every time. Everything stays on your device.",
+    "phraseLabel": "Passphrase with hidden words",
+    "round": "Round {{n}} of {{total}}",
+    "typeHere": "Type the full passphrase …",
+    "checkBtn": "Check",
+    "correct": "Correct! Next round.",
+    "wrong": "Not quite – try again.",
+    "done": "Done! The passphrase sticks.",
+    "restart": "Start over"
+  },
+  "deterministic": {
+    "master": "Master password",
+    "masterHint": "Never stored, never sent – it only lives in this form.",
+    "site": "Website / domain",
+    "login": "Login / username",
+    "counter": "Counter",
+    "warningTitle": "Stateless mode – no recovery",
+    "warningBody": "Master password + domain + login always derive the same password (PBKDF2, 310,000 iterations). Nothing is stored: if you forget the master password, the derived passwords cannot be recovered.",
+    "generateBtn": "Derive password",
+    "deriving": "Deriving …"
+  },
+  "footer": {
+    "pledge": "100% offline · no accounts · no tracking – your passwords stay on your device."
+  }
+}

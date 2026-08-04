@@ -1,0 +1,159 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.lengthControl {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.lengthLabel {
+  font-weight: 600;
+}
+
+.slider {
+  width: 100%;
+}
+
+.number {
+  width: 5em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  padding: 14px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fieldset legend {
+  padding: 0 6px;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 28px;
+  cursor: pointer;
+}
+
+.check input {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.hint {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.minRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.minField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.minField input {
+  width: 5.5em;
+  text-align: center;
+}
+
+.textField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.textField input,
+.textField select {
+  width: 100%;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.warningBox {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border: 1.5px solid var(--warn-text);
+  color: var(--warn-text);
+  border-radius: var(--radius-m);
+  padding: 14px;
+}
+
+.warningBox p {
+  color: var(--text);
+  margin-top: 4px;
+  font-size: 0.92rem;
+}
+
+.masterRow {
+  display: flex;
+  gap: 8px;
+}
+
+.masterRow input {
+  flex: 1;
+}
+
+.inlineIconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface2);
+  color: var(--text);
+}
+
+.primaryBtn {
+  grid-column: 1 / -1;
+  justify-self: start;
+  background: var(--accent);
+  color: var(--on-accent);
+  border: none;
+  border-radius: var(--radius-m);
+  min-height: 46px;
+  padding: 0 22px;
+  font-weight: 650;
+  box-shadow: var(--glow-sm);
+}

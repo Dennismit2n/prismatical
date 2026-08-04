@@ -1,0 +1,22 @@
+{
+  "title": "Trasparenza crittografica: come è nata questa password?",
+  "intro": "Prisma non nasconde nulla. Qui vedi in chiaro quale fonte di casualità, quale alfabeto e quale calcolo ci sono dietro il risultato attuale.",
+  "randomSourceTitle": "Fonte di casualità",
+  "randomSourceBody": "il generatore di numeri casuali crittograficamente sicuro del tuo sistema (CSPRNG). Il bias del modulo viene evitato tramite rejection sampling: i valori casuali superiori al più grande multiplo della dimensione dell’alfabeto vengono scartati ed estratti di nuovo. Math.random() non viene mai usato.",
+  "entropyTitle": "Entropia grezza",
+  "entropyChars": "Alfabeto: {{pool}} caratteri, lunghezza: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bit. Sono i tentativi che servirebbero a un attaccante che conosce il metodo per provarli tutti.",
+  "entropyWords": "Lista di parole: {{pool}} parole → numero di parole × log₂({{pool}}) ≈ {{bits}} bit (gli extra come le cifre vengono sommati esattamente).",
+  "constrainedNote": "Le regole aggiuntive attive (minimi, obbligo di classi, nessuna ripetizione) riducono leggermente l’entropia reale: la formula rappresenta allora un lieve limite superiore.",
+  "zxcvbnTitle": "Analisi dei pattern (zxcvbn)",
+  "zxcvbnBody": "zxcvbn cerca corrispondenze da dizionario, sequenze di tastiera, ripetizioni e date. Risultato: punteggio {{score}} su 4, tentativi stimati 10^{{guesses}}.",
+  "zxcvbnLoading": "I dizionari sono ancora in caricamento…",
+  "scenariosTitle": "Tempo di cracking in quattro scenari di attacco",
+  "scenario": {
+    "onlineThrottled": "Online, limitato (100/ora)",
+    "onlineFast": "Online, senza limiti (10/secondo)",
+    "offlineSlow": "Offline, hash lenti (10⁴/secondo)",
+    "offlineFast": "Offline, hash veloci (10¹⁰/secondo)"
+  },
+  "privacyTitle": "Cosa lascia il tuo dispositivo?",
+  "privacyBody": "Niente. Generazione, analisi e codice QR avvengono interamente in locale. Unica eccezione: il controllo violazioni opzionale (opt-in nelle impostazioni) invia i primi 5 caratteri dell’hash SHA-1 calcolato localmente, mai la password stessa."
+}

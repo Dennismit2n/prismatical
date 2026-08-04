@@ -1,0 +1,22 @@
+{
+  "title": "Kripto şeffaflığı: Bu parola nasıl oluştu?",
+  "intro": "Prisma hiçbir şey gizlemez. Mevcut sonucun arkasındaki rastgelelik kaynağı, alfabe ve hesaplama burada açıkça görülebilir.",
+  "randomSourceTitle": "Rastgelelik kaynağı",
+  "randomSourceBody": "sisteminin kriptografik olarak güvenli rastgele sayı üreteci (CSPRNG). Modulo sapması, reddetme örneklemesiyle (rejection sampling) önlenir: alfabe boyutunun en büyük katının üzerindeki rastgele değerler atılır ve yeniden çekilir. Math.random() hiçbir yerde kullanılmaz.",
+  "entropyTitle": "Ham entropi",
+  "entropyChars": "Alfabe: {{pool}} karakter, uzunluk: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bit. Yöntemi bilen ve tüm olasılıkları deneyen bir saldırganın işte bu kadar denemeye ihtiyacı olur.",
+  "entropyWords": "Kelime listesi: {{pool}} kelime → kelime sayısı × log₂({{pool}}) ≈ {{bits}} bit (rakam gibi ekstralar tam olarak eklenir).",
+  "constrainedNote": "Etkin ek kurallar (alt sınırlar, sınıf zorunluluğu, tekrar yasağı) gerçek entropiyi bir miktar azaltır – bu durumda formül hafif bir üst sınırdır.",
+  "zxcvbnTitle": "Örüntü analizi (zxcvbn)",
+  "zxcvbnBody": "zxcvbn sözlük eşleşmelerini, klavye örüntülerini, tekrarları ve tarihleri arar. Sonuç: 4 üzerinden {{score}} puan, tahmini deneme sayısı 10^{{guesses}}.",
+  "zxcvbnLoading": "Sözlükler hâlâ yükleniyor…",
+  "scenariosTitle": "Dört saldırı senaryosunda kırılma süresi",
+  "scenario": {
+    "onlineThrottled": "Çevrimiçi, kısıtlanmış (100/saat)",
+    "onlineFast": "Çevrimiçi, kısıtlamasız (10/saniye)",
+    "offlineSlow": "Çevrimdışı, yavaş hash'ler (10⁴/saniye)",
+    "offlineFast": "Çevrimdışı, hızlı hash'ler (10¹⁰/saniye)"
+  },
+  "privacyTitle": "Cihazından ne çıkıyor?",
+  "privacyBody": "Hiçbir şey. Oluşturma, analiz ve QR kodu tamamen yerel çalışır. Tek istisna: isteğe bağlı sızıntı kontrolü (ayarlardan açılan opt-in) yerel olarak hesaplanan SHA-1 hash'inin ilk 5 karakterini gönderir – parolanın kendisini asla."
+}

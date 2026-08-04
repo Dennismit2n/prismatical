@@ -1,0 +1,193 @@
+{
+  "app": {
+    "title": "Prisma – generator haseł"
+  },
+  "display": {
+    "label": "Wygenerowane hasło",
+    "announceNew": "Wygenerowano nowe hasło"
+  },
+  "actions": {
+    "generate": "Generuj",
+    "copy": "Kopiuj",
+    "copied": "Skopiowano!",
+    "reveal": "Pokaż hasło",
+    "hide": "Ukryj hasło",
+    "close": "Zamknij",
+    "delete": "Usuń"
+  },
+  "clipboard": {
+    "countdown": "Schowek zostanie wyczyszczony za {{s}} s",
+    "clearFailed": "Nie udało się wyczyścić schowka (okno nie było aktywne)."
+  },
+  "modes": {
+    "label": "Tryb generatora",
+    "password": "Hasło",
+    "passphrase": "Fraza hasłowa",
+    "pin": "PIN",
+    "pronounceable": "Wymawialne",
+    "username": "Nazwa użytkownika",
+    "deterministic": "Deterministyczny"
+  },
+  "options": {
+    "preset": "Preset reguł witryny",
+    "presetCustom": "Własny",
+    "length": "Długość",
+    "classes": "Klasy znaków",
+    "upper": "Wielkie litery (A–Z)",
+    "lower": "Małe litery (a–z)",
+    "digits": "Cyfry (0–9)",
+    "special": "Znaki specjalne",
+    "rules": "Reguły",
+    "excludeAmbiguous": "Wyklucz niejednoznaczne znaki",
+    "requireEachClass": "Każda wybrana klasa co najmniej raz",
+    "noRepeats": "Bez powtarzających się znaków",
+    "minDigits": "Min. cyfr",
+    "minSpecial": "Min. znaków specjalnych",
+    "charsets": "Zestawy znaków",
+    "specialChars": "Zestaw znaków specjalnych",
+    "excludeChars": "Wyklucz te znaki",
+    "wordCount": "Liczba słów",
+    "wordlist": "Lista słów",
+    "wordlistAuto": "Automatycznie (wg języka)",
+    "wordlistInfo": "{{label}}: {{size}} słów ≈ {{bits}} bitów na słowo",
+    "separator": "Separator",
+    "sepDash": "Myślnik (-)",
+    "sepDot": "Kropka (.)",
+    "sepSpace": "Spacja",
+    "sepDigit": "Losowa cyfra",
+    "sepCustom": "Własny znak",
+    "sepCustomLabel": "Własny separator",
+    "extras": "Dodatki",
+    "capitalizeWords": "Każde słowo wielką literą",
+    "includeDigit": "Wpleć jedną cyfrę",
+    "includeSpecial": "Wpleć jeden znak specjalny",
+    "digitsCount": "Liczba cyfr",
+    "pinNote": "PIN chroni tylko w połączeniu z blokadą po kilku nieudanych próbach (np. karta SIM lub bankowa).",
+    "capitalize": "Pierwsza litera wielka",
+    "appendDigits": "Dołącz cyfry na końcu",
+    "leetify": "Leetify",
+    "style": "Styl zapisu",
+    "styleCamel": "WielkieMałe (AmberFalcon)",
+    "styleLower": "małe litery (amberfalcon)"
+  },
+  "presets": {
+    "standard": "Standard (zalecany, 20 znaków)",
+    "nistLong": "Długie wg NIST (32 znaki, bez wymuszonych reguł)",
+    "lettersDigits": "Tylko litery + cyfry (16)",
+    "max16": "Maks. 16, ograniczone znaki specjalne",
+    "bank": "Typowe bankowe (10, litery + cyfry)"
+  },
+  "strength": {
+    "title": "Siła hasła",
+    "computing": "Analizowanie…",
+    "score0": "bardzo słabe",
+    "score1": "słabe",
+    "score2": "przeciętne",
+    "score3": "silne",
+    "score4": "epickie",
+    "bits": "ok. {{bits}} bitów entropii",
+    "crackOnline": "Atak online (spowolniony)",
+    "crackOffline": "Atak offline (szybkie funkcje skrótu)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Wymawialne hasła mają znacznie mniej entropii na znak – wybieraj dłuższe.",
+    "pinEntropy": "PIN jest tylko tak bezpieczny jak blokada, która za nim stoi.",
+    "deterministicNoRecovery": "Brak odzyskiwania: bez hasła głównego tego hasła nie da się odtworzyć.",
+    "usernamePurpose": "Nazwy użytkownika to nie hasła – nie używaj ich jako sekretu."
+  },
+  "errors": {
+    "noClasses": "Wybierz co najmniej jedną klasę znaków.",
+    "emptyAlphabet": "Wszystkie znaki są wykluczone – alfabet jest pusty.",
+    "lengthOutOfRange": "Długość wykracza poza dozwolony zakres.",
+    "minDigitsWithoutDigits": "Ustawiono minimum cyfr, ale cyfry są odznaczone.",
+    "minSpecialWithoutSpecial": "Ustawiono minimum znaków specjalnych, ale znaki specjalne są odznaczone.",
+    "minimaExceedLength": "Wymagane minima przekraczają długość hasła.",
+    "notEnoughUniqueChars": "Za mało różnych znaków dla opcji „bez powtórzeń”.",
+    "wordlistUnavailable": "Nie udało się wczytać listy słów."
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "languageLabel": "Język",
+    "theme": "Motyw",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Wygląd",
+    "schemeSystem": "Systemowy",
+    "schemeLight": "Jasny",
+    "schemeDark": "Ciemny",
+    "clipboardTimer": "Schowek",
+    "clipboardTimerLabel": "Wyczyść automatycznie po",
+    "timerNever": "Nigdy",
+    "timerSeconds": "{{s}} sekund",
+    "clipboardHint": "Uwaga: aplikacja webowa nie może zagwarantować wyczyszczenia systemowej historii schowka (np. Win+V w Windows).",
+    "history": "Historia",
+    "historyEnabled": "Zapisuj historię",
+    "historyPersist": "Przechowuj historię na stałe",
+    "historyPersistHint": "Wył. = historia jest czyszczona przy zamknięciu aplikacji.",
+    "clearHistory_one": "Wyczyść historię ({{count}} wpis)",
+    "clearHistory_few": "Wyczyść historię ({{count}} wpisy)",
+    "clearHistory_many": "Wyczyść historię ({{count}} wpisów)",
+    "clearHistory_other": "Wyczyść historię ({{count}} wpisu)",
+    "hibp": "Kontrola wycieków (Have I Been Pwned)",
+    "hibpEnabled": "Włącz kontrolę wycieków",
+    "hibpExplain": "Sprawdza metodą k-anonimowości, czy hasło pojawia się w znanych wyciekach danych: hash SHA-1 jest obliczany lokalnie, a na api.pwnedpasswords.com trafia tylko jego pierwszych 5 znaków.",
+    "hibpPrivacy": "Twoje hasło ani pełny hash nigdy nie opuszczają Twojego urządzenia. Bez tej zgody Prisma nie wykonuje żadnych połączeń z internetem."
+  },
+  "history": {
+    "title": "Historia",
+    "empty": "Na razie brak wpisów.",
+    "disabledHint": "Historia jest wyłączona. Możesz ją włączyć w ustawieniach – dopiero wtedy cokolwiek zostanie zapisane.",
+    "clearAll": "Usuń wszystkie wpisy"
+  },
+  "hibp": {
+    "checking": "Sprawdzanie w znanych wyciekach…",
+    "found_one": "Znaleziono w {{count}} znanym wycieku – nie używaj!",
+    "found_few": "Znaleziono w {{count}} znanych wyciekach – nie używaj!",
+    "found_many": "Znaleziono w {{count}} znanych wyciekach – nie używaj!",
+    "found_other": "Znaleziono w {{count}} znanego wycieku – nie używaj!",
+    "notFound": "Nie znaleziono w żadnym znanym wycieku.",
+    "error": "Kontrola wycieków jest obecnie niedostępna."
+  },
+  "qr": {
+    "title": "Kod QR",
+    "canvasLabel": "Kod QR hasła",
+    "warning": "Kto zobaczy lub sfotografuje ten kod QR, pozna Twoje hasło. Kod jest generowany w całości lokalnie."
+  },
+  "bulk": {
+    "title": "Generowanie zbiorcze",
+    "count": "Liczba",
+    "generate": "Wygeneruj listę",
+    "copyAll": "Kopiuj wszystkie",
+    "downloadFile": "Zapisz jako plik",
+    "listLabel": "Wygenerowane hasła",
+    "error": "Przy bieżących opcjach nie można wygenerować listy.",
+    "hint": "Lista nie jest nigdzie zapisywana i zostaje odrzucona po zamknięciu."
+  },
+  "trainer": {
+    "title": "Trener pamięci",
+    "intro": "Zapamiętaj frazę hasłową. W każdej rundzie ukrywane jest kolejne słowo – za każdym razem wpisz pełną frazę. Wszystko zostaje na Twoim urządzeniu.",
+    "phraseLabel": "Fraza hasłowa z ukrytymi słowami",
+    "round": "Runda {{n}} z {{total}}",
+    "typeHere": "Wpisz pełną frazę hasłową…",
+    "checkBtn": "Sprawdź",
+    "correct": "Dobrze! Następna runda.",
+    "wrong": "Jeszcze nie do końca – spróbuj ponownie.",
+    "done": "Udało się! Fraza siedzi w głowie.",
+    "restart": "Zacznij od nowa"
+  },
+  "deterministic": {
+    "master": "Hasło główne",
+    "masterHint": "Nie jest zapisywane ani wysyłane – istnieje tylko w tym formularzu.",
+    "site": "Witryna / domena",
+    "login": "Login / nazwa użytkownika",
+    "counter": "Licznik",
+    "warningTitle": "Tryb bezstanowy – brak odzyskiwania",
+    "warningBody": "Z hasła głównego + domeny + loginu zawsze wyprowadzane jest to samo hasło (PBKDF2, 310 000 iteracji). Nic nie jest zapisywane: kto zapomni hasła głównego, nie odzyska wyprowadzonych haseł.",
+    "generateBtn": "Wyprowadź hasło",
+    "deriving": "Wyprowadzanie…"
+  },
+  "footer": {
+    "pledge": "100% offline · bez kont · bez śledzenia – Twoje hasła zostają na Twoim urządzeniu."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Crypto transparency: how was this password made?",
+  "intro": "Prisma hides nothing. This panel shows exactly which randomness source, alphabet and math are behind the current result.",
+  "randomSourceTitle": "Randomness source",
+  "randomSourceBody": "your system's cryptographically secure random generator (CSPRNG). Modulo bias is avoided via rejection sampling: random values above the largest multiple of the alphabet size are discarded and redrawn. Math.random() is never used.",
+  "entropyTitle": "Raw entropy",
+  "entropyChars": "Alphabet: {{pool}} characters, length: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. That is how many attempts an attacker who knows the method would need to try them all.",
+  "entropyWords": "Word list: {{pool}} words → word count × log₂({{pool}}) ≈ {{bits}} bits (extras such as digits are added exactly).",
+  "constrainedNote": "Active extra rules (minimums, class requirement, no repeats) slightly reduce the real entropy – the formula is then a mild upper bound.",
+  "zxcvbnTitle": "Pattern analysis (zxcvbn)",
+  "zxcvbnBody": "zxcvbn searches for dictionary hits, keyboard patterns, repeats and dates. Result: score {{score}} of 4, estimated guesses 10^{{guesses}}.",
+  "zxcvbnLoading": "Dictionaries are still loading …",
+  "scenariosTitle": "Crack time in four attack scenarios",
+  "scenario": {
+    "onlineThrottled": "Online, throttled (100/hour)",
+    "onlineFast": "Online, unthrottled (10/second)",
+    "offlineSlow": "Offline, slow hashes (10⁴/second)",
+    "offlineFast": "Offline, fast hashes (10¹⁰/second)"
+  },
+  "privacyTitle": "What leaves your device?",
+  "privacyBody": "Nothing. Generation, analysis and the QR code all run locally. The only exception: the optional leak check (opt-in in the settings) sends the first 5 characters of the locally computed SHA-1 hash – never the password itself."
+}

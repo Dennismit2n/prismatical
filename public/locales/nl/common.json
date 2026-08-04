@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – wachtwoordgenerator"
+  },
+  "display": {
+    "label": "Gegenereerd wachtwoord",
+    "announceNew": "Nieuw wachtwoord gegenereerd"
+  },
+  "actions": {
+    "generate": "Genereren",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd!",
+    "reveal": "Wachtwoord tonen",
+    "hide": "Wachtwoord verbergen",
+    "close": "Sluiten",
+    "delete": "Verwijderen"
+  },
+  "clipboard": {
+    "countdown": "Klembord wordt over {{s}} s gewist",
+    "clearFailed": "Klembord kon niet worden gewist (venster had geen focus)."
+  },
+  "modes": {
+    "label": "Generatormodus",
+    "password": "Wachtwoord",
+    "passphrase": "Wachtwoordzin",
+    "pin": "Pincode",
+    "pronounceable": "Uitspreekbaar",
+    "username": "Gebruikersnaam",
+    "deterministic": "Deterministisch"
+  },
+  "options": {
+    "preset": "Preset voor websiteregels",
+    "presetCustom": "Aangepast",
+    "length": "Lengte",
+    "classes": "Tekenklassen",
+    "upper": "Hoofdletters (A–Z)",
+    "lower": "Kleine letters (a–z)",
+    "digits": "Cijfers (0–9)",
+    "special": "Speciale tekens",
+    "rules": "Regels",
+    "excludeAmbiguous": "Dubbelzinnige tekens uitsluiten",
+    "requireEachClass": "Elke gekozen klasse minstens één keer",
+    "noRepeats": "Geen herhaalde tekens",
+    "minDigits": "Min. cijfers",
+    "minSpecial": "Min. speciale tekens",
+    "charsets": "Tekensets",
+    "specialChars": "Set speciale tekens",
+    "excludeChars": "Deze tekens uitsluiten",
+    "wordCount": "Aantal woorden",
+    "wordlist": "Woordenlijst",
+    "wordlistAuto": "Automatisch (op taal)",
+    "wordlistInfo": "{{label}}: {{size}} woorden ≈ {{bits}} bits per woord",
+    "separator": "Scheidingsteken",
+    "sepDash": "Koppelteken (-)",
+    "sepDot": "Punt (.)",
+    "sepSpace": "Spatie",
+    "sepDigit": "Willekeurig cijfer",
+    "sepCustom": "Eigen teken",
+    "sepCustomLabel": "Eigen scheidingsteken",
+    "extras": "Extra's",
+    "capitalizeWords": "Elk woord met een hoofdletter",
+    "includeDigit": "Een cijfer tussenvoegen",
+    "includeSpecial": "Een speciaal teken tussenvoegen",
+    "digitsCount": "Aantal cijfers",
+    "pinNote": "Pincodes zijn alleen veilig in combinatie met een blokkering na enkele foute pogingen (bijv. simkaart of bankpas).",
+    "capitalize": "Eerste letter als hoofdletter",
+    "appendDigits": "Cijfers achteraan toevoegen",
+    "leetify": "Leetify",
+    "style": "Schrijfwijze",
+    "styleCamel": "CamelCase (AmberValk)",
+    "styleLower": "kleine letters (ambervalk)"
+  },
+  "presets": {
+    "standard": "Standaard (aanbevolen, 20 tekens)",
+    "nistLong": "NIST-lang (32 tekens, geen verplichte regels)",
+    "lettersDigits": "Alleen letters + cijfers (16)",
+    "max16": "Max. 16, beperkte speciale tekens",
+    "bank": "Bankstijl (10, letters + cijfers)"
+  },
+  "strength": {
+    "title": "Wachtwoordsterkte",
+    "computing": "Analyseren …",
+    "score0": "zeer zwak",
+    "score1": "zwak",
+    "score2": "oké",
+    "score3": "sterk",
+    "score4": "episch",
+    "bits": "{{bits}} bits entropie",
+    "crackOnline": "Online aanval (afgeremd)",
+    "crackOffline": "Offline aanval (snelle hashes)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Uitspreekbare wachtwoorden bevatten veel minder entropie per teken – maak ze langer.",
+    "pinEntropy": "Een pincode is maar zo veilig als de blokkering erachter.",
+    "deterministicNoRecovery": "Geen herstel: zonder het hoofdwachtwoord kan dit wachtwoord niet opnieuw worden gemaakt.",
+    "usernamePurpose": "Gebruikersnamen zijn geen wachtwoorden – gebruik ze niet als geheim."
+  },
+  "errors": {
+    "noClasses": "Kies minstens één tekenklasse.",
+    "emptyAlphabet": "Alle tekens zijn uitgesloten – het alfabet is leeg.",
+    "lengthOutOfRange": "De lengte valt buiten het toegestane bereik.",
+    "minDigitsWithoutDigits": "Minimum aantal cijfers ingesteld, maar cijfers zijn uitgeschakeld.",
+    "minSpecialWithoutSpecial": "Minimum aantal speciale tekens ingesteld, maar speciale tekens zijn uitgeschakeld.",
+    "minimaExceedLength": "De minimumeisen overschrijden de wachtwoordlengte.",
+    "notEnoughUniqueChars": "Te weinig verschillende tekens voor ‘geen herhalingen’.",
+    "wordlistUnavailable": "De woordenlijst kon niet worden geladen."
+  },
+  "settings": {
+    "title": "Instellingen",
+    "languageLabel": "Taal",
+    "theme": "Thema",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Weergave",
+    "schemeSystem": "Systeem",
+    "schemeLight": "Licht",
+    "schemeDark": "Donker",
+    "clipboardTimer": "Klembord",
+    "clipboardTimerLabel": "Automatisch wissen na",
+    "timerNever": "Nooit",
+    "timerSeconds": "{{s}} seconden",
+    "clipboardHint": "Let op: een webapp kan de klembordgeschiedenis van het systeem (bijv. Windows Win+V) niet gegarandeerd wissen.",
+    "history": "Geschiedenis",
+    "historyEnabled": "Geschiedenis bijhouden",
+    "historyPersist": "Geschiedenis permanent bewaren",
+    "historyPersistHint": "Uit = geschiedenis wordt gewist wanneer je de app sluit.",
+    "clearHistory_one": "Geschiedenis wissen ({{count}} item)",
+    "clearHistory_other": "Geschiedenis wissen ({{count}} items)",
+    "hibp": "Lekcontrole (Have I Been Pwned)",
+    "hibpEnabled": "Lekcontrole inschakelen",
+    "hibpExplain": "Controleert via k-anonimiteit of een wachtwoord in bekende datalekken voorkomt: de SHA-1-hash wordt lokaal berekend en alleen de eerste 5 tekens gaan naar api.pwnedpasswords.com.",
+    "hibpPrivacy": "Je wachtwoord en de volledige hash verlaten nooit je apparaat. Zonder deze opt-in doet Prisma helemaal geen internetverzoeken."
+  },
+  "history": {
+    "title": "Geschiedenis",
+    "empty": "Nog geen items.",
+    "disabledHint": "De geschiedenis staat uit. Je kunt die in de instellingen inschakelen – pas dan wordt er iets bijgehouden.",
+    "clearAll": "Alle items verwijderen"
+  },
+  "hibp": {
+    "checking": "Controleren op bekende lekken …",
+    "found_one": "Gevonden in {{count}} bekend lek – niet gebruiken!",
+    "found_other": "Gevonden in {{count}} bekende lekken – niet gebruiken!",
+    "notFound": "In geen enkel bekend lek gevonden.",
+    "error": "Lekcontrole is momenteel niet bereikbaar."
+  },
+  "qr": {
+    "title": "QR-code",
+    "canvasLabel": "QR-code van het wachtwoord",
+    "warning": "Wie deze QR-code ziet of fotografeert, kent je wachtwoord. Hij wordt volledig lokaal gegenereerd."
+  },
+  "bulk": {
+    "title": "Bulkgeneratie",
+    "count": "Aantal",
+    "generate": "Lijst genereren",
+    "copyAll": "Alles kopiëren",
+    "downloadFile": "Opslaan als bestand",
+    "listLabel": "Gegenereerde wachtwoorden",
+    "error": "Met de huidige opties kan er geen lijst worden gegenereerd.",
+    "hint": "De lijst wordt nergens opgeslagen en bij het sluiten gewist."
+  },
+  "trainer": {
+    "title": "Geheugentrainer",
+    "intro": "Prent de wachtwoordzin in je geheugen. Elke ronde wordt één extra woord verborgen – typ telkens de volledige zin. Alles blijft op je apparaat.",
+    "phraseLabel": "Wachtwoordzin met verborgen woorden",
+    "round": "Ronde {{n}} van {{total}}",
+    "typeHere": "Typ de volledige wachtwoordzin …",
+    "checkBtn": "Controleren",
+    "correct": "Goed! Volgende ronde.",
+    "wrong": "Nog niet helemaal – probeer het opnieuw.",
+    "done": "Gelukt! De wachtwoordzin zit erin.",
+    "restart": "Opnieuw beginnen"
+  },
+  "deterministic": {
+    "master": "Hoofdwachtwoord",
+    "masterHint": "Wordt niet opgeslagen en niet verzonden – het bestaat alleen in dit formulier.",
+    "site": "Website / domein",
+    "login": "Login / gebruikersnaam",
+    "counter": "Teller",
+    "warningTitle": "Stateless modus – geen herstel",
+    "warningBody": "Uit hoofdwachtwoord + domein + login wordt altijd hetzelfde wachtwoord afgeleid (PBKDF2, 310.000 iteraties). Er wordt niets opgeslagen: wie het hoofdwachtwoord vergeet, kan de wachtwoorden niet herstellen.",
+    "generateBtn": "Wachtwoord afleiden",
+    "deriving": "Afleiden …"
+  },
+  "footer": {
+    "pledge": "100% offline · geen accounts · geen tracking – je wachtwoorden blijven op je apparaat."
+  }
+}

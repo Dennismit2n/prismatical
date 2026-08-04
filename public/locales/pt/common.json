@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Gerador de Senhas"
+  },
+  "display": {
+    "label": "Senha gerada",
+    "announceNew": "Nova senha gerada"
+  },
+  "actions": {
+    "generate": "Gerar",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "reveal": "Mostrar senha",
+    "hide": "Ocultar senha",
+    "close": "Fechar",
+    "delete": "Apagar"
+  },
+  "clipboard": {
+    "countdown": "A área de transferência será limpa em {{s}} s",
+    "clearFailed": "Não foi possível limpar a área de transferência (a janela não estava em foco)."
+  },
+  "modes": {
+    "label": "Modo do gerador",
+    "password": "Senha",
+    "passphrase": "Frase secreta",
+    "pin": "PIN",
+    "pronounceable": "Pronunciável",
+    "username": "Nome de usuário",
+    "deterministic": "Determinístico"
+  },
+  "options": {
+    "preset": "Predefinição de regras do site",
+    "presetCustom": "Personalizada",
+    "length": "Comprimento",
+    "classes": "Classes de caracteres",
+    "upper": "Maiúsculas (A–Z)",
+    "lower": "Minúsculas (a–z)",
+    "digits": "Dígitos (0–9)",
+    "special": "Caracteres especiais",
+    "rules": "Regras",
+    "excludeAmbiguous": "Excluir caracteres ambíguos",
+    "requireEachClass": "Cada classe selecionada pelo menos uma vez",
+    "noRepeats": "Sem caracteres repetidos",
+    "minDigits": "Mín. de dígitos",
+    "minSpecial": "Mín. de especiais",
+    "charsets": "Conjuntos de caracteres",
+    "specialChars": "Conjunto de caracteres especiais",
+    "excludeChars": "Excluir estes caracteres",
+    "wordCount": "Número de palavras",
+    "wordlist": "Lista de palavras",
+    "wordlistAuto": "Automática (conforme o idioma)",
+    "wordlistInfo": "{{label}}: {{size}} palavras ≈ {{bits}} bits por palavra",
+    "separator": "Separador",
+    "sepDash": "Hífen (-)",
+    "sepDot": "Ponto (.)",
+    "sepSpace": "Espaço",
+    "sepDigit": "Dígito aleatório",
+    "sepCustom": "Personalizado",
+    "sepCustomLabel": "Separador personalizado",
+    "extras": "Extras",
+    "capitalizeWords": "Iniciar cada palavra com maiúscula",
+    "includeDigit": "Intercalar um dígito",
+    "includeSpecial": "Intercalar um caractere especial",
+    "digitsCount": "Dígitos",
+    "pinNote": "PINs só protegem em conjunto com um bloqueio após poucas tentativas erradas (p. ex. SIM ou cartão bancário).",
+    "capitalize": "Primeira letra em maiúscula",
+    "appendDigits": "Acrescentar dígitos",
+    "leetify": "Leetify",
+    "style": "Estilo",
+    "styleCamel": "CamelCase (FalcaoAmbar)",
+    "styleLower": "minúsculas (falcaoambar)"
+  },
+  "presets": {
+    "standard": "Padrão (recomendado, 20 caracteres)",
+    "nistLong": "NIST longo (32 caracteres, sem regras obrigatórias)",
+    "lettersDigits": "Apenas letras + dígitos (16)",
+    "max16": "Máx. 16, caracteres especiais limitados",
+    "bank": "Típico de banco (10, letras + dígitos)"
+  },
+  "strength": {
+    "title": "Força da senha",
+    "computing": "Analisando…",
+    "score0": "muito fraca",
+    "score1": "fraca",
+    "score2": "aceitável",
+    "score3": "forte",
+    "score4": "épica",
+    "bits": "{{bits}} bits de entropia",
+    "crackOnline": "Ataque online (limitado)",
+    "crackOffline": "Ataque offline (hashes rápidos)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Senhas pronunciáveis têm bem menos entropia por caractere – compense com um comprimento maior.",
+    "pinEntropy": "Um PIN só é tão seguro quanto o bloqueio que o protege.",
+    "deterministicNoRecovery": "Sem recuperação: sem a senha mestra, esta senha não pode ser recriada.",
+    "usernamePurpose": "Nomes de usuário não são senhas – não os use como segredo."
+  },
+  "errors": {
+    "noClasses": "Selecione pelo menos uma classe de caracteres.",
+    "emptyAlphabet": "Todos os caracteres estão excluídos – o alfabeto está vazio.",
+    "lengthOutOfRange": "O comprimento está fora do intervalo permitido.",
+    "minDigitsWithoutDigits": "Mínimo de dígitos definido, mas os dígitos estão desmarcados.",
+    "minSpecialWithoutSpecial": "Mínimo de caracteres especiais definido, mas os especiais estão desmarcados.",
+    "minimaExceedLength": "Os mínimos exigidos excedem o comprimento da senha.",
+    "notEnoughUniqueChars": "Caracteres distintos insuficientes para “sem repetições”.",
+    "wordlistUnavailable": "Não foi possível carregar a lista de palavras."
+  },
+  "settings": {
+    "title": "Configurações",
+    "languageLabel": "Idioma",
+    "theme": "Tema",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Aparência",
+    "schemeSystem": "Sistema",
+    "schemeLight": "Claro",
+    "schemeDark": "Escuro",
+    "clipboardTimer": "Área de transferência",
+    "clipboardTimerLabel": "Limpar automaticamente após",
+    "timerNever": "Nunca",
+    "timerSeconds": "{{s}} segundos",
+    "clipboardHint": "Nota: históricos da área de transferência do sistema (p. ex. Win+V no Windows) não podem ser limpos de forma garantida a partir do navegador.",
+    "history": "Histórico",
+    "historyEnabled": "Gravar histórico",
+    "historyPersist": "Manter o histórico permanentemente",
+    "historyPersistHint": "Desligado = o histórico é limpo ao fechar o Prisma.",
+    "clearHistory_one": "Apagar histórico ({{count}} entrada)",
+    "clearHistory_other": "Apagar histórico ({{count}} entradas)",
+    "hibp": "Verificação de vazamentos (Have I Been Pwned)",
+    "hibpEnabled": "Ativar verificação de vazamentos",
+    "hibpExplain": "Verifica por k-anonimato se uma senha aparece em vazamentos de dados conhecidos: o hash SHA-1 é calculado localmente e apenas os seus primeiros 5 caracteres são enviados a api.pwnedpasswords.com.",
+    "hibpPrivacy": "Sua senha e o hash completo nunca saem do seu dispositivo. Sem esse opt-in, o Prisma não faz nenhum pedido à internet."
+  },
+  "history": {
+    "title": "Histórico",
+    "empty": "Ainda não há entradas.",
+    "disabledHint": "O histórico está desativado. Você pode ativá-lo nas configurações – só a partir daí algo será gravado.",
+    "clearAll": "Apagar todas as entradas"
+  },
+  "hibp": {
+    "checking": "Verificando em vazamentos conhecidos…",
+    "found_one": "Encontrada em {{count}} vazamento conhecido – não use!",
+    "found_other": "Encontrada em {{count}} vazamentos conhecidos – não use!",
+    "notFound": "Não encontrada em nenhum vazamento conhecido.",
+    "error": "A verificação de vazamentos está indisponível no momento."
+  },
+  "qr": {
+    "title": "Código QR",
+    "canvasLabel": "Código QR da senha",
+    "warning": "Quem vir ou fotografar este código QR conhece sua senha. Ele é gerado totalmente no seu dispositivo."
+  },
+  "bulk": {
+    "title": "Geração em massa",
+    "count": "Quantidade",
+    "generate": "Gerar lista",
+    "copyAll": "Copiar todas",
+    "downloadFile": "Salvar como arquivo",
+    "listLabel": "Senhas geradas",
+    "error": "Não é possível gerar uma lista com as opções atuais.",
+    "hint": "A lista não é guardada em lugar nenhum e é descartada ao fechar."
+  },
+  "trainer": {
+    "title": "Treinador de memorização",
+    "intro": "Memorize a frase secreta. A cada etapa, mais uma palavra é ocultada – digite sempre a frase completa. Tudo permanece no seu dispositivo.",
+    "phraseLabel": "Frase secreta com palavras ocultas",
+    "round": "Etapa {{n}} de {{total}}",
+    "typeHere": "Digite a frase secreta completa…",
+    "checkBtn": "Verificar",
+    "correct": "Correto! Próxima etapa.",
+    "wrong": "Quase lá – tente novamente.",
+    "done": "Conseguiu! A frase secreta está memorizada.",
+    "restart": "Começar de novo"
+  },
+  "deterministic": {
+    "master": "Senha mestra",
+    "masterHint": "Nunca é guardada nem enviada – existe apenas neste formulário.",
+    "site": "Site / domínio",
+    "login": "Login / nome de usuário",
+    "counter": "Contador",
+    "warningTitle": "Modo sem estado – sem recuperação",
+    "warningBody": "De senha mestra + domínio + login deriva-se sempre a mesma senha (PBKDF2, 310.000 iterações). Nada é guardado: quem esquecer a senha mestra não poderá recuperar as senhas derivadas.",
+    "generateBtn": "Derivar senha",
+    "deriving": "Derivando…"
+  },
+  "footer": {
+    "pledge": "100% offline · sem contas · sem rastreamento – suas senhas ficam no seu dispositivo."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Krypto-przejrzystość: jak powstało to hasło?",
+  "intro": "Prisma niczego nie ukrywa. Tutaj widać dokładnie, jakie źródło losowości, jaki alfabet i jakie obliczenia stoją za bieżącym wynikiem.",
+  "randomSourceTitle": "Źródło losowości",
+  "randomSourceBody": "kryptograficznie bezpieczny generator losowości Twojego systemu (CSPRNG). Obciążenie modulo jest eliminowane metodą rejection sampling: wartości losowe powyżej największej wielokrotności rozmiaru alfabetu są odrzucane i losowane ponownie. Math.random() nie jest nigdzie używany.",
+  "entropyTitle": "Surowa entropia",
+  "entropyChars": "Alfabet: {{pool}} znaków, długość: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bitów. Tylu prób potrzebowałby atakujący, który zna metodę i sprawdza wszystkie kombinacje.",
+  "entropyWords": "Lista słów: {{pool}} słów → liczba słów × log₂({{pool}}) ≈ {{bits}} bitów (dodatki, np. cyfry, są doliczane dokładnie).",
+  "constrainedNote": "Aktywne dodatkowe reguły (minima, wymóg klas, brak powtórzeń) nieznacznie zmniejszają rzeczywistą entropię – wzór stanowi wtedy łagodną górną granicę.",
+  "zxcvbnTitle": "Analiza wzorców (zxcvbn)",
+  "zxcvbnBody": "zxcvbn szuka trafień słownikowych, wzorców klawiaturowych, powtórzeń i dat. Wynik: ocena {{score}} na 4, szacowana liczba prób 10^{{guesses}}.",
+  "zxcvbnLoading": "Słowniki wciąż się ładują…",
+  "scenariosTitle": "Czas łamania w czterech scenariuszach ataku",
+  "scenario": {
+    "onlineThrottled": "Online, z ograniczeniem (100/godz.)",
+    "onlineFast": "Online, bez ograniczeń (10/s)",
+    "offlineSlow": "Offline, wolne hashe (10⁴/s)",
+    "offlineFast": "Offline, szybkie hashe (10¹⁰/s)"
+  },
+  "privacyTitle": "Co opuszcza Twoje urządzenie?",
+  "privacyBody": "Nic. Generowanie, analiza i kod QR działają w całości lokalnie. Jedyny wyjątek: opcjonalne sprawdzanie wycieków (opt-in w ustawieniach) wysyła pierwsze 5 znaków lokalnie obliczonego hasha SHA-1 – nigdy samo hasło."
+}

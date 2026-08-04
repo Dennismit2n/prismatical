@@ -1,0 +1,187 @@
+{
+  "app": {
+    "title": "Prisma – パスワードジェネレーター"
+  },
+  "display": {
+    "label": "生成されたパスワード",
+    "announceNew": "新しいパスワードを生成しました"
+  },
+  "actions": {
+    "generate": "生成",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "reveal": "パスワードを表示",
+    "hide": "パスワードを隠す",
+    "close": "閉じる",
+    "delete": "削除"
+  },
+  "clipboard": {
+    "countdown": "クリップボードはあと{{s}}秒で消去されます",
+    "clearFailed": "クリップボードを消去できませんでした（ウィンドウがフォーカスされていませんでした）。"
+  },
+  "modes": {
+    "label": "生成モード",
+    "password": "パスワード",
+    "passphrase": "パスフレーズ",
+    "pin": "PIN",
+    "pronounceable": "発音しやすい",
+    "username": "ユーザー名",
+    "deterministic": "決定論的"
+  },
+  "options": {
+    "preset": "サイトルールのプリセット",
+    "presetCustom": "カスタム",
+    "length": "長さ",
+    "classes": "文字種",
+    "upper": "大文字（A–Z）",
+    "lower": "小文字（a–z）",
+    "digits": "数字（0–9）",
+    "special": "記号",
+    "rules": "ルール",
+    "excludeAmbiguous": "紛らわしい文字を除外",
+    "requireEachClass": "選択した各文字種を1文字以上含める",
+    "noRepeats": "同じ文字を繰り返さない",
+    "minDigits": "数字の最小数",
+    "minSpecial": "記号の最小数",
+    "charsets": "文字セット",
+    "specialChars": "記号セット",
+    "excludeChars": "除外する文字",
+    "wordCount": "単語数",
+    "wordlist": "単語リスト",
+    "wordlistAuto": "自動（言語に応じて）",
+    "wordlistInfo": "{{label}}：{{size}}語 ≈ 1語あたり{{bits}}ビット",
+    "separator": "区切り文字",
+    "sepDash": "ハイフン（-）",
+    "sepDot": "ドット（.）",
+    "sepSpace": "スペース",
+    "sepDigit": "ランダムな数字",
+    "sepCustom": "カスタム文字",
+    "sepCustomLabel": "カスタム区切り文字",
+    "extras": "追加オプション",
+    "capitalizeWords": "各単語の頭文字を大文字にする",
+    "includeDigit": "数字を1つ混ぜる",
+    "includeSpecial": "記号を1つ混ぜる",
+    "digitsCount": "桁数",
+    "pinNote": "PINは、数回の失敗でロックされる仕組み（SIMや銀行カードなど）と組み合わせてはじめて安全です。",
+    "capitalize": "先頭の文字を大文字にする",
+    "appendDigits": "末尾に数字を追加",
+    "leetify": "Leetify",
+    "style": "表記スタイル",
+    "styleCamel": "キャメルケース（AmberFalcon）",
+    "styleLower": "小文字（amberfalcon）"
+  },
+  "presets": {
+    "standard": "標準（推奨、20文字）",
+    "nistLong": "NISTロング（32文字、強制ルールなし）",
+    "lettersDigits": "英字＋数字のみ（16文字）",
+    "max16": "最大16文字、記号は制限あり",
+    "bank": "銀行タイプ（10文字、英字＋数字）"
+  },
+  "strength": {
+    "title": "パスワード強度",
+    "computing": "分析中…",
+    "score0": "とても弱い",
+    "score1": "弱い",
+    "score2": "まずまず",
+    "score3": "強い",
+    "score4": "伝説級",
+    "bits": "エントロピー{{bits}}ビット",
+    "crackOnline": "オンライン攻撃（速度制限あり）",
+    "crackOffline": "オフライン攻撃（高速ハッシュ）"
+  },
+  "warnings": {
+    "pronounceableEntropy": "発音しやすいパスワードは1文字あたりのエントロピーが大幅に低くなります。長めに設定しましょう。",
+    "pinEntropy": "PINの安全性は、その背後にあるロック機構次第です。",
+    "deterministicNoRecovery": "復元不可：マスターパスワードなしでは、このパスワードを再現できません。",
+    "usernamePurpose": "ユーザー名はパスワードではありません。秘密情報として使わないでください。"
+  },
+  "errors": {
+    "noClasses": "文字種を1つ以上選択してください。",
+    "emptyAlphabet": "すべての文字が除外されており、使用できる文字がありません。",
+    "lengthOutOfRange": "長さが許容範囲外です。",
+    "minDigitsWithoutDigits": "数字の最小数が設定されていますが、数字が選択されていません。",
+    "minSpecialWithoutSpecial": "記号の最小数が設定されていますが、記号が選択されていません。",
+    "minimaExceedLength": "最小数の合計がパスワードの長さを超えています。",
+    "notEnoughUniqueChars": "「同じ文字を繰り返さない」を満たすには文字の種類が足りません。",
+    "wordlistUnavailable": "単語リストを読み込めませんでした。"
+  },
+  "settings": {
+    "title": "設定",
+    "languageLabel": "言語",
+    "theme": "テーマ",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "外観",
+    "schemeSystem": "システム",
+    "schemeLight": "ライト",
+    "schemeDark": "ダーク",
+    "clipboardTimer": "クリップボード",
+    "clipboardTimerLabel": "自動消去までの時間",
+    "timerNever": "消去しない",
+    "timerSeconds": "{{s}}秒",
+    "clipboardHint": "注意：システムのクリップボード履歴（WindowsのWin+Vなど）は、ウェブアプリからは確実に消去できません。",
+    "history": "履歴",
+    "historyEnabled": "履歴を記録する",
+    "historyPersist": "履歴を永続的に保存する",
+    "historyPersistHint": "オフの場合、アプリを閉じると履歴は消去されます。",
+    "clearHistory_other": "履歴を消去（{{count}}件）",
+    "hibp": "漏えいチェック（Have I Been Pwned）",
+    "hibpEnabled": "漏えいチェックを有効にする",
+    "hibpExplain": "k-匿名性を利用して、パスワードが既知のデータ漏えいに含まれていないかを確認します。SHA-1ハッシュはローカルで計算され、その先頭5文字だけがapi.pwnedpasswords.comに送信されます。",
+    "hibpPrivacy": "パスワード本体と完全なハッシュがデバイスの外に出ることはありません。このオプトインなしでは、Prismaは一切インターネット通信を行いません。"
+  },
+  "history": {
+    "title": "履歴",
+    "empty": "まだ記録がありません。",
+    "disabledHint": "履歴はオフになっています。設定で有効にするまで、何も記録されません。",
+    "clearAll": "すべての記録を削除"
+  },
+  "hibp": {
+    "checking": "既知の漏えいと照合中…",
+    "found_other": "{{count}}件の既知の漏えいで見つかりました。使用しないでください！",
+    "notFound": "既知の漏えいでは見つかりませんでした。",
+    "error": "漏えいチェックに現在接続できません。"
+  },
+  "qr": {
+    "title": "QRコード",
+    "canvasLabel": "パスワードのQRコード",
+    "warning": "このQRコードを見たり撮影したりした人は、あなたのパスワードを知ることができます。QRコードは完全にローカルで生成されます。"
+  },
+  "bulk": {
+    "title": "一括生成",
+    "count": "個数",
+    "generate": "リストを生成",
+    "copyAll": "すべてコピー",
+    "downloadFile": "ファイルとして保存",
+    "listLabel": "生成されたパスワード",
+    "error": "現在のオプションではリストを生成できません。",
+    "hint": "リストはどこにも保存されず、閉じると破棄されます。"
+  },
+  "trainer": {
+    "title": "暗記トレーナー",
+    "intro": "パスフレーズを覚えましょう。ラウンドごとに単語が1つずつ隠れていくので、毎回フレーズ全体を入力してください。すべてあなたのデバイス内で完結します。",
+    "phraseLabel": "一部の単語が隠されたパスフレーズ",
+    "round": "ラウンド{{n}}／{{total}}",
+    "typeHere": "パスフレーズ全体を入力…",
+    "checkBtn": "確認",
+    "correct": "正解！次のラウンドへ。",
+    "wrong": "惜しい！もう一度試してください。",
+    "done": "完了！パスフレーズはしっかり頭に入りました。",
+    "restart": "最初からやり直す"
+  },
+  "deterministic": {
+    "master": "マスターパスワード",
+    "masterHint": "保存も送信もされません。このフォームの中にだけ存在します。",
+    "site": "ウェブサイト／ドメイン",
+    "login": "ログイン／ユーザー名",
+    "counter": "カウンター",
+    "warningTitle": "ステートレスモード：復元不可",
+    "warningBody": "マスターパスワード＋ドメイン＋ログインからは常に同じパスワードが導出されます（PBKDF2、310,000回の反復）。何も保存されないため、マスターパスワードを忘れるとパスワードは復元できません。",
+    "generateBtn": "パスワードを導出",
+    "deriving": "導出中…"
+  },
+  "footer": {
+    "pledge": "100%オフライン・アカウント不要・トラッキングなし。パスワードはあなたのデバイスから出ません。"
+  }
+}

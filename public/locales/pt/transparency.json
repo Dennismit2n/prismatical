@@ -1,0 +1,22 @@
+{
+  "title": "Transparência criptográfica: como esta senha foi criada?",
+  "intro": "O Prisma não esconde nada. Aqui está, às claras, qual fonte de aleatoriedade, qual alfabeto e qual cálculo estão por trás do resultado atual.",
+  "randomSourceTitle": "Fonte de aleatoriedade",
+  "randomSourceBody": "o gerador de números aleatórios criptograficamente seguro do seu sistema (CSPRNG). O viés de módulo é evitado por amostragem por rejeição: valores aleatórios acima do maior múltiplo do tamanho do alfabeto são descartados e sorteados de novo. Math.random() não é usado em lugar nenhum.",
+  "entropyTitle": "Entropia bruta",
+  "entropyChars": "Alfabeto: {{pool}} caracteres, comprimento: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. É esse o número de tentativas de que um atacante que conhece o método precisaria para testar todas as possibilidades.",
+  "entropyWords": "Lista de palavras: {{pool}} palavras → número de palavras × log₂({{pool}}) ≈ {{bits}} bits (extras como dígitos são somados com exatidão).",
+  "constrainedNote": "Regras adicionais ativas (mínimos, obrigatoriedade de classes, sem repetições) reduzem ligeiramente a entropia real – a fórmula passa então a ser um limite superior aproximado.",
+  "zxcvbnTitle": "Análise de padrões (zxcvbn)",
+  "zxcvbnBody": "O zxcvbn procura correspondências de dicionário, padrões de teclado, repetições e datas. Resultado: pontuação {{score}} de 4, tentativas estimadas 10^{{guesses}}.",
+  "zxcvbnLoading": "Os dicionários ainda estão sendo carregados…",
+  "scenariosTitle": "Tempo de quebra em quatro cenários de ataque",
+  "scenario": {
+    "onlineThrottled": "Online, limitado (100/hora)",
+    "onlineFast": "Online, sem limitação (10/segundo)",
+    "offlineSlow": "Offline, hashes lentos (10⁴/segundo)",
+    "offlineFast": "Offline, hashes rápidos (10¹⁰/segundo)"
+  },
+  "privacyTitle": "O que sai do seu dispositivo?",
+  "privacyBody": "Nada. Geração, análise e código QR acontecem totalmente no dispositivo. Única exceção: a verificação de vazamentos opcional (opt-in nas configurações) envia os primeiros 5 caracteres do hash SHA-1 calculado localmente – nunca a senha em si."
+}

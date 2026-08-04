@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Generador de contraseñas"
+  },
+  "display": {
+    "label": "Contraseña generada",
+    "announceNew": "Nueva contraseña generada"
+  },
+  "actions": {
+    "generate": "Generar",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "reveal": "Mostrar contraseña",
+    "hide": "Ocultar contraseña",
+    "close": "Cerrar",
+    "delete": "Eliminar"
+  },
+  "clipboard": {
+    "countdown": "El portapapeles se vaciará en {{s}} s",
+    "clearFailed": "No se pudo vaciar el portapapeles (la ventana no tenía el foco)."
+  },
+  "modes": {
+    "label": "Modo del generador",
+    "password": "Contraseña",
+    "passphrase": "Frase de contraseña",
+    "pin": "PIN",
+    "pronounceable": "Pronunciable",
+    "username": "Nombre de usuario",
+    "deterministic": "Determinista"
+  },
+  "options": {
+    "preset": "Preajuste de reglas del sitio web",
+    "presetCustom": "Personalizado",
+    "length": "Longitud",
+    "classes": "Clases de caracteres",
+    "upper": "Mayúsculas (A–Z)",
+    "lower": "Minúsculas (a–z)",
+    "digits": "Dígitos (0–9)",
+    "special": "Caracteres especiales",
+    "rules": "Reglas",
+    "excludeAmbiguous": "Excluir caracteres ambiguos",
+    "requireEachClass": "Cada clase seleccionada al menos una vez",
+    "noRepeats": "Sin caracteres repetidos",
+    "minDigits": "Mín. de dígitos",
+    "minSpecial": "Mín. de especiales",
+    "charsets": "Juegos de caracteres",
+    "specialChars": "Juego de caracteres especiales",
+    "excludeChars": "Excluir estos caracteres",
+    "wordCount": "Número de palabras",
+    "wordlist": "Lista de palabras",
+    "wordlistAuto": "Automática (según el idioma)",
+    "wordlistInfo": "{{label}}: {{size}} palabras ≈ {{bits}} bits por palabra",
+    "separator": "Separador",
+    "sepDash": "Guion (-)",
+    "sepDot": "Punto (.)",
+    "sepSpace": "Espacio",
+    "sepDigit": "Dígito aleatorio",
+    "sepCustom": "Carácter personalizado",
+    "sepCustomLabel": "Separador personalizado",
+    "extras": "Extras",
+    "capitalizeWords": "Poner en mayúscula cada palabra",
+    "includeDigit": "Intercalar un dígito",
+    "includeSpecial": "Intercalar un carácter especial",
+    "digitsCount": "Dígitos",
+    "pinNote": "Un PIN solo protege junto con un bloqueo tras unos pocos intentos fallidos (p. ej. la SIM o la tarjeta bancaria).",
+    "capitalize": "Poner en mayúscula la primera letra",
+    "appendDigits": "Añadir dígitos al final",
+    "leetify": "Leetify",
+    "style": "Estilo",
+    "styleCamel": "CamelCase (HalconAmbar)",
+    "styleLower": "minúsculas (halconambar)"
+  },
+  "presets": {
+    "standard": "Estándar (recomendado, 20 caracteres)",
+    "nistLong": "NIST largo (32 caracteres, sin reglas forzadas)",
+    "lettersDigits": "Solo letras + dígitos (16)",
+    "max16": "Máx. 16, caracteres especiales limitados",
+    "bank": "Estilo banco (10, letras + dígitos)"
+  },
+  "strength": {
+    "title": "Fortaleza de la contraseña",
+    "computing": "Analizando…",
+    "score0": "muy débil",
+    "score1": "débil",
+    "score2": "aceptable",
+    "score3": "fuerte",
+    "score4": "épica",
+    "bits": "{{bits}} bits de entropía",
+    "crackOnline": "Ataque en línea (limitado)",
+    "crackOffline": "Ataque sin conexión (hashes rápidos)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Las contraseñas pronunciables tienen mucha menos entropía por carácter: hazlas más largas.",
+    "pinEntropy": "Un PIN es solo tan seguro como el bloqueo que lo respalda.",
+    "deterministicNoRecovery": "Sin recuperación: sin la contraseña maestra, esta contraseña no puede regenerarse.",
+    "usernamePurpose": "Los nombres de usuario no son contraseñas: no los uses como secreto."
+  },
+  "errors": {
+    "noClasses": "Selecciona al menos una clase de caracteres.",
+    "emptyAlphabet": "Todos los caracteres están excluidos: el alfabeto está vacío.",
+    "lengthOutOfRange": "La longitud está fuera del rango permitido.",
+    "minDigitsWithoutDigits": "Hay un mínimo de dígitos, pero los dígitos están desactivados.",
+    "minSpecialWithoutSpecial": "Hay un mínimo de caracteres especiales, pero están desactivados.",
+    "minimaExceedLength": "Los mínimos exigidos superan la longitud de la contraseña.",
+    "notEnoughUniqueChars": "No hay suficientes caracteres distintos para «sin repeticiones».",
+    "wordlistUnavailable": "No se pudo cargar la lista de palabras."
+  },
+  "settings": {
+    "title": "Ajustes",
+    "languageLabel": "Idioma",
+    "theme": "Tema",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Apariencia",
+    "schemeSystem": "Sistema",
+    "schemeLight": "Claro",
+    "schemeDark": "Oscuro",
+    "clipboardTimer": "Portapapeles",
+    "clipboardTimerLabel": "Vaciar automáticamente tras",
+    "timerNever": "Nunca",
+    "timerSeconds": "{{s}} segundos",
+    "clipboardHint": "Nota: una aplicación web no puede garantizar el vaciado de los historiales del portapapeles del sistema (p. ej. Win+V en Windows).",
+    "history": "Historial",
+    "historyEnabled": "Registrar historial",
+    "historyPersist": "Guardar el historial de forma permanente",
+    "historyPersistHint": "Desactivado = el historial se vacía al cerrar la aplicación.",
+    "clearHistory_one": "Borrar historial ({{count}} entrada)",
+    "clearHistory_other": "Borrar historial ({{count}} entradas)",
+    "hibp": "Comprobación de filtraciones (Have I Been Pwned)",
+    "hibpEnabled": "Activar la comprobación de filtraciones",
+    "hibpExplain": "Comprueba mediante k-anonimato si una contraseña aparece en filtraciones conocidas: el hash SHA-1 se calcula localmente y solo sus primeros 5 caracteres se envían a api.pwnedpasswords.com.",
+    "hibpPrivacy": "Tu contraseña y el hash completo nunca salen de tu dispositivo. Sin esta activación voluntaria, Prisma no realiza ninguna petición a internet."
+  },
+  "history": {
+    "title": "Historial",
+    "empty": "Aún no hay entradas.",
+    "disabledHint": "El historial está desactivado. Puedes activarlo en los ajustes: hasta entonces no se registra nada.",
+    "clearAll": "Eliminar todas las entradas"
+  },
+  "hibp": {
+    "checking": "Comprobando contra filtraciones conocidas…",
+    "found_one": "Encontrada en {{count}} filtración conocida. ¡No la uses!",
+    "found_other": "Encontrada en {{count}} filtraciones conocidas. ¡No la uses!",
+    "notFound": "No aparece en ninguna filtración conocida.",
+    "error": "La comprobación de filtraciones no está disponible en este momento."
+  },
+  "qr": {
+    "title": "Código QR",
+    "canvasLabel": "Código QR de la contraseña",
+    "warning": "Quien vea o fotografíe este código QR conocerá tu contraseña. Se genera completamente en tu dispositivo."
+  },
+  "bulk": {
+    "title": "Generación en lote",
+    "count": "Cantidad",
+    "generate": "Generar lista",
+    "copyAll": "Copiar todo",
+    "downloadFile": "Guardar como archivo",
+    "listLabel": "Contraseñas generadas",
+    "error": "Con las opciones actuales no se puede generar ninguna lista.",
+    "hint": "La lista no se guarda en ningún sitio y se descarta al cerrar este diálogo."
+  },
+  "trainer": {
+    "title": "Entrenador de memoria",
+    "intro": "Memoriza la frase de contraseña. En cada ronda se oculta una palabra más: escribe cada vez la frase completa. Todo permanece en tu dispositivo.",
+    "phraseLabel": "Frase de contraseña con palabras ocultas",
+    "round": "Ronda {{n}} de {{total}}",
+    "typeHere": "Escribe la frase de contraseña completa…",
+    "checkBtn": "Comprobar",
+    "correct": "¡Correcto! Siguiente ronda.",
+    "wrong": "Aún no: inténtalo de nuevo.",
+    "done": "¡Conseguido! La frase ya está memorizada.",
+    "restart": "Empezar de nuevo"
+  },
+  "deterministic": {
+    "master": "Contraseña maestra",
+    "masterHint": "No se guarda ni se envía: solo existe en este formulario.",
+    "site": "Sitio web / dominio",
+    "login": "Login / nombre de usuario",
+    "counter": "Contador",
+    "warningTitle": "Modo sin estado: sin recuperación",
+    "warningBody": "De contraseña maestra + dominio + login se deriva siempre la misma contraseña (PBKDF2, 310 000 iteraciones). No se guarda nada: quien olvide la contraseña maestra no podrá recuperar las contraseñas derivadas.",
+    "generateBtn": "Derivar contraseña",
+    "deriving": "Derivando…"
+  },
+  "footer": {
+    "pledge": "100 % sin conexión · sin cuentas · sin rastreo: tus contraseñas se quedan en tu dispositivo."
+  }
+}

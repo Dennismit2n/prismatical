@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Générateur de mots de passe"
+  },
+  "display": {
+    "label": "Mot de passe généré",
+    "announceNew": "Nouveau mot de passe généré"
+  },
+  "actions": {
+    "generate": "Générer",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "reveal": "Afficher le mot de passe",
+    "hide": "Masquer le mot de passe",
+    "close": "Fermer",
+    "delete": "Supprimer"
+  },
+  "clipboard": {
+    "countdown": "Le presse-papiers sera vidé dans {{s}} s",
+    "clearFailed": "Impossible de vider le presse-papiers (la fenêtre n'avait pas le focus)."
+  },
+  "modes": {
+    "label": "Mode du générateur",
+    "password": "Mot de passe",
+    "passphrase": "Phrase de passe",
+    "pin": "PIN",
+    "pronounceable": "Prononçable",
+    "username": "Nom d'utilisateur",
+    "deterministic": "Déterministe"
+  },
+  "options": {
+    "preset": "Préréglage de règles de site web",
+    "presetCustom": "Personnalisé",
+    "length": "Longueur",
+    "classes": "Classes de caractères",
+    "upper": "Majuscules (A–Z)",
+    "lower": "Minuscules (a–z)",
+    "digits": "Chiffres (0–9)",
+    "special": "Caractères spéciaux",
+    "rules": "Règles",
+    "excludeAmbiguous": "Exclure les caractères ambigus",
+    "requireEachClass": "Chaque classe choisie au moins une fois",
+    "noRepeats": "Aucun caractère répété",
+    "minDigits": "Chiffres min.",
+    "minSpecial": "Spéciaux min.",
+    "charsets": "Jeux de caractères",
+    "specialChars": "Jeu de caractères spéciaux",
+    "excludeChars": "Exclure ces caractères",
+    "wordCount": "Nombre de mots",
+    "wordlist": "Liste de mots",
+    "wordlistAuto": "Automatique (selon la langue)",
+    "wordlistInfo": "{{label}} : {{size}} mots ≈ {{bits}} bits par mot",
+    "separator": "Séparateur",
+    "sepDash": "Tiret (-)",
+    "sepDot": "Point (.)",
+    "sepSpace": "Espace",
+    "sepDigit": "Chiffre aléatoire",
+    "sepCustom": "Caractère personnalisé",
+    "sepCustomLabel": "Séparateur personnalisé",
+    "extras": "Extras",
+    "capitalizeWords": "Majuscule à chaque mot",
+    "includeDigit": "Insérer un chiffre",
+    "includeSpecial": "Insérer un caractère spécial",
+    "digitsCount": "Chiffres",
+    "pinNote": "Un PIN ne protège qu'associé à un blocage après quelques tentatives échouées (p. ex. SIM ou carte bancaire).",
+    "capitalize": "Première lettre en majuscule",
+    "appendDigits": "Ajouter des chiffres à la fin",
+    "leetify": "Leetify",
+    "style": "Casse",
+    "styleCamel": "CamelCase (FauconAmbre)",
+    "styleLower": "minuscules (fauconambre)"
+  },
+  "presets": {
+    "standard": "Standard (recommandé, 20 caractères)",
+    "nistLong": "NIST long (32 caractères, aucune contrainte)",
+    "lettersDigits": "Lettres + chiffres uniquement (16)",
+    "max16": "Max. 16, caractères spéciaux limités",
+    "bank": "Type banque (10, lettres + chiffres)"
+  },
+  "strength": {
+    "title": "Force du mot de passe",
+    "computing": "Analyse en cours…",
+    "score0": "très faible",
+    "score1": "faible",
+    "score2": "correct",
+    "score3": "fort",
+    "score4": "légendaire",
+    "bits": "{{bits}} bits d'entropie",
+    "crackOnline": "Attaque en ligne (limitée)",
+    "crackOffline": "Attaque hors ligne (hachages rapides)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Les mots de passe prononçables ont bien moins d'entropie par caractère – choisissez-les plus longs.",
+    "pinEntropy": "Un PIN n'est aussi sûr que le blocage qui le protège.",
+    "deterministicNoRecovery": "Aucune récupération : sans le mot de passe maître, ce mot de passe ne peut pas être régénéré.",
+    "usernamePurpose": "Les noms d'utilisateur ne sont pas des mots de passe – ne les utilisez pas comme secrets."
+  },
+  "errors": {
+    "noClasses": "Sélectionnez au moins une classe de caractères.",
+    "emptyAlphabet": "Tous les caractères sont exclus – l'alphabet est vide.",
+    "lengthOutOfRange": "La longueur est hors de la plage autorisée.",
+    "minDigitsWithoutDigits": "Minimum de chiffres défini, mais les chiffres sont désélectionnés.",
+    "minSpecialWithoutSpecial": "Minimum de caractères spéciaux défini, mais les caractères spéciaux sont désélectionnés.",
+    "minimaExceedLength": "Les minimums exigés dépassent la longueur du mot de passe.",
+    "notEnoughUniqueChars": "Pas assez de caractères distincts pour « aucune répétition ».",
+    "wordlistUnavailable": "La liste de mots n'a pas pu être chargée."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "languageLabel": "Langue",
+    "theme": "Thème",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Apparence",
+    "schemeSystem": "Système",
+    "schemeLight": "Clair",
+    "schemeDark": "Sombre",
+    "clipboardTimer": "Presse-papiers",
+    "clipboardTimerLabel": "Vider automatiquement après",
+    "timerNever": "Jamais",
+    "timerSeconds": "{{s}} secondes",
+    "clipboardHint": "Remarque : une application web ne peut pas garantir l'effacement des historiques du presse-papiers système (p. ex. Win+V sous Windows).",
+    "history": "Historique",
+    "historyEnabled": "Enregistrer l'historique",
+    "historyPersist": "Conserver l'historique durablement",
+    "historyPersistHint": "Désactivé = l'historique est vidé à la fermeture de l'application.",
+    "clearHistory_one": "Effacer l'historique ({{count}} entrée)",
+    "clearHistory_other": "Effacer l'historique ({{count}} entrées)",
+    "hibp": "Vérification de fuites (Have I Been Pwned)",
+    "hibpEnabled": "Activer la vérification de fuites",
+    "hibpExplain": "Vérifie par k-anonymat si un mot de passe apparaît dans des fuites de données connues : le hachage SHA-1 est calculé localement et seuls ses 5 premiers caractères sont envoyés à api.pwnedpasswords.com.",
+    "hibpPrivacy": "Votre mot de passe et le hachage complet ne quittent jamais votre appareil. Sans cet opt-in, Prisma n'effectue aucune requête Internet."
+  },
+  "history": {
+    "title": "Historique",
+    "empty": "Aucune entrée pour l'instant.",
+    "disabledHint": "L'historique est désactivé. Vous pouvez l'activer dans les paramètres – rien n'est enregistré avant cela.",
+    "clearAll": "Supprimer toutes les entrées"
+  },
+  "hibp": {
+    "checking": "Vérification dans les fuites connues…",
+    "found_one": "Trouvé dans {{count}} fuite connue – ne pas utiliser !",
+    "found_other": "Trouvé dans {{count}} fuites connues – ne pas utiliser !",
+    "notFound": "Introuvable dans les fuites connues.",
+    "error": "Vérification de fuites actuellement indisponible."
+  },
+  "qr": {
+    "title": "Code QR",
+    "canvasLabel": "Code QR du mot de passe",
+    "warning": "Quiconque voit ou photographie ce code QR connaît votre mot de passe. Il est généré entièrement en local."
+  },
+  "bulk": {
+    "title": "Génération en masse",
+    "count": "Nombre",
+    "generate": "Générer la liste",
+    "copyAll": "Tout copier",
+    "downloadFile": "Enregistrer comme fichier",
+    "listLabel": "Mots de passe générés",
+    "error": "Impossible de générer une liste avec les options actuelles.",
+    "hint": "La liste n'est stockée nulle part et sera supprimée à la fermeture."
+  },
+  "trainer": {
+    "title": "Entraîneur de mémorisation",
+    "intro": "Mémorisez la phrase de passe. À chaque tour, un mot de plus est masqué – saisissez chaque fois la phrase complète. Tout reste sur votre appareil.",
+    "phraseLabel": "Phrase de passe avec mots masqués",
+    "round": "Tour {{n}} sur {{total}}",
+    "typeHere": "Saisissez la phrase de passe complète…",
+    "checkBtn": "Vérifier",
+    "correct": "Correct ! Tour suivant.",
+    "wrong": "Pas tout à fait – réessayez.",
+    "done": "Bravo ! La phrase de passe est bien ancrée.",
+    "restart": "Recommencer"
+  },
+  "deterministic": {
+    "master": "Mot de passe maître",
+    "masterHint": "Il n'est ni stocké ni envoyé – il n'existe que dans ce formulaire.",
+    "site": "Site web / domaine",
+    "login": "Identifiant / nom d'utilisateur",
+    "counter": "Compteur",
+    "warningTitle": "Mode sans état – aucune récupération",
+    "warningBody": "Mot de passe maître + domaine + identifiant produisent toujours le même mot de passe (PBKDF2, 310 000 itérations). Rien n'est stocké : en cas d'oubli du mot de passe maître, les mots de passe dérivés sont irrécupérables.",
+    "generateBtn": "Dériver le mot de passe",
+    "deriving": "Dérivation…"
+  },
+  "footer": {
+    "pledge": "100 % hors ligne · aucun compte · aucun pistage – vos mots de passe restent sur votre appareil."
+  }
+}

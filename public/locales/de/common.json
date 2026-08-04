@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Passwort-Generator"
+  },
+  "display": {
+    "label": "Erzeugtes Passwort",
+    "announceNew": "Neues Passwort erzeugt"
+  },
+  "actions": {
+    "generate": "Generieren",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "reveal": "Passwort anzeigen",
+    "hide": "Passwort verbergen",
+    "close": "Schließen",
+    "delete": "Löschen"
+  },
+  "clipboard": {
+    "countdown": "Zwischenablage wird in {{s}} s geleert",
+    "clearFailed": "Zwischenablage konnte nicht geleert werden (Fenster war nicht im Fokus)."
+  },
+  "modes": {
+    "label": "Generator-Modus",
+    "password": "Passwort",
+    "passphrase": "Passphrase",
+    "pin": "PIN",
+    "pronounceable": "Aussprechbar",
+    "username": "Nutzername",
+    "deterministic": "Deterministisch"
+  },
+  "options": {
+    "preset": "Website-Regel-Preset",
+    "presetCustom": "Benutzerdefiniert",
+    "length": "Länge",
+    "classes": "Zeichenklassen",
+    "upper": "Großbuchstaben (A–Z)",
+    "lower": "Kleinbuchstaben (a–z)",
+    "digits": "Ziffern (0–9)",
+    "special": "Sonderzeichen",
+    "rules": "Regeln",
+    "excludeAmbiguous": "Mehrdeutige Zeichen ausschließen",
+    "requireEachClass": "Jede gewählte Klasse mindestens einmal",
+    "noRepeats": "Keine Zeichen-Wiederholungen",
+    "minDigits": "Mind. Ziffern",
+    "minSpecial": "Mind. Sonderzeichen",
+    "charsets": "Zeichensätze",
+    "specialChars": "Sonderzeichensatz",
+    "excludeChars": "Diese Zeichen ausschließen",
+    "wordCount": "Wortanzahl",
+    "wordlist": "Wortliste",
+    "wordlistAuto": "Automatisch (nach Sprache)",
+    "wordlistInfo": "{{label}}: {{size}} Wörter ≈ {{bits}} Bit pro Wort",
+    "separator": "Trennzeichen",
+    "sepDash": "Bindestrich (-)",
+    "sepDot": "Punkt (.)",
+    "sepSpace": "Leerzeichen",
+    "sepDigit": "Zufallsziffer",
+    "sepCustom": "Eigenes Zeichen",
+    "sepCustomLabel": "Eigenes Trennzeichen",
+    "extras": "Extras",
+    "capitalizeWords": "Jedes Wort großschreiben",
+    "includeDigit": "Eine Ziffer einstreuen",
+    "includeSpecial": "Ein Sonderzeichen einstreuen",
+    "digitsCount": "Stellen",
+    "pinNote": "PINs schützen nur zusammen mit einer Sperre nach wenigen Fehlversuchen (z. B. SIM oder Bankkarte).",
+    "capitalize": "Ersten Buchstaben großschreiben",
+    "appendDigits": "Ziffern anhängen",
+    "leetify": "Leetify",
+    "style": "Schreibweise",
+    "styleCamel": "GroßKlein (AmberFalke)",
+    "styleLower": "kleinbuchstaben (amberfalke)"
+  },
+  "presets": {
+    "standard": "Standard (empfohlen, 20 Zeichen)",
+    "nistLong": "NIST-lang (32 Zeichen, keine Zwänge)",
+    "lettersDigits": "Nur Buchstaben + Ziffern (16)",
+    "max16": "Max. 16, Sonderzeichen eingeschränkt",
+    "bank": "Bank-typisch (10, Buchstaben + Ziffern)"
+  },
+  "strength": {
+    "title": "Passwort-Stärke",
+    "computing": "Analysiere …",
+    "score0": "sehr schwach",
+    "score1": "schwach",
+    "score2": "okay",
+    "score3": "stark",
+    "score4": "episch",
+    "bits": "{{bits}} Bit Entropie",
+    "crackOnline": "Online-Angriff (gedrosselt)",
+    "crackOffline": "Offline-Angriff (schnelle Hashes)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Aussprechbare Passwörter haben deutlich weniger Entropie pro Zeichen – wähle sie länger.",
+    "pinEntropy": "Eine PIN ist nur so sicher wie die Sperre dahinter.",
+    "deterministicNoRecovery": "Kein Recovery: Ohne Master-Passwort lässt sich dieses Passwort nicht wiederherstellen.",
+    "usernamePurpose": "Nutzernamen sind keine Passwörter – nicht als Geheimnis verwenden."
+  },
+  "errors": {
+    "noClasses": "Wähle mindestens eine Zeichenklasse.",
+    "emptyAlphabet": "Alle Zeichen sind ausgeschlossen – Alphabet ist leer.",
+    "lengthOutOfRange": "Länge liegt außerhalb des erlaubten Bereichs.",
+    "minDigitsWithoutDigits": "Ziffern-Minimum gesetzt, aber Ziffern sind abgewählt.",
+    "minSpecialWithoutSpecial": "Sonderzeichen-Minimum gesetzt, aber Sonderzeichen sind abgewählt.",
+    "minimaExceedLength": "Die Mindestvorgaben übersteigen die Passwortlänge.",
+    "notEnoughUniqueChars": "Zu wenige unterschiedliche Zeichen für „keine Wiederholungen“.",
+    "wordlistUnavailable": "Wortliste konnte nicht geladen werden."
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "languageLabel": "Sprache",
+    "theme": "Theme",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Darstellung",
+    "schemeSystem": "System",
+    "schemeLight": "Hell",
+    "schemeDark": "Dunkel",
+    "clipboardTimer": "Zwischenablage",
+    "clipboardTimerLabel": "Automatisch leeren nach",
+    "timerNever": "Nie",
+    "timerSeconds": "{{s}} Sekunden",
+    "clipboardHint": "Hinweis: System-Zwischenablage-Verläufe (z. B. Windows Win+V) kann eine Web-App nicht garantiert leeren.",
+    "history": "Verlauf",
+    "historyEnabled": "Verlauf aufzeichnen",
+    "historyPersist": "Verlauf dauerhaft speichern",
+    "historyPersistHint": "Aus = Verlauf wird beim Schließen der App geleert.",
+    "clearHistory_one": "Verlauf löschen ({{count}} Eintrag)",
+    "clearHistory_other": "Verlauf löschen ({{count}} Einträge)",
+    "hibp": "Leak-Check (Have I Been Pwned)",
+    "hibpEnabled": "Leak-Check aktivieren",
+    "hibpExplain": "Prüft per k-Anonymity, ob ein Passwort in bekannten Datenlecks auftaucht: Der SHA-1-Hash wird lokal gebildet, nur seine ersten 5 Zeichen gehen an api.pwnedpasswords.com.",
+    "hibpPrivacy": "Dein Passwort und der volle Hash verlassen nie dein Gerät. Ohne dieses Opt-in macht Prisma keinerlei Internet-Anfragen."
+  },
+  "history": {
+    "title": "Verlauf",
+    "empty": "Noch keine Einträge.",
+    "disabledHint": "Der Verlauf ist ausgeschaltet. Du kannst ihn in den Einstellungen aktivieren – erst dann wird etwas aufgezeichnet.",
+    "clearAll": "Alle Einträge löschen"
+  },
+  "hibp": {
+    "checking": "Prüfe gegen bekannte Leaks …",
+    "found_one": "In {{count}} bekannten Leak gefunden – nicht verwenden!",
+    "found_other": "In {{count}} bekannten Leaks gefunden – nicht verwenden!",
+    "notFound": "In keinem bekannten Leak gefunden.",
+    "error": "Leak-Check derzeit nicht erreichbar."
+  },
+  "qr": {
+    "title": "QR-Code",
+    "canvasLabel": "QR-Code des Passworts",
+    "warning": "Wer diesen QR-Code sieht oder fotografiert, kennt dein Passwort. Er wird komplett lokal erzeugt."
+  },
+  "bulk": {
+    "title": "Bulk-Generierung",
+    "count": "Anzahl",
+    "generate": "Liste erzeugen",
+    "copyAll": "Alle kopieren",
+    "downloadFile": "Als Datei speichern",
+    "listLabel": "Erzeugte Passwörter",
+    "error": "Mit den aktuellen Optionen kann keine Liste erzeugt werden.",
+    "hint": "Die Liste wird nirgends gespeichert und beim Schließen verworfen."
+  },
+  "trainer": {
+    "title": "Merk-Trainer",
+    "intro": "Präge dir die Passphrase ein. Pro Runde wird ein weiteres Wort ausgeblendet – tippe jedes Mal die vollständige Phrase. Alles bleibt auf deinem Gerät.",
+    "phraseLabel": "Passphrase mit ausgeblendeten Wörtern",
+    "round": "Runde {{n}} von {{total}}",
+    "typeHere": "Vollständige Passphrase eintippen …",
+    "checkBtn": "Prüfen",
+    "correct": "Richtig! Nächste Runde.",
+    "wrong": "Noch nicht ganz – versuch es erneut.",
+    "done": "Geschafft! Die Passphrase sitzt.",
+    "restart": "Von vorn beginnen"
+  },
+  "deterministic": {
+    "master": "Master-Passwort",
+    "masterHint": "Wird weder gespeichert noch gesendet – es bleibt nur in diesem Formular.",
+    "site": "Website / Domain",
+    "login": "Login / Benutzername",
+    "counter": "Zähler",
+    "warningTitle": "Zustandsloser Modus – kein Recovery",
+    "warningBody": "Aus Master-Passwort + Domain + Login wird immer dasselbe Passwort abgeleitet (PBKDF2, 310.000 Iterationen). Es wird nichts gespeichert: Wer das Master-Passwort vergisst, kann die Passwörter nicht wiederherstellen.",
+    "generateBtn": "Passwort ableiten",
+    "deriving": "Leite ab …"
+  },
+  "footer": {
+    "pledge": "100 % offline · keine Konten · kein Tracking – deine Passwörter bleiben auf deinem Gerät."
+  }
+}

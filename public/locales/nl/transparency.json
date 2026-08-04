@@ -1,0 +1,22 @@
+{
+  "title": "Crypto-transparantie: hoe is dit wachtwoord ontstaan?",
+  "intro": "Prisma verbergt niets. Hier zie je precies welke bron van willekeur, welk alfabet en welke berekening achter het huidige resultaat zitten.",
+  "randomSourceTitle": "Bron van willekeur",
+  "randomSourceBody": "de cryptografisch veilige willekeurige-getallengenerator van je systeem (CSPRNG). Modulo-bias wordt vermeden via rejection sampling: willekeurige waarden boven het grootste veelvoud van de alfabetgrootte worden verworpen en opnieuw getrokken. Math.random() komt nergens voor.",
+  "entropyTitle": "Ruwe entropie",
+  "entropyChars": "Alfabet: {{pool}} tekens, lengte: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. Zoveel pogingen zou een aanvaller die de methode kent nodig hebben om alles door te proberen.",
+  "entropyWords": "Woordenlijst: {{pool}} woorden → aantal woorden × log₂({{pool}}) ≈ {{bits}} bits (extra's zoals cijfers worden exact opgeteld).",
+  "constrainedNote": "Actieve extra regels (minima, klassenverplichting, geen herhalingen) verlagen de werkelijke entropie licht – de formule is dan een milde bovengrens.",
+  "zxcvbnTitle": "Patroonanalyse (zxcvbn)",
+  "zxcvbnBody": "zxcvbn zoekt naar woordenboektreffers, toetsenbordpatronen, herhalingen en datums. Resultaat: score {{score}} van 4, geschat aantal raadpogingen 10^{{guesses}}.",
+  "zxcvbnLoading": "De woordenboeken worden nog geladen …",
+  "scenariosTitle": "Kraaktijd in vier aanvalsscenario's",
+  "scenario": {
+    "onlineThrottled": "Online, afgeremd (100/uur)",
+    "onlineFast": "Online, onbeperkt (10/seconde)",
+    "offlineSlow": "Offline, trage hashes (10⁴/seconde)",
+    "offlineFast": "Offline, snelle hashes (10¹⁰/seconde)"
+  },
+  "privacyTitle": "Wat verlaat je apparaat?",
+  "privacyBody": "Niets. Generatie, analyse en de QR-code draaien volledig lokaal. Enige uitzondering: de optionele lekcontrole (opt-in in de instellingen) stuurt de eerste 5 tekens van de lokaal berekende SHA-1-hash – nooit het wachtwoord zelf."
+}

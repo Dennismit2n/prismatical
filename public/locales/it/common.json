@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Generatore di password"
+  },
+  "display": {
+    "label": "Password generata",
+    "announceNew": "Nuova password generata"
+  },
+  "actions": {
+    "generate": "Genera",
+    "copy": "Copia",
+    "copied": "Copiato!",
+    "reveal": "Mostra password",
+    "hide": "Nascondi password",
+    "close": "Chiudi",
+    "delete": "Elimina"
+  },
+  "clipboard": {
+    "countdown": "Gli appunti si svuotano tra {{s}} s",
+    "clearFailed": "Impossibile svuotare gli appunti (la finestra non era in primo piano)."
+  },
+  "modes": {
+    "label": "Modalità del generatore",
+    "password": "Password",
+    "passphrase": "Passphrase",
+    "pin": "PIN",
+    "pronounceable": "Pronunciabile",
+    "username": "Nome utente",
+    "deterministic": "Deterministica"
+  },
+  "options": {
+    "preset": "Preset di regole del sito",
+    "presetCustom": "Personalizzato",
+    "length": "Lunghezza",
+    "classes": "Classi di caratteri",
+    "upper": "Maiuscole (A–Z)",
+    "lower": "Minuscole (a–z)",
+    "digits": "Cifre (0–9)",
+    "special": "Caratteri speciali",
+    "rules": "Regole",
+    "excludeAmbiguous": "Escludi caratteri ambigui",
+    "requireEachClass": "Ogni classe selezionata almeno una volta",
+    "noRepeats": "Nessun carattere ripetuto",
+    "minDigits": "Min. cifre",
+    "minSpecial": "Min. speciali",
+    "charsets": "Set di caratteri",
+    "specialChars": "Set di caratteri speciali",
+    "excludeChars": "Escludi questi caratteri",
+    "wordCount": "Numero di parole",
+    "wordlist": "Lista di parole",
+    "wordlistAuto": "Automatica (in base alla lingua)",
+    "wordlistInfo": "{{label}}: {{size}} parole ≈ {{bits}} bit per parola",
+    "separator": "Separatore",
+    "sepDash": "Trattino (-)",
+    "sepDot": "Punto (.)",
+    "sepSpace": "Spazio",
+    "sepDigit": "Cifra casuale",
+    "sepCustom": "Carattere personalizzato",
+    "sepCustomLabel": "Separatore personalizzato",
+    "extras": "Extra",
+    "capitalizeWords": "Iniziale maiuscola per ogni parola",
+    "includeDigit": "Inserisci una cifra",
+    "includeSpecial": "Inserisci un carattere speciale",
+    "digitsCount": "Cifre",
+    "pinNote": "Un PIN è sicuro solo se abbinato a un blocco dopo pochi tentativi errati (ad es. SIM o carta bancaria).",
+    "capitalize": "Prima lettera maiuscola",
+    "appendDigits": "Aggiungi cifre alla fine",
+    "leetify": "Leetify",
+    "style": "Stile",
+    "styleCamel": "CamelCase (FalcoAmbra)",
+    "styleLower": "minuscolo (falcoambra)"
+  },
+  "presets": {
+    "standard": "Standard (consigliato, 20 caratteri)",
+    "nistLong": "NIST lungo (32 caratteri, nessuna regola imposta)",
+    "lettersDigits": "Solo lettere + cifre (16)",
+    "max16": "Max. 16, caratteri speciali limitati",
+    "bank": "Stile banca (10, lettere + cifre)"
+  },
+  "strength": {
+    "title": "Robustezza della password",
+    "computing": "Analisi in corso…",
+    "score0": "debolissima",
+    "score1": "debole",
+    "score2": "discreta",
+    "score3": "forte",
+    "score4": "epica",
+    "bits": "{{bits}} bit di entropia",
+    "crackOnline": "Attacco online (limitato)",
+    "crackOffline": "Attacco offline (hash veloci)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Le password pronunciabili hanno molta meno entropia per carattere: sceglile più lunghe.",
+    "pinEntropy": "Un PIN è sicuro solo quanto il blocco che lo protegge.",
+    "deterministicNoRecovery": "Nessun recupero: senza la password principale questa password non può essere ricreata.",
+    "usernamePurpose": "I nomi utente non sono password: non usarli come segreti."
+  },
+  "errors": {
+    "noClasses": "Seleziona almeno una classe di caratteri.",
+    "emptyAlphabet": "Tutti i caratteri sono esclusi: l’alfabeto è vuoto.",
+    "lengthOutOfRange": "La lunghezza è fuori dall’intervallo consentito.",
+    "minDigitsWithoutDigits": "Minimo di cifre impostato, ma le cifre sono deselezionate.",
+    "minSpecialWithoutSpecial": "Minimo di caratteri speciali impostato, ma i caratteri speciali sono deselezionati.",
+    "minimaExceedLength": "I requisiti minimi superano la lunghezza della password.",
+    "notEnoughUniqueChars": "Troppo pochi caratteri distinti per «nessun carattere ripetuto».",
+    "wordlistUnavailable": "Impossibile caricare la lista di parole."
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "languageLabel": "Lingua",
+    "theme": "Tema",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Aspetto",
+    "schemeSystem": "Sistema",
+    "schemeLight": "Chiaro",
+    "schemeDark": "Scuro",
+    "clipboardTimer": "Appunti",
+    "clipboardTimerLabel": "Svuota automaticamente dopo",
+    "timerNever": "Mai",
+    "timerSeconds": "{{s}} secondi",
+    "clipboardHint": "Nota: una web app non può garantire lo svuotamento delle cronologie degli appunti di sistema (ad es. Win+V di Windows).",
+    "history": "Cronologia",
+    "historyEnabled": "Registra la cronologia",
+    "historyPersist": "Conserva la cronologia in modo permanente",
+    "historyPersistHint": "Disattivato = la cronologia viene svuotata alla chiusura dell’app.",
+    "clearHistory_one": "Cancella cronologia ({{count}} voce)",
+    "clearHistory_other": "Cancella cronologia ({{count}} voci)",
+    "hibp": "Controllo violazioni (Have I Been Pwned)",
+    "hibpEnabled": "Attiva il controllo violazioni",
+    "hibpExplain": "Verifica tramite k-anonymity se una password compare in violazioni di dati note: l’hash SHA-1 viene calcolato localmente e solo i suoi primi 5 caratteri vengono inviati ad api.pwnedpasswords.com.",
+    "hibpPrivacy": "La tua password e l’hash completo non lasciano mai il tuo dispositivo. Senza questo opt-in, Prisma non effettua alcuna richiesta a internet."
+  },
+  "history": {
+    "title": "Cronologia",
+    "empty": "Ancora nessuna voce.",
+    "disabledHint": "La cronologia è disattivata. Puoi attivarla nelle impostazioni: solo allora verrà registrato qualcosa.",
+    "clearAll": "Elimina tutte le voci"
+  },
+  "hibp": {
+    "checking": "Controllo delle violazioni note…",
+    "found_one": "Trovata in {{count}} violazione nota: non usarla!",
+    "found_other": "Trovata in {{count}} violazioni note: non usarla!",
+    "notFound": "Non trovata in nessuna violazione nota.",
+    "error": "Il controllo violazioni non è al momento raggiungibile."
+  },
+  "qr": {
+    "title": "Codice QR",
+    "canvasLabel": "Codice QR della password",
+    "warning": "Chi vede o fotografa questo codice QR conosce la tua password. Viene generato interamente in locale."
+  },
+  "bulk": {
+    "title": "Generazione in blocco",
+    "count": "Quantità",
+    "generate": "Genera elenco",
+    "copyAll": "Copia tutto",
+    "downloadFile": "Salva come file",
+    "listLabel": "Password generate",
+    "error": "Con le opzioni attuali non è possibile generare alcun elenco.",
+    "hint": "L’elenco non viene salvato da nessuna parte e viene scartato alla chiusura."
+  },
+  "trainer": {
+    "title": "Allenamento di memoria",
+    "intro": "Memorizza la passphrase. A ogni round viene nascosta una parola in più: digita ogni volta la frase completa. Tutto resta sul tuo dispositivo.",
+    "phraseLabel": "Passphrase con parole nascoste",
+    "round": "Round {{n}} di {{total}}",
+    "typeHere": "Digita la passphrase completa…",
+    "checkBtn": "Verifica",
+    "correct": "Esatto! Prossimo round.",
+    "wrong": "Non proprio: riprova.",
+    "done": "Fatto! La passphrase è memorizzata.",
+    "restart": "Ricomincia da capo"
+  },
+  "deterministic": {
+    "master": "Password principale",
+    "masterHint": "Non viene mai salvata né inviata: vive solo in questo modulo.",
+    "site": "Sito web / dominio",
+    "login": "Login / nome utente",
+    "counter": "Contatore",
+    "warningTitle": "Modalità senza stato: nessun recupero",
+    "warningBody": "Da password principale + dominio + login viene sempre derivata la stessa password (PBKDF2, 310.000 iterazioni). Non viene salvato nulla: chi dimentica la password principale non può recuperare le password derivate.",
+    "generateBtn": "Deriva password",
+    "deriving": "Derivazione in corso…"
+  },
+  "footer": {
+    "pledge": "100% offline · nessun account · nessun tracciamento: le tue password restano sul tuo dispositivo."
+  }
+}

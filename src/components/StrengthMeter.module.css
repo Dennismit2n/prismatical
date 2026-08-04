@@ -1,0 +1,93 @@
+.meterBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.track {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--accent);
+  /* Innenring in --accent-text: sichert die 3:1-Abgrenzung der Fuellung
+     auch dort, wo der Akzent selbst dem Track zu aehnlich ist (Gelb auf Creme). */
+  box-shadow:
+    inset 0 0 0 1.5px var(--accent-text),
+    var(--glow-sm);
+  transition: width 0.35s ease;
+}
+
+.summary {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.scoreLabel {
+  font-size: 1.08rem;
+  color: var(--accent-text);
+  text-shadow: var(--glow-text);
+}
+
+.bits {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.approx {
+  color: var(--muted);
+}
+
+.crackTimes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.crackTimes dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.crackTimes dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.feedbackWarning {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--warn-text);
+  font-size: 0.92rem;
+}
+
+.suggestions {
+  margin: 0;
+  padding-left: 1.3em;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hibp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hibpFound {
+  color: var(--error-text);
+  font-weight: 650;
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Transparencia criptográfica: ¿cómo se ha creado esta contraseña?",
+  "intro": "Prisma no oculta nada. Aquí se muestra abiertamente qué fuente de aleatoriedad, qué alfabeto y qué cálculo hay detrás del resultado actual.",
+  "randomSourceTitle": "Fuente de aleatoriedad",
+  "randomSourceBody": "el generador de números aleatorios criptográficamente seguro de tu sistema (CSPRNG). El sesgo de módulo se evita mediante muestreo por rechazo: los valores aleatorios por encima del mayor múltiplo del tamaño del alfabeto se descartan y se vuelven a extraer. Math.random() no se usa en ningún momento.",
+  "entropyTitle": "Entropía bruta",
+  "entropyChars": "Alfabeto: {{pool}} caracteres, longitud: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. Esos son los intentos que necesitaría un atacante que conozca el método y lo pruebe todo.",
+  "entropyWords": "Lista de palabras: {{pool}} palabras → número de palabras × log₂({{pool}}) ≈ {{bits}} bits (los extras, como los dígitos, se suman con exactitud).",
+  "constrainedNote": "Las reglas adicionales activas (mínimos, clases obligatorias, sin repeticiones) reducen ligeramente la entropía real: la fórmula pasa a ser entonces una cota superior aproximada.",
+  "zxcvbnTitle": "Análisis de patrones (zxcvbn)",
+  "zxcvbnBody": "zxcvbn busca coincidencias de diccionario, patrones de teclado, repeticiones y fechas. Resultado: puntuación {{score}} de 4, intentos estimados 10^{{guesses}}.",
+  "zxcvbnLoading": "Los diccionarios todavía se están cargando…",
+  "scenariosTitle": "Tiempo de descifrado en cuatro escenarios de ataque",
+  "scenario": {
+    "onlineThrottled": "En línea, limitado (100/hora)",
+    "onlineFast": "En línea, sin límite (10/segundo)",
+    "offlineSlow": "Sin conexión, hashes lentos (10⁴/segundo)",
+    "offlineFast": "Sin conexión, hashes rápidos (10¹⁰/segundo)"
+  },
+  "privacyTitle": "¿Qué sale de tu dispositivo?",
+  "privacyBody": "Nada. La generación, el análisis y el código QR se ejecutan completamente en local. Única excepción: la comprobación de filtraciones opcional (activación voluntaria en los ajustes) envía los primeros 5 caracteres del hash SHA-1 calculado localmente, nunca la contraseña en sí."
+}

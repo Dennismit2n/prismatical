@@ -1,0 +1,135 @@
+/*
+ * Design-Tokens. Die Akzentfarbe IST die Staerke-Anzeige:
+ * useStrengthAnalysis setzt --accent-h/-l/-c live per CSSOM auf <html>,
+ * alles Weitere (Buttons, Slider, Tabs, Fokusringe) haengt an --accent.
+ */
+
+:root {
+  --font-sans:
+    system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-mono:
+    ui-monospace, 'Cascadia Code', 'Segoe UI Mono', Consolas, 'Liberation Mono', Menlo,
+    monospace;
+
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 20px;
+
+  /* Spektrum-Komponenten (werden von JS live gesetzt; Startwert: Violett) */
+  --accent-h: 285;
+  --accent-l: 0.58;
+  --accent-c: 0.22;
+  /* Theme-Intensitaet: Cyber dreht Chroma hoch, Aurora dimmt auf Pastell */
+  --accent-c-scale: 1;
+  /* Text auf Akzentflaechen: immer Anthrazit — applyAccent() hebt die
+     Akzent-Helligkeit so an, dass 4.5:1 garantiert ist. */
+  --on-accent: #1c1b1f;
+
+  --accent: oklch(
+    var(--accent-l) calc(var(--accent-c) * var(--accent-c-scale)) var(--accent-h)
+  );
+  /* Zarte Akzentflaeche (aktive Tabs, Hover) */
+  --accent-dim: oklch(
+    var(--accent-l) calc(var(--accent-c) * var(--accent-c-scale) * 0.6) var(--accent-h) /
+      0.16
+  );
+  /* Akzent als TEXT: L wird pro Schema in themes.css fixiert, damit der
+     Kontrast zur Flaeche immer reicht (auch bei Gelb). */
+  --accent-text-l: 0.44;
+  --accent-text: oklch(
+    var(--accent-text-l) calc(min(var(--accent-c), 0.17) * var(--accent-c-scale))
+      var(--accent-h)
+  );
+
+  /* Neon-Glow (nur Theme Cyber setzt echte Werte; Default = unsichtbar,
+     damit er in Schatten-Listen kombinierbar bleibt) */
+  --glow-sm: 0 0 0 rgba(0, 0, 0, 0);
+  --glow-text: 0 0 0 rgba(0, 0, 0, 0);
+
+  /* Spectrum-Flow-Verlauf: Fallback als sRGB-Stufen … */
+  --flow-c: 0.16;
+  --flow-gradient: linear-gradient(
+    90deg,
+    #e5484d,
+    #f76b15,
+    #e2c541,
+    #6fbf3b,
+    #22a2a2,
+    #7a5cff,
+    #9d4edd
+  );
+}
+
+/* … und wo moeglich als perzeptuell gleichmaessiger OKLCH-Hue-Verlauf. */
+@supports (background: linear-gradient(90deg in oklch longer hue, red, blue)) {
+  :root {
+    --flow-gradient: linear-gradient(
+      90deg in oklch longer hue,
+      oklch(0.68 var(--flow-c) 25),
+      oklch(0.62 var(--flow-c) 300)
+    );
+  }
+}
+
+/* HEX-Fallback fuer Browser ohne oklch(): Akzent rastet auf den Score-Stopp.
+   Die Toene sind so gewaehlt, dass Anthrazit-Text (>= 4.5:1) darauf passt. */
+@supports not (color: oklch(0 0 0)) {
+  :root {
+    --accent: #8b71ff;
+    --accent-dim: rgba(122, 92, 255, 0.16);
+    --accent-text: #5b3fd4;
+  }
+  :root[data-score='0'] {
+    --accent: #e85d5f;
+    --accent-dim: rgba(229, 72, 77, 0.16);
+    --accent-text: #b93338;
+  }
+  :root[data-score='1'] {
+    --accent: #f76b15;
+    --accent-dim: rgba(247, 107, 21, 0.16);
+    --accent-text: #ad4a0e;
+  }
+  :root[data-score='2'] {
+    --accent: #6fbf3b;
+    --accent-dim: rgba(111, 191, 59, 0.16);
+    --accent-text: #3d7a1a;
+  }
+  :root[data-score='3'] {
+    --accent: #22a2a2;
+    --accent-dim: rgba(34, 162, 162, 0.16);
+    --accent-text: #17706f;
+  }
+  :root[data-score='4'] {
+    --accent: #8b71ff;
+    --accent-dim: rgba(122, 92, 255, 0.16);
+    --accent-text: #5b3fd4;
+  }
+  :root[data-scheme='dark'] {
+    --accent-text: #b7a5ff;
+  }
+  :root[data-scheme='dark'][data-score='0'] {
+    --accent-text: #ff9a9e;
+  }
+  :root[data-scheme='dark'][data-score='1'] {
+    --accent-text: #ffab70;
+  }
+  :root[data-scheme='dark'][data-score='2'] {
+    --accent-text: #a3e07a;
+  }
+  :root[data-scheme='dark'][data-score='3'] {
+    --accent-text: #6fd6d6;
+  }
+  :root[data-scheme='dark'][data-score='4'] {
+    --accent-text: #b7a5ff;
+  }
+}
+
+/* Spectrum-Flow-Animation (Deko auf Buttons/Balken); reduced-motion → statisch. */
+@keyframes prisma-flow {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}

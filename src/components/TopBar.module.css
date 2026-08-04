@@ -1,0 +1,66 @@
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  color: var(--text);
+  filter: drop-shadow(var(--glow-text, 0 0 0 transparent));
+}
+
+.title {
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.selectWrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  padding: 0 4px 0 8px;
+  color: var(--muted);
+}
+
+.select {
+  border: none;
+  background: transparent;
+  min-height: 42px;
+  padding: 0 4px;
+  color: var(--text);
+}
+
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.iconBtn:hover {
+  background: var(--accent-dim);
+  color: var(--accent-text);
+}

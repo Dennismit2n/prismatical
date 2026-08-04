@@ -1,0 +1,245 @@
+.dialog {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  padding: 0;
+  width: min(480px, calc(100vw - 32px));
+}
+
+.wide {
+  width: min(660px, calc(100vw - 32px));
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.55);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-size: 1.15rem;
+}
+
+.closeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: var(--radius-s);
+  background: transparent;
+  color: var(--muted);
+}
+
+.closeBtn:hover {
+  background: var(--accent-dim);
+  color: var(--accent-text);
+}
+
+.body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-height: 72dvh;
+  overflow: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section h3 {
+  font-size: 1rem;
+  color: var(--accent-text);
+}
+
+.selectRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.warningNote {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--warn-text);
+  font-size: 0.92rem;
+}
+
+.successNote {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ok-text);
+  font-weight: 600;
+}
+
+.dangerBtn {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--error-text);
+  border: 1px solid var(--error-text);
+  border-radius: var(--radius-s);
+  min-height: 42px;
+  padding: 0 14px;
+}
+
+.primaryBtn {
+  background: var(--accent);
+  color: var(--on-accent);
+  border: none;
+  border-radius: var(--radius-m);
+  min-height: 44px;
+  padding: 0 18px;
+  font-weight: 650;
+  box-shadow: var(--glow-sm);
+}
+
+.subtleBtn {
+  align-self: flex-start;
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  min-height: 42px;
+  padding: 0 14px;
+}
+
+/* Verlauf */
+.historyList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.historyItem {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  background: var(--surface2);
+}
+
+.historyValue {
+  font-family: var(--font-mono);
+  word-break: break-all;
+}
+
+.historyMeta {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.historyActions {
+  grid-row: 1 / 3;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.historyActions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: var(--radius-s);
+  background: transparent;
+  color: var(--muted);
+}
+
+.historyActions button:hover {
+  background: var(--accent-dim);
+  color: var(--accent-text);
+}
+
+/* QR */
+.qrWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.qrCanvas {
+  border-radius: var(--radius-s);
+}
+
+/* Bulk */
+.bulkControls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bulkControls input {
+  width: 5.5em;
+  text-align: center;
+}
+
+.bulkControls button {
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
+  border-radius: var(--radius-s);
+  min-height: 42px;
+  padding: 0 14px;
+}
+
+.bulkControls .primaryBtn {
+  border: none;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.bulkOutput {
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+/* Trainer */
+.trainerPhrase {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  border-radius: var(--radius-m);
+  word-break: break-word;
+  letter-spacing: 0.03em;
+}
+
+.trainerRow {
+  display: flex;
+  gap: 8px;
+}
+
+.trainerRow input {
+  flex: 1;
+}

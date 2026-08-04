@@ -1,0 +1,120 @@
+/*
+ * 3 Themes × Hell/Dunkel. Grundregeln:
+ *  - Hell ist NIE reinweiss (warmes Creme), Dunkel NIE reinschwarz (Anthrazit).
+ *  - Alle sechs Varianten nutzen dieselbe Staerke-Spektrum-Logik (tokens.css);
+ *    die Themes drehen nur an Chroma (--accent-c-scale) und Glow.
+ *  - --char-digit / --char-special: Zeichen-Typ-Faerbung, pro Variante auf
+ *    AA-Kontrast (≥ 4.5:1 gegen --surface2) abgestimmt.
+ */
+
+/* ── Theme 1: Classic Rainbow ─────────────────────────────────────────── */
+:root[data-theme='classic'][data-scheme='light'] {
+  --bg: #f7f3ec;
+  --surface: #fffdf8;
+  --surface2: #f3eee2;
+  --text: #2b2a28;
+  --muted: #6b6862;
+  --border: #e4ddd0;
+  --char-digit: #2456d6;
+  --char-special: #a92180;
+  --warn-text: #8a5500;
+  --error-text: #b3261e;
+  --ok-text: #1c7c33;
+  --accent-c-scale: 1;
+  --accent-text-l: 0.44;
+  color-scheme: light;
+}
+
+:root[data-theme='classic'][data-scheme='dark'] {
+  --bg: #1c1b1f;
+  --surface: #26252b;
+  --surface2: #2d2c33;
+  --text: #f2efe9;
+  --muted: #a9a49b;
+  --border: #38363d;
+  --char-digit: #60a5fa;
+  --char-special: #f472b6;
+  --warn-text: #f0c34e;
+  --error-text: #ff8a80;
+  --ok-text: #6fd388;
+  --accent-c-scale: 1;
+  --accent-text-l: 0.78;
+  color-scheme: dark;
+}
+
+/* ── Theme 2: Cyber (Neon-Prisma) ─────────────────────────────────────── */
+:root[data-theme='cyber'][data-scheme='light'] {
+  --bg: #ece9f5;
+  --surface: #ffffff;
+  --surface2: #f3f0fb;
+  --text: #1a1730;
+  --muted: #55506e;
+  --border: #d8d3ea;
+  --char-digit: #2145d4;
+  --char-special: #a51e8c;
+  --warn-text: #8a5500;
+  --error-text: #b3261e;
+  --ok-text: #1c7c33;
+  --accent-c-scale: 1.18;
+  --accent-text-l: 0.42;
+  /* Glow im Hellen dezenter */
+  --glow-sm: 0 0 8px
+    oklch(var(--accent-l) calc(var(--accent-c) * var(--accent-c-scale)) var(--accent-h) / 0.45);
+  color-scheme: light;
+}
+
+:root[data-theme='cyber'][data-scheme='dark'] {
+  --bg: #0d0b14;
+  --surface: #141020;
+  --surface2: #1b1530;
+  --text: #eafcff;
+  --muted: #a49ecf;
+  --border: #2a2140;
+  --char-digit: #7dd3fc;
+  --char-special: #f77ad0;
+  --warn-text: #f0c34e;
+  --error-text: #ff8a80;
+  --ok-text: #6fd388;
+  --accent-c-scale: 1.3;
+  --accent-text-l: 0.8;
+  --glow-sm: 0 0 12px
+    oklch(var(--accent-l) calc(var(--accent-c) * var(--accent-c-scale)) var(--accent-h) / 0.7);
+  --glow-text: 0 0 10px
+    oklch(var(--accent-l) calc(var(--accent-c) * var(--accent-c-scale)) var(--accent-h) / 0.6);
+  color-scheme: dark;
+}
+
+/* ── Theme 3: Aurora (Nordlicht-Pastell) ──────────────────────────────── */
+:root[data-theme='aurora'][data-scheme='light'] {
+  --bg: #f2f6f4;
+  --surface: #fbfffe;
+  --surface2: #e9f1ed;
+  --text: #24302c;
+  --muted: #57675f;
+  --border: #dbe8e2;
+  --char-digit: #2b649c;
+  --char-special: #96437f;
+  --warn-text: #8a5500;
+  --error-text: #b3261e;
+  --ok-text: #1c7c33;
+  --accent-c-scale: 0.55;
+  --accent-text-l: 0.44;
+  color-scheme: light;
+}
+
+:root[data-theme='aurora'][data-scheme='dark'] {
+  --bg: #10161a;
+  --surface: #172026;
+  --surface2: #1d2933;
+  --text: #eaf6f2;
+  --muted: #9db0a8;
+  --border: #263038;
+  --char-digit: #93c1eb;
+  --char-special: #dfa3cd;
+  --warn-text: #f0c34e;
+  --error-text: #ff8a80;
+  --ok-text: #6fd388;
+  --accent-c-scale: 0.55;
+  --accent-text-l: 0.78;
+  color-scheme: dark;
+}

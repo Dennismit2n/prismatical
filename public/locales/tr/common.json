@@ -1,0 +1,189 @@
+{
+  "app": {
+    "title": "Prisma – Parola Oluşturucu"
+  },
+  "display": {
+    "label": "Oluşturulan parola",
+    "announceNew": "Yeni parola oluşturuldu"
+  },
+  "actions": {
+    "generate": "Oluştur",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!",
+    "reveal": "Parolayı göster",
+    "hide": "Parolayı gizle",
+    "close": "Kapat",
+    "delete": "Sil"
+  },
+  "clipboard": {
+    "countdown": "Pano {{s}} sn içinde temizlenecek",
+    "clearFailed": "Pano temizlenemedi (pencere odakta değildi)."
+  },
+  "modes": {
+    "label": "Oluşturucu modu",
+    "password": "Parola",
+    "passphrase": "Parola ifadesi",
+    "pin": "PIN",
+    "pronounceable": "Telaffuz edilebilir",
+    "username": "Kullanıcı adı",
+    "deterministic": "Deterministik"
+  },
+  "options": {
+    "preset": "Web sitesi kural ön ayarı",
+    "presetCustom": "Özel",
+    "length": "Uzunluk",
+    "classes": "Karakter sınıfları",
+    "upper": "Büyük harfler (A–Z)",
+    "lower": "Küçük harfler (a–z)",
+    "digits": "Rakamlar (0–9)",
+    "special": "Özel karakterler",
+    "rules": "Kurallar",
+    "excludeAmbiguous": "Birbirine karışabilen karakterleri hariç tut",
+    "requireEachClass": "Seçilen her sınıftan en az bir karakter",
+    "noRepeats": "Karakter tekrarı yok",
+    "minDigits": "Min. rakam",
+    "minSpecial": "Min. özel karakter",
+    "charsets": "Karakter kümeleri",
+    "specialChars": "Özel karakter kümesi",
+    "excludeChars": "Şu karakterleri hariç tut",
+    "wordCount": "Kelime sayısı",
+    "wordlist": "Kelime listesi",
+    "wordlistAuto": "Otomatik (dile göre)",
+    "wordlistInfo": "{{label}}: {{size}} kelime ≈ kelime başına {{bits}} bit",
+    "separator": "Ayraç",
+    "sepDash": "Tire (-)",
+    "sepDot": "Nokta (.)",
+    "sepSpace": "Boşluk",
+    "sepDigit": "Rastgele rakam",
+    "sepCustom": "Kendi karakterin",
+    "sepCustomLabel": "Kendi ayracın",
+    "extras": "Ekstralar",
+    "capitalizeWords": "Her kelimenin ilk harfini büyüt",
+    "includeDigit": "Araya bir rakam serpiştir",
+    "includeSpecial": "Araya bir özel karakter serpiştir",
+    "digitsCount": "Basamak sayısı",
+    "pinNote": "PIN'ler ancak birkaç yanlış denemeden sonra devreye giren bir kilitle birlikte koruma sağlar (ör. SIM veya banka kartı).",
+    "capitalize": "İlk harfi büyüt",
+    "appendDigits": "Sona rakam ekle",
+    "leetify": "Leetify",
+    "style": "Yazım stili",
+    "styleCamel": "BüyükKüçük (KehribarŞahin)",
+    "styleLower": "küçük harf (kehribarşahin)"
+  },
+  "presets": {
+    "standard": "Standart (önerilen, 20 karakter)",
+    "nistLong": "NIST-uzun (32 karakter, zorunlu kural yok)",
+    "lettersDigits": "Yalnızca harf + rakam (16)",
+    "max16": "En fazla 16, sınırlı özel karakter",
+    "bank": "Banka tarzı (10, harf + rakam)"
+  },
+  "strength": {
+    "title": "Parola gücü",
+    "computing": "Analiz ediliyor…",
+    "score0": "çok zayıf",
+    "score1": "zayıf",
+    "score2": "idare eder",
+    "score3": "güçlü",
+    "score4": "efsane",
+    "bits": "{{bits}} bit entropi",
+    "crackOnline": "Çevrimiçi saldırı (kısıtlanmış)",
+    "crackOffline": "Çevrimdışı saldırı (hızlı hash'ler)"
+  },
+  "warnings": {
+    "pronounceableEntropy": "Telaffuz edilebilir parolaların karakter başına entropisi çok daha düşüktür – bu yüzden daha uzun seç.",
+    "pinEntropy": "Bir PIN ancak arkasındaki kilit kadar güvenlidir.",
+    "deterministicNoRecovery": "Kurtarma yok: Ana parola olmadan bu parola yeniden oluşturulamaz.",
+    "usernamePurpose": "Kullanıcı adları parola değildir – gizli bilgi olarak kullanma."
+  },
+  "errors": {
+    "noClasses": "En az bir karakter sınıfı seç.",
+    "emptyAlphabet": "Tüm karakterler hariç tutulmuş – alfabe boş.",
+    "lengthOutOfRange": "Uzunluk izin verilen aralığın dışında.",
+    "minDigitsWithoutDigits": "Rakam alt sınırı ayarlı ama rakamlar seçili değil.",
+    "minSpecialWithoutSpecial": "Özel karakter alt sınırı ayarlı ama özel karakterler seçili değil.",
+    "minimaExceedLength": "Alt sınırlar parola uzunluğunu aşıyor.",
+    "notEnoughUniqueChars": "“Karakter tekrarı yok” için yeterli sayıda farklı karakter yok.",
+    "wordlistUnavailable": "Kelime listesi yüklenemedi."
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "languageLabel": "Dil",
+    "theme": "Tema",
+    "themeClassic": "Classic Rainbow",
+    "themeCyber": "Cyber",
+    "themeAurora": "Aurora",
+    "scheme": "Görünüm",
+    "schemeSystem": "Sistem",
+    "schemeLight": "Açık",
+    "schemeDark": "Koyu",
+    "clipboardTimer": "Pano",
+    "clipboardTimerLabel": "Otomatik temizleme süresi",
+    "timerNever": "Hiçbir zaman",
+    "timerSeconds": "{{s}} saniye",
+    "clipboardHint": "Not: Bir web uygulaması sistem pano geçmişlerini (ör. Windows Win+V) garantili olarak temizleyemez.",
+    "history": "Geçmiş",
+    "historyEnabled": "Geçmişi kaydet",
+    "historyPersist": "Geçmişi kalıcı olarak sakla",
+    "historyPersistHint": "Kapalı = geçmiş, uygulama kapatıldığında temizlenir.",
+    "clearHistory_one": "Geçmişi temizle ({{count}} kayıt)",
+    "clearHistory_other": "Geçmişi temizle ({{count}} kayıt)",
+    "hibp": "Sızıntı kontrolü (Have I Been Pwned)",
+    "hibpEnabled": "Sızıntı kontrolünü etkinleştir",
+    "hibpExplain": "Bir parolanın bilinen veri sızıntılarında yer alıp almadığını k-anonimlik yöntemiyle kontrol eder: SHA-1 hash'i yerel olarak hesaplanır ve yalnızca ilk 5 karakteri api.pwnedpasswords.com adresine gönderilir.",
+    "hibpPrivacy": "Parolan ve hash'in tamamı asla cihazından çıkmaz. Bu seçeneği açmadığın sürece Prisma hiçbir internet isteği yapmaz."
+  },
+  "history": {
+    "title": "Geçmiş",
+    "empty": "Henüz kayıt yok.",
+    "disabledHint": "Geçmiş kapalı. Ayarlardan etkinleştirebilirsin – o zamana kadar hiçbir şey kaydedilmez.",
+    "clearAll": "Tüm kayıtları sil"
+  },
+  "hibp": {
+    "checking": "Bilinen sızıntılara karşı kontrol ediliyor…",
+    "found_one": "{{count}} bilinen sızıntıda bulundu – kullanma!",
+    "found_other": "{{count}} bilinen sızıntıda bulundu – kullanma!",
+    "notFound": "Bilinen hiçbir sızıntıda bulunamadı.",
+    "error": "Sızıntı kontrolüne şu anda ulaşılamıyor."
+  },
+  "qr": {
+    "title": "QR kodu",
+    "canvasLabel": "Parolanın QR kodu",
+    "warning": "Bu QR kodunu gören ya da fotoğraflayan herkes parolanı öğrenir. Kod tamamen cihazında oluşturulur."
+  },
+  "bulk": {
+    "title": "Toplu oluşturma",
+    "count": "Adet",
+    "generate": "Liste oluştur",
+    "copyAll": "Tümünü kopyala",
+    "downloadFile": "Dosya olarak kaydet",
+    "listLabel": "Oluşturulan parolalar",
+    "error": "Geçerli seçeneklerle liste oluşturulamıyor.",
+    "hint": "Liste hiçbir yerde saklanmaz ve pencereyi kapattığında silinir."
+  },
+  "trainer": {
+    "title": "Ezber antrenörü",
+    "intro": "Parola ifadesini ezberle. Her turda bir kelime daha gizlenir – her seferinde ifadenin tamamını yaz. Her şey cihazında kalır.",
+    "phraseLabel": "Kelimeleri gizlenmiş parola ifadesi",
+    "round": "Tur {{n}} / {{total}}",
+    "typeHere": "Parola ifadesinin tamamını yaz…",
+    "checkBtn": "Kontrol et",
+    "correct": "Doğru! Sıradaki tur.",
+    "wrong": "Tam olmadı – bir daha dene.",
+    "done": "Tamamdır! Parola ifadesi artık aklında.",
+    "restart": "Baştan başla"
+  },
+  "deterministic": {
+    "master": "Ana parola",
+    "masterHint": "Ne kaydedilir ne gönderilir – yalnızca bu formda kalır.",
+    "site": "Web sitesi / alan adı",
+    "login": "Giriş / kullanıcı adı",
+    "counter": "Sayaç",
+    "warningTitle": "Durumsuz mod – kurtarma yok",
+    "warningBody": "Ana parola + alan adı + kullanıcı adından her zaman aynı parola türetilir (PBKDF2, 310.000 yineleme). Hiçbir şey kaydedilmez: Ana parolanı unutursan türetilen parolalar kurtarılamaz.",
+    "generateBtn": "Parola türet",
+    "deriving": "Türetiliyor…"
+  },
+  "footer": {
+    "pledge": "%100 çevrimdışı · hesap yok · takip yok – parolaların cihazında kalır."
+  }
+}
