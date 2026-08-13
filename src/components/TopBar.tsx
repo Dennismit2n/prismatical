@@ -26,7 +26,7 @@ export function TopBar({ onOpenDialog }: { onOpenDialog: (d: DialogId) => void }
           <path d="M16 4 4 26h24z" fill="none" stroke="currentColor" strokeWidth="2.5" />
           <path d="M16 12v14" stroke="var(--accent)" strokeWidth="2.5" />
         </svg>
-        <h1 className={styles.title}>Prisma</h1>
+        <h1 className={styles.title}>Prismatical</h1>
       </div>
 
       <div className={styles.controls}>

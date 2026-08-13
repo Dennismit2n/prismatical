@@ -1,0 +1,70 @@
+# Prüfen und ausliefern.
+#
+# Die Auslieferung hängt ausdrücklich an den Prüfungen: Was den Bias-Test oder
+# die Kontrast-/Sprachprüfung nicht besteht, geht nicht live. Bei einem
+# Passwort-Generator wäre ein unbemerkt verzerrter Zufall der einzige wirklich
+# unverzeihliche Fehler.
+name: Prüfen und ausliefern
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  pruefen:
+    name: Typen, Lint, Tests, Bau
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Lint (inkl. Math.random-Verbot)
+        run: npm run lint
+      - name: Einheitentests (Bias, Regeln, Entropie, HIBP, Determinismus)
+        run: npm test
+      - name: Sprachdateien prüfen (Schlüssel, Platzhalter, Plurale)
+        run: node tools/check-locales.mjs
+      - name: Farbkontraste prüfen (WCAG AA, 6 Theme-Varianten)
+        run: node tools/check-contrast.mjs
+      - name: Bauen (inkl. Typecheck)
+        run: npm run build
+
+  ausliefern:
+    name: Auf GitHub Pages stellen
+    needs: [pruefen]
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

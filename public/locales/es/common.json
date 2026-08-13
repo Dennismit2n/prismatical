@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Generador de contraseñas"
+    "title": "Prismatical – Generador de contraseñas"
   },
   "display": {
     "label": "Contraseña generada",
@@ -130,7 +130,7 @@
     "hibp": "Comprobación de filtraciones (Have I Been Pwned)",
     "hibpEnabled": "Activar la comprobación de filtraciones",
     "hibpExplain": "Comprueba mediante k-anonimato si una contraseña aparece en filtraciones conocidas: el hash SHA-1 se calcula localmente y solo sus primeros 5 caracteres se envían a api.pwnedpasswords.com.",
-    "hibpPrivacy": "Tu contraseña y el hash completo nunca salen de tu dispositivo. Sin esta activación voluntaria, Prisma no realiza ninguna petición a internet."
+    "hibpPrivacy": "Tu contraseña y el hash completo nunca salen de tu dispositivo. Sin esta activación voluntaria, Prismatical no realiza ninguna petición a internet."
   },
   "history": {
     "title": "Historial",
@@ -159,7 +159,7 @@
     "listLabel": "Contraseñas generadas",
     "error": "Con las opciones actuales no se puede generar ninguna lista.",
     "hint": "La lista no se guarda en ningún sitio y se descarta al cerrar este diálogo.",
-    "fileName": "prisma-contrasenas.txt"
+    "fileName": "prismatical-contrasenas.txt"
   },
   "trainer": {
     "title": "Entrenador de memoria",

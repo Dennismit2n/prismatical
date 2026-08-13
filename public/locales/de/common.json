@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Passwort-Generator"
+    "title": "Prismatical – Passwort-Generator"
   },
   "display": {
     "label": "Erzeugtes Passwort",
@@ -130,7 +130,7 @@
     "hibp": "Leak-Check (Have I Been Pwned)",
     "hibpEnabled": "Leak-Check aktivieren",
     "hibpExplain": "Prüft per k-Anonymity, ob ein Passwort in bekannten Datenlecks auftaucht: Der SHA-1-Hash wird lokal gebildet, nur seine ersten 5 Zeichen gehen an api.pwnedpasswords.com.",
-    "hibpPrivacy": "Dein Passwort und der volle Hash verlassen nie dein Gerät. Ohne dieses Opt-in macht Prisma keinerlei Internet-Anfragen."
+    "hibpPrivacy": "Dein Passwort und der volle Hash verlassen nie dein Gerät. Ohne dieses Opt-in macht Prismatical keinerlei Internet-Anfragen."
   },
   "history": {
     "title": "Verlauf",
@@ -159,7 +159,7 @@
     "listLabel": "Erzeugte Passwörter",
     "error": "Mit den aktuellen Optionen kann keine Liste erzeugt werden.",
     "hint": "Die Liste wird nirgends gespeichert und beim Schließen verworfen.",
-    "fileName": "prisma-passwoerter.txt"
+    "fileName": "prismatical-passwoerter.txt"
   },
   "trainer": {
     "title": "Merk-Trainer",

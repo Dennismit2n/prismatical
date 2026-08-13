@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Generatore di password"
+    "title": "Prismatical – Generatore di password"
   },
   "display": {
     "label": "Password generata",
@@ -130,7 +130,7 @@
     "hibp": "Controllo violazioni (Have I Been Pwned)",
     "hibpEnabled": "Attiva il controllo violazioni",
     "hibpExplain": "Verifica tramite k-anonymity se una password compare in violazioni di dati note: l’hash SHA-1 viene calcolato localmente e solo i suoi primi 5 caratteri vengono inviati ad api.pwnedpasswords.com.",
-    "hibpPrivacy": "La tua password e l’hash completo non lasciano mai il tuo dispositivo. Senza questo opt-in, Prisma non effettua alcuna richiesta a internet."
+    "hibpPrivacy": "La tua password e l’hash completo non lasciano mai il tuo dispositivo. Senza questo opt-in, Prismatical non effettua alcuna richiesta a internet."
   },
   "history": {
     "title": "Cronologia",
@@ -159,7 +159,7 @@
     "listLabel": "Password generate",
     "error": "Con le opzioni attuali non è possibile generare alcun elenco.",
     "hint": "L’elenco non viene salvato da nessuna parte e viene scartato alla chiusura.",
-    "fileName": "prisma-password.txt"
+    "fileName": "prismatical-password.txt"
   },
   "trainer": {
     "title": "Allenamento della memoria",

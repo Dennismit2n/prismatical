@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – generator haseł"
+    "title": "Prismatical – generator haseł"
   },
   "display": {
     "label": "Wygenerowane hasło",
@@ -132,7 +132,7 @@
     "hibp": "Kontrola wycieków (Have I Been Pwned)",
     "hibpEnabled": "Włącz kontrolę wycieków",
     "hibpExplain": "Sprawdza metodą k-anonimowości, czy hasło pojawia się w znanych wyciekach danych: hash SHA-1 jest obliczany lokalnie, a na api.pwnedpasswords.com trafia tylko jego pierwszych 5 znaków.",
-    "hibpPrivacy": "Twoje hasło ani pełny hash nigdy nie opuszczają Twojego urządzenia. Bez tej zgody Prisma nie wykonuje żadnych połączeń z internetem."
+    "hibpPrivacy": "Twoje hasło ani pełny hash nigdy nie opuszczają Twojego urządzenia. Bez tej zgody Prismatical nie wykonuje żadnych połączeń z internetem."
   },
   "history": {
     "title": "Historia",
@@ -163,7 +163,7 @@
     "listLabel": "Wygenerowane hasła",
     "error": "Przy bieżących opcjach nie można wygenerować listy.",
     "hint": "Lista nie jest nigdzie zapisywana i po zamknięciu jest usuwana.",
-    "fileName": "prisma-hasla.txt"
+    "fileName": "prismatical-hasla.txt"
   },
   "trainer": {
     "title": "Trener pamięci",

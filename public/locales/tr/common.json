@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Parola Oluşturucu"
+    "title": "Prismatical – Parola Oluşturucu"
   },
   "display": {
     "label": "Oluşturulan parola",
@@ -130,7 +130,7 @@
     "hibp": "Sızıntı kontrolü (Have I Been Pwned)",
     "hibpEnabled": "Sızıntı kontrolünü etkinleştir",
     "hibpExplain": "Bir parolanın bilinen veri sızıntılarında yer alıp almadığını k-anonimlik yöntemiyle kontrol eder: SHA-1 hash'i yerel olarak hesaplanır ve yalnızca ilk 5 karakteri api.pwnedpasswords.com adresine gönderilir.",
-    "hibpPrivacy": "Parolan ve hash'in tamamı asla cihazından çıkmaz. Bu seçeneği açmadığın sürece Prisma hiçbir internet isteği yapmaz."
+    "hibpPrivacy": "Parolan ve hash'in tamamı asla cihazından çıkmaz. Bu seçeneği açmadığın sürece Prismatical hiçbir internet isteği yapmaz."
   },
   "history": {
     "title": "Geçmiş",
@@ -159,7 +159,7 @@
     "listLabel": "Oluşturulan parolalar",
     "error": "Geçerli seçeneklerle liste oluşturulamıyor.",
     "hint": "Liste hiçbir yerde saklanmaz ve pencereyi kapattığında silinir.",
-    "fileName": "prisma-parolalar.txt"
+    "fileName": "prismatical-parolalar.txt"
   },
   "trainer": {
     "title": "Ezber antrenörü",

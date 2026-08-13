@@ -1,6 +1,6 @@
 {
   "title": "Crypto transparency: how was this password made?",
-  "intro": "Prisma hides nothing. This panel shows exactly which randomness source, alphabet and math are behind the current result.",
+  "intro": "Prismatical hides nothing. This panel shows exactly which randomness source, alphabet and math are behind the current result.",
   "randomSourceTitle": "Randomness source",
   "randomSourceBody": "your system's cryptographically secure random generator (CSPRNG). Modulo bias is avoided via rejection sampling: random values above the largest multiple of the alphabet size are discarded and redrawn. Math.random() is never used.",
   "entropyTitle": "Raw entropy",

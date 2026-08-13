@@ -1,6 +1,6 @@
 {
   "title": "Kripto şeffaflığı: Bu parola nasıl oluştu?",
-  "intro": "Prisma hiçbir şey gizlemez. Mevcut sonucun arkasındaki rastgelelik kaynağı, alfabe ve hesaplama burada açıkça görülebilir.",
+  "intro": "Prismatical hiçbir şey gizlemez. Mevcut sonucun arkasındaki rastgelelik kaynağı, alfabe ve hesaplama burada açıkça görülebilir.",
   "randomSourceTitle": "Rastgelelik kaynağı",
   "randomSourceBody": "sisteminin kriptografik olarak güvenli rastgele sayı üreteci (CSPRNG). Modulo sapması, reddetme örneklemesiyle (rejection sampling) önlenir: alfabe boyutunun en büyük katının üzerindeki rastgele değerler atılır ve yeniden çekilir. Math.random() hiçbir yerde kullanılmaz.",
   "entropyTitle": "Ham entropi",

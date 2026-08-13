@@ -1,6 +1,6 @@
 {
   "title": "Transparence cryptographique : comment ce mot de passe a-t-il été créé ?",
-  "intro": "Prisma ne cache rien. Voici, en toute transparence, la source d’aléa, l’alphabet et le calcul qui se trouvent derrière le résultat actuel.",
+  "intro": "Prismatical ne cache rien. Voici, en toute transparence, la source d’aléa, l’alphabet et le calcul qui se trouvent derrière le résultat actuel.",
   "randomSourceTitle": "Source d’aléa",
   "randomSourceBody": "le générateur aléatoire cryptographiquement sûr de votre système (CSPRNG). Le biais de modulo est évité par échantillonnage avec rejet : les valeurs aléatoires au-delà du plus grand multiple de la taille de l’alphabet sont rejetées et tirées à nouveau. Math.random() n’est jamais utilisé.",
   "entropyTitle": "Entropie brute",

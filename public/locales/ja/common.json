@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – パスワードジェネレーター"
+    "title": "Prismatical – パスワードジェネレーター"
   },
   "display": {
     "label": "生成されたパスワード",
@@ -129,7 +129,7 @@
     "hibp": "漏えいチェック（Have I Been Pwned）",
     "hibpEnabled": "漏えいチェックを有効にする",
     "hibpExplain": "k-匿名性を利用して、パスワードが既知のデータ漏えいに含まれていないかを確認します。SHA-1ハッシュはローカルで計算され、その先頭5文字だけがapi.pwnedpasswords.comに送信されます。",
-    "hibpPrivacy": "パスワード本体と完全なハッシュがデバイスの外に出ることはありません。このオプトインなしでは、Prismaは一切インターネット通信を行いません。"
+    "hibpPrivacy": "パスワード本体と完全なハッシュがデバイスの外に出ることはありません。このオプトインなしでは、Prismaticalは一切インターネット通信を行いません。"
   },
   "history": {
     "title": "履歴",
@@ -157,7 +157,7 @@
     "listLabel": "生成されたパスワード",
     "error": "現在のオプションではリストを生成できません。",
     "hint": "リストはどこにも保存されず、閉じると破棄されます。",
-    "fileName": "prisma-passwords.txt"
+    "fileName": "prismatical-passwords.txt"
   },
   "trainer": {
     "title": "暗記トレーナー",

@@ -15,7 +15,7 @@ import './styles/base.css'
  */
 function initialLanguage(): string {
   try {
-    const raw = localStorage.getItem('prisma.settings')
+    const raw = localStorage.getItem('prismatical.settings')
     if (raw) {
       const lang: unknown = JSON.parse(raw)?.state?.language
       if (typeof lang === 'string' && LANGUAGE_CODES.includes(lang)) return lang

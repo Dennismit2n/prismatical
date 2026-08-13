@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Password Generator"
+    "title": "Prismatical – Password Generator"
   },
   "display": {
     "label": "Generated password",
@@ -130,7 +130,7 @@
     "hibp": "Leak check (Have I Been Pwned)",
     "hibpEnabled": "Enable leak check",
     "hibpExplain": "Uses k-anonymity to check whether a password appears in known breaches: the SHA-1 hash is computed locally and only its first 5 characters are sent to api.pwnedpasswords.com.",
-    "hibpPrivacy": "Your password and the full hash never leave your device. Without this opt-in, Prisma makes no internet requests at all."
+    "hibpPrivacy": "Your password and the full hash never leave your device. Without this opt-in, Prismatical makes no internet requests at all."
   },
   "history": {
     "title": "History",
@@ -159,7 +159,7 @@
     "listLabel": "Generated passwords",
     "error": "No list can be generated with the current options.",
     "hint": "The list is stored nowhere and discarded when you close this dialog.",
-    "fileName": "prisma-passwords.txt"
+    "fileName": "prismatical-passwords.txt"
   },
   "trainer": {
     "title": "Memory trainer",

@@ -1,4 +1,6 @@
-# Prisma – Passwort-Generator
+# Prismatical – Passwort-Generator
+
+**Live: https://dennismit2n.github.io/prismatical/**
 
 Ein Passwort-Generator mit Live-Stärke-Spektrum: Die Akzentfarbe der gesamten
 Oberfläche IST die Stärke-Anzeige und wandert mit dem zxcvbn-Score von Rot

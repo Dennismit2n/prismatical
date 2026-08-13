@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Gerador de Senhas"
+    "title": "Prismatical – Gerador de Senhas"
   },
   "display": {
     "label": "Senha gerada",
@@ -124,13 +124,13 @@
     "history": "Histórico",
     "historyEnabled": "Gravar histórico",
     "historyPersist": "Manter o histórico permanentemente",
-    "historyPersistHint": "Desligado = o histórico é limpo ao fechar o Prisma.",
+    "historyPersistHint": "Desligado = o histórico é limpo ao fechar o Prismatical.",
     "clearHistory_one": "Apagar histórico ({{count}} entrada)",
     "clearHistory_other": "Apagar histórico ({{count}} entradas)",
     "hibp": "Verificação de vazamentos (Have I Been Pwned)",
     "hibpEnabled": "Ativar verificação de vazamentos",
     "hibpExplain": "Verifica por k-anonimato se uma senha aparece em vazamentos de dados conhecidos: o hash SHA-1 é calculado localmente e apenas os seus primeiros 5 caracteres são enviados a api.pwnedpasswords.com.",
-    "hibpPrivacy": "Sua senha e o hash completo nunca saem do seu dispositivo. Sem esse opt-in, o Prisma não faz nenhuma requisição à internet."
+    "hibpPrivacy": "Sua senha e o hash completo nunca saem do seu dispositivo. Sem esse opt-in, o Prismatical não faz nenhuma requisição à internet."
   },
   "history": {
     "title": "Histórico",
@@ -159,7 +159,7 @@
     "listLabel": "Senhas geradas",
     "error": "Não é possível gerar uma lista com as opções atuais.",
     "hint": "A lista não é salva em lugar nenhum e é descartada ao fechar.",
-    "fileName": "prisma-senhas.txt"
+    "fileName": "prismatical-senhas.txt"
   },
   "trainer": {
     "title": "Treinador de memorização",

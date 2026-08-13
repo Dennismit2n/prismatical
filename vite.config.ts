@@ -49,6 +49,8 @@ function cspPlugin(): Plugin {
 }
 
 export default defineConfig({
+  // GitHub Pages Projekt-Seite: https://dennismit2n.github.io/prismatical/
+  base: '/prismatical/',
   plugins: [
     react(),
     cspPlugin(),
@@ -60,9 +62,9 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ['favicon.svg', 'icons/*.png'],
       manifest: {
-        id: '/',
-        name: 'Prisma – Passwort-Generator',
-        short_name: 'Prisma',
+        id: '/prismatical/',
+        name: 'Prismatical – Passwort-Generator',
+        short_name: 'Prismatical',
         description:
           'Passwort-Generator mit Live-Stärke-Spektrum. 100 % offline, ohne Tracking – deine Passwörter bleiben auf deinem Gerät.',
         lang: 'de',

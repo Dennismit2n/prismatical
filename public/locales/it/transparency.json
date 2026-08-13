@@ -1,6 +1,6 @@
 {
   "title": "Trasparenza crittografica: come è nata questa password?",
-  "intro": "Prisma non nasconde nulla. Qui vedi in chiaro quale fonte di casualità, quale alfabeto e quale calcolo ci sono dietro il risultato attuale.",
+  "intro": "Prismatical non nasconde nulla. Qui vedi in chiaro quale fonte di casualità, quale alfabeto e quale calcolo ci sono dietro il risultato attuale.",
   "randomSourceTitle": "Fonte di casualità",
   "randomSourceBody": "il generatore di numeri casuali crittograficamente sicuro del tuo sistema (CSPRNG). Il bias del modulo viene evitato tramite rejection sampling: i valori casuali superiori al più grande multiplo della dimensione dell’alfabeto vengono scartati ed estratti di nuovo. Math.random() non viene mai usato.",
   "entropyTitle": "Entropia grezza",

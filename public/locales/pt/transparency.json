@@ -1,6 +1,6 @@
 {
   "title": "Transparência criptográfica: como esta senha foi criada?",
-  "intro": "O Prisma não esconde nada. Aqui você vê, às claras, qual fonte de aleatoriedade, qual alfabeto e qual cálculo estão por trás do resultado atual.",
+  "intro": "O Prismatical não esconde nada. Aqui você vê, às claras, qual fonte de aleatoriedade, qual alfabeto e qual cálculo estão por trás do resultado atual.",
   "randomSourceTitle": "Fonte de aleatoriedade",
   "randomSourceBody": "o gerador de números aleatórios criptograficamente seguro do seu sistema (CSPRNG). O viés de módulo é evitado por amostragem por rejeição: valores aleatórios acima do maior múltiplo do tamanho do alfabeto são descartados e sorteados de novo. Math.random() não é usado em lugar nenhum.",
   "entropyTitle": "Entropia bruta",

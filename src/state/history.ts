@@ -19,7 +19,7 @@ export interface HistoryEntry {
   at: number
 }
 
-const KEY = 'prisma.history'
+const KEY = 'prismatical.history'
 const MAX_ENTRIES = 50
 
 function readStore(storage: Storage): HistoryEntry[] {

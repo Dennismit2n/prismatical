@@ -11,7 +11,7 @@
   var theme = 'classic';
   var scheme = 'system';
   try {
-    var raw = localStorage.getItem('prisma.settings');
+    var raw = localStorage.getItem('prismatical.settings');
     if (raw) {
       var parsed = JSON.parse(raw);
       var state = parsed && parsed.state ? parsed.state : parsed;

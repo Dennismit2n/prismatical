@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – Générateur de mots de passe"
+    "title": "Prismatical – Générateur de mots de passe"
   },
   "display": {
     "label": "Mot de passe généré",
@@ -130,7 +130,7 @@
     "hibp": "Vérification de fuites (Have I Been Pwned)",
     "hibpEnabled": "Activer la vérification de fuites",
     "hibpExplain": "Vérifie par k-anonymat si un mot de passe apparaît dans des fuites de données connues : le hachage SHA-1 est calculé localement et seuls ses 5 premiers caractères sont envoyés à api.pwnedpasswords.com.",
-    "hibpPrivacy": "Votre mot de passe et le hachage complet ne quittent jamais votre appareil. Sans cet opt-in, Prisma n’effectue aucune requête Internet."
+    "hibpPrivacy": "Votre mot de passe et le hachage complet ne quittent jamais votre appareil. Sans cet opt-in, Prismatical n’effectue aucune requête Internet."
   },
   "history": {
     "title": "Historique",
@@ -159,7 +159,7 @@
     "listLabel": "Mots de passe générés",
     "error": "Impossible de générer une liste avec les options actuelles.",
     "hint": "La liste n’est stockée nulle part et sera supprimée à la fermeture.",
-    "fileName": "prisma-mots-de-passe.txt"
+    "fileName": "prismatical-mots-de-passe.txt"
   },
   "trainer": {
     "title": "Entraîneur de mémorisation",

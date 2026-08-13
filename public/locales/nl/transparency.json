@@ -1,6 +1,6 @@
 {
   "title": "Crypto-transparantie: hoe is dit wachtwoord ontstaan?",
-  "intro": "Prisma verbergt niets. Hier zie je precies welke bron van willekeur, welk alfabet en welke berekening achter het huidige resultaat zitten.",
+  "intro": "Prismatical verbergt niets. Hier zie je precies welke bron van willekeur, welk alfabet en welke berekening achter het huidige resultaat zitten.",
   "randomSourceTitle": "Bron van willekeur",
   "randomSourceBody": "de cryptografisch veilige toevalsgenerator van je systeem (CSPRNG). Modulo-bias wordt vermeden via rejection sampling: willekeurige waarden boven het grootste veelvoud van de alfabetgrootte worden verworpen en opnieuw getrokken. Math.random() komt nergens voor.",
   "entropyTitle": "Ruwe entropie",

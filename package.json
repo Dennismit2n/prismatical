@@ -1,7 +1,6 @@
 {
-  "name": "prisma",
-  "private": true,
-  "version": "0.0.0",
+  "name": "prismatical",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -50,5 +49,7 @@
     "vite": "^8.2.0",
     "vite-plugin-pwa": "^1.3.0",
     "vitest": "^4.1.10"
-  }
+  },
+  "description": "Passwort-Generator mit Live-Stärke-Spektrum – 100 % offline, ohne Tracking",
+  "license": "MIT"
 }

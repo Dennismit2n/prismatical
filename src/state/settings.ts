@@ -86,7 +86,7 @@ export const useSettings = create<SettingsState>()(
       patchUsername: (p) => set((s) => ({ username: { ...s.username, ...p } })),
     }),
     {
-      name: 'prisma.settings',
+      name: 'prismatical.settings',
       version: 1,
       partialize: (s) => ({
         language: s.language,

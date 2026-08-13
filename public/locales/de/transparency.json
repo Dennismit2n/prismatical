@@ -1,6 +1,6 @@
 {
   "title": "Krypto-Transparenz: Wie ist dieses Passwort entstanden?",
-  "intro": "Prisma versteckt nichts. Hier steht offen, welche Zufallsquelle, welches Alphabet und welche Rechnung hinter dem aktuellen Ergebnis stecken.",
+  "intro": "Prismatical versteckt nichts. Hier steht offen, welche Zufallsquelle, welches Alphabet und welche Rechnung hinter dem aktuellen Ergebnis stecken.",
   "randomSourceTitle": "Zufallsquelle",
   "randomSourceBody": "der kryptografisch sichere Zufallsgenerator deines Systems (CSPRNG). Modulo-Bias wird per Rejection-Sampling vermieden: Zufallswerte oberhalb des größten Vielfachen der Alphabetgröße werden verworfen und neu gezogen. Math.random() kommt nirgends vor.",
   "entropyTitle": "Rohe Entropie",

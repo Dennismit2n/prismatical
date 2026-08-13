@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Prisma – wachtwoordgenerator"
+    "title": "Prismatical – wachtwoordgenerator"
   },
   "display": {
     "label": "Gegenereerd wachtwoord",
@@ -130,7 +130,7 @@
     "hibp": "Lekcontrole (Have I Been Pwned)",
     "hibpEnabled": "Lekcontrole inschakelen",
     "hibpExplain": "Controleert via k-anonimiteit of een wachtwoord in bekende datalekken voorkomt: de SHA-1-hash wordt lokaal berekend en alleen de eerste 5 tekens gaan naar api.pwnedpasswords.com.",
-    "hibpPrivacy": "Je wachtwoord en de volledige hash verlaten nooit je apparaat. Zonder deze opt-in doet Prisma helemaal geen internetverzoeken."
+    "hibpPrivacy": "Je wachtwoord en de volledige hash verlaten nooit je apparaat. Zonder deze opt-in doet Prismatical helemaal geen internetverzoeken."
   },
   "history": {
     "title": "Geschiedenis",
@@ -159,7 +159,7 @@
     "listLabel": "Gegenereerde wachtwoorden",
     "error": "Met de huidige opties kan er geen lijst worden gegenereerd.",
     "hint": "De lijst wordt nergens opgeslagen en bij het sluiten gewist.",
-    "fileName": "prisma-wachtwoorden.txt"
+    "fileName": "prismatical-wachtwoorden.txt"
   },
   "trainer": {
     "title": "Geheugentrainer",
