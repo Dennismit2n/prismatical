@@ -93,6 +93,13 @@ export function generatePassword(o: PasswordOptions): GeneratorResult {
   ) {
     throw new GeneratorError('lengthOutOfRange')
   }
+  // Vertragspruefung: negative oder nicht-ganzzahlige Minima wuerden die
+  // Kontingent-Logik (und damit die requireEachClass-Garantie) still aushebeln.
+  for (const min of [o.minDigits, o.minSpecial]) {
+    if (!Number.isInteger(min) || min < 0 || min > 9) {
+      throw new RangeError(`generatePassword: ungültiges Minimum ${min}`)
+    }
+  }
   if (!o.upper && !o.lower && !o.digits && !o.special) {
     throw new GeneratorError('noClasses')
   }
@@ -122,7 +129,9 @@ export function generatePassword(o: PasswordOptions): GeneratorResult {
 
   const requiredCount = quotas.reduce((sum, q) => sum + q.count, 0)
   if (requiredCount > o.length) throw new GeneratorError('minimaExceedLength')
-  if (o.noRepeats && sets.all.length < o.length) {
+  // Poolgroesse pro Codepoint zaehlen (Emoji im Sonderzeichensatz = 1 Zeichen).
+  const poolSize = [...sets.all].length
+  if (o.noRepeats && poolSize < o.length) {
     throw new GeneratorError('notEnoughUniqueChars')
   }
 
@@ -150,10 +159,18 @@ export function generatePassword(o: PasswordOptions): GeneratorResult {
   const constrained =
     o.noRepeats || o.requireEachClass || o.minDigits > 0 || o.minSpecial > 0
 
+  // Entropie: mit noRepeats wird ohne Zuruecklegen gezogen — exakt ist dann
+  // sum(log2(N-i)) statt der L*log2(N)-Obergrenze.
+  let entropyBits = charEntropyBits(o.length, poolSize)
+  if (o.noRepeats) {
+    entropyBits = 0
+    for (let i = 0; i < o.length; i++) entropyBits += Math.log2(poolSize - i)
+  }
+
   return {
     value: chars.join(''),
-    entropyBits: charEntropyBits(o.length, sets.all.length),
-    poolSize: sets.all.length,
+    entropyBits,
+    poolSize,
     warnings: [],
     constrained,
   }

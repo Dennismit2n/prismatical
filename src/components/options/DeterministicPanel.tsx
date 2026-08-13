@@ -64,7 +64,10 @@ export function DeterministicPanel() {
             id="det-master"
             type={masterVisible ? 'text' : 'password'}
             value={master}
-            autoComplete="off"
+            // "new-password" statt "off": Chromium ignoriert "off" bei
+            // Passwortfeldern und wuerde anbieten, das Master-Passwort im
+            // Browser-Passwortmanager zu speichern.
+            autoComplete="new-password"
             spellCheck={false}
             onChange={(e) => setMaster(e.target.value)}
           />

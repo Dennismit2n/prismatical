@@ -29,7 +29,12 @@ export interface DeterministicInput {
 }
 
 const PBKDF2_ITERATIONS = 310_000
-const BLOCK_BYTES = 64
+/**
+ * Genau eine SHA-256-Ausgabelaenge pro deriveBits-Aufruf: dkLen > hashLen
+ * wuerde PBKDF2 intern mehrfach laufen lassen, ein Angreifer muesste aber nur
+ * den ersten Block berechnen — das verschenkte Verteidiger-Arbeit.
+ */
+const BLOCK_BYTES = 32
 
 async function deriveBlock(input: DeterministicInput, blockIndex: number): Promise<Uint8Array> {
   const enc = new TextEncoder()
@@ -77,31 +82,37 @@ export async function deriveDeterministicPassword(
     throw new GeneratorError('noClasses')
   }
   const sets = buildSets(fullOptions)
-  const alphabet = sets.all
+  // Pro CODEPOINT arbeiten (nutzerdefinierte Sonderzeichen koennten Emoji sein).
+  const alphabet = [...sets.all]
   if (alphabet.length === 0) throw new GeneratorError('emptyAlphabet')
   if (!Number.isInteger(options.length) || options.length < 4 || options.length > 64) {
     throw new GeneratorError('lengthOutOfRange')
   }
 
   const n = alphabet.length
-  const limit = 256 - (256 % n)
-  let out = ''
+  // 16-Bit-Rejection-Sampling (2 Bytes pro Ziehung): traegt auch Alphabete
+  // mit mehr als 256 Zeichen. Der fruehere 8-Bit-Pfad haette bei n > 256
+  // JEDEN Wert verworfen (limit = 0) und niemals terminiert.
+  if (n > 0x10000) throw new GeneratorError('emptyAlphabet')
+  const limit = 0x10000 - (0x10000 % n)
+  const picks: string[] = []
   let blockIndex = 0
   let block = await deriveBlock(input, blockIndex)
   let pos = 0
 
-  while (out.length < options.length) {
-    if (pos >= block.length) {
+  while (picks.length < options.length) {
+    if (pos + 1 >= block.length) {
       blockIndex += 1
       block = await deriveBlock(input, blockIndex)
       pos = 0
     }
-    const b = block[pos++]
-    if (b < limit) out += alphabet[b % n] // Rejection-Sampling wie im Zufallsmodus
+    const value = (block[pos] << 8) | block[pos + 1]
+    pos += 2
+    if (value < limit) picks.push(alphabet[value % n]) // Rejection-Sampling
   }
 
   return {
-    value: out,
+    value: picks.join(''),
     entropyBits: charEntropyBits(options.length, n),
     poolSize: n,
     warnings: ['deterministicNoRecovery'],

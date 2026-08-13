@@ -49,4 +49,31 @@ describe('Deterministischer Modus (PBKDF2)', () => {
     const r = await deriveDeterministicPassword(input, options)
     expect(r.warnings).toContain('deterministicNoRecovery')
   })
+
+  it('terminiert auch mit Alphabeten > 256 Zeichen (16-Bit-Sampling)', async () => {
+    // 300 eindeutige CJK-Zeichen als Sonderzeichensatz → n > 256.
+    // Der alte 8-Bit-Pfad haette hier NIE terminiert (limit = 0).
+    const bigSpecial = Array.from({ length: 300 }, (_, i) =>
+      String.fromCodePoint(0x4e00 + i),
+    ).join('')
+    const r = await deriveDeterministicPassword(input, {
+      length: 12,
+      upper: false,
+      lower: false,
+      digits: false,
+      special: true,
+      specialChars: bigSpecial,
+    })
+    expect([...r.value]).toHaveLength(12)
+    expect(r.poolSize).toBe(300)
+    const again = await deriveDeterministicPassword(input, {
+      length: 12,
+      upper: false,
+      lower: false,
+      digits: false,
+      special: true,
+      specialChars: bigSpecial,
+    })
+    expect(again.value).toBe(r.value) // weiterhin deterministisch
+  })
 })

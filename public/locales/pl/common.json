@@ -162,7 +162,8 @@
     "downloadFile": "Zapisz jako plik",
     "listLabel": "Wygenerowane hasła",
     "error": "Przy bieżących opcjach nie można wygenerować listy.",
-    "hint": "Lista nie jest nigdzie zapisywana i po zamknięciu jest usuwana."
+    "hint": "Lista nie jest nigdzie zapisywana i po zamknięciu jest usuwana.",
+    "fileName": "prisma-hasla.txt"
   },
   "trainer": {
     "title": "Trener pamięci",

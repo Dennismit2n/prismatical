@@ -158,7 +158,8 @@
     "downloadFile": "Salvar como arquivo",
     "listLabel": "Senhas geradas",
     "error": "Não é possível gerar uma lista com as opções atuais.",
-    "hint": "A lista não é salva em lugar nenhum e é descartada ao fechar."
+    "hint": "A lista não é salva em lugar nenhum e é descartada ao fechar.",
+    "fileName": "prisma-senhas.txt"
   },
   "trainer": {
     "title": "Treinador de memorização",

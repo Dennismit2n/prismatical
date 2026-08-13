@@ -203,4 +203,51 @@ describe('generatePassword – Entropie-Metadaten', () => {
     expect(generatePassword({ ...base, minDigits: 2 }).constrained).toBe(true)
     expect(generatePassword({ ...base, noRepeats: true }).constrained).toBe(true)
   })
+
+  it('noRepeats: exakte Entropie sum(log2(N-i)) statt der L*log2(N)-Obergrenze', () => {
+    // Nur Ziffern (N=10), Laenge 10 ohne Wiederholung → log2(10!) ≈ 21,79 Bit
+    const r = generatePassword({
+      ...base,
+      upper: false,
+      lower: false,
+      special: false,
+      minSpecial: 0,
+      minDigits: 0,
+      noRepeats: true,
+      length: 10,
+    })
+    let expected = 0
+    for (let i = 0; i < 10; i++) expected += Math.log2(10 - i)
+    expect(r.entropyBits).toBeCloseTo(expected, 5)
+    expect(r.entropyBits).toBeLessThan(10 * Math.log2(10))
+  })
+})
+
+describe('generatePassword – Vertragspruefungen und Sonderfaelle', () => {
+  it('weist negative oder nicht-ganzzahlige Minima zurueck', () => {
+    expect(() => generatePassword({ ...base, minDigits: -1 })).toThrow(RangeError)
+    expect(() => generatePassword({ ...base, minSpecial: 2.5 })).toThrow(RangeError)
+    expect(() => generatePassword({ ...base, minDigits: 10 })).toThrow(RangeError)
+  })
+
+  it('zaehlt Nicht-BMP-Sonderzeichen (Emoji) als EIN Zeichen und liefert gueltige Strings', () => {
+    const o = {
+      ...base,
+      upper: false,
+      lower: false,
+      digits: false,
+      minDigits: 0,
+      specialChars: '😀😁😂🤖🔒',
+      minSpecial: 1,
+      length: 8,
+    }
+    for (let run = 0; run < 50; run++) {
+      const r = generatePassword(o)
+      const chars = [...r.value]
+      expect(chars).toHaveLength(8) // 8 Codepoints, nicht 16 UTF-16-Einheiten
+      expect(r.poolSize).toBe(5)
+      // kein halbes Surrogat-Paar: jeder Codepoint ist eines der 5 Emoji
+      for (const ch of chars) expect([...'😀😁😂🤖🔒']).toContain(ch)
+    }
+  })
 })

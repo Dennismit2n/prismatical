@@ -71,12 +71,17 @@ export function randomBelow(maxExclusive: number): number {
   }
 }
 
-/** Ein gleichverteilt zufaelliges Zeichen aus einem Alphabet-String. */
+/**
+ * Ein gleichverteilt zufaelliges Zeichen aus einem Alphabet-String.
+ *
+ * Wichtig: pro CODEPOINT, nicht pro UTF-16-Einheit. Nutzerdefinierte
+ * Sonderzeichensaetze koennen Zeichen ausserhalb der BMP enthalten (Emoji);
+ * naive Indexierung wuerde dort halbe Surrogat-Paare liefern.
+ */
 export function pickChar(alphabet: string): string {
-  if (alphabet.length === 0) throw new RangeError('pickChar: leeres Alphabet')
-  // Hinweis: alle Alphabete in Prisma bestehen aus BMP-Zeichen (ASCII),
-  // daher ist Index-Zugriff pro UTF-16-Einheit hier korrekt.
-  return alphabet[randomBelow(alphabet.length)]
+  const chars = [...alphabet]
+  if (chars.length === 0) throw new RangeError('pickChar: leeres Alphabet')
+  return chars[randomBelow(chars.length)]
 }
 
 /** Ein gleichverteilt zufaelliges Element aus einem Array (z. B. Diceware-Wort). */

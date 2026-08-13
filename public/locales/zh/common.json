@@ -156,7 +156,8 @@
     "downloadFile": "保存为文件",
     "listLabel": "已生成的密码",
     "error": "当前选项无法生成列表。",
-    "hint": "该列表不会存储在任何地方，关闭后即被丢弃。"
+    "hint": "该列表不会存储在任何地方，关闭后即被丢弃。",
+    "fileName": "prisma-passwords.txt"
   },
   "trainer": {
     "title": "记忆训练器",

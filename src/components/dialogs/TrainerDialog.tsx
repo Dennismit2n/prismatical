@@ -56,7 +56,10 @@ export function TrainerDialog({ open, onClose }: { open: boolean; onClose: () =>
   return (
     <Modal open={open} onClose={close} title={t('trainer.title')}>
       <p className={styles.note}>{t('trainer.intro')}</p>
-      <p className={styles.trainerPhrase} aria-label={t('trainer.phraseLabel')}>
+      {/* aria-label auf <p> ist per ARIA-Spezifikation verboten (role=paragraph)
+          — der Screenreader-Kontext kommt stattdessen als versteckter Praefix. */}
+      <p className={styles.trainerPhrase}>
+        <span className="visually-hidden">{t('trainer.phraseLabel')}: </span>
         {masked}
       </p>
       <p className={styles.note}>

@@ -11,7 +11,12 @@ export function OptionsCard() {
   const mode = useSettings((s) => s.mode)
 
   return (
-    <section id="options-panel" role="tabpanel" className={styles.card}>
+    <section
+      id="options-panel"
+      role="tabpanel"
+      aria-labelledby={`tab-${mode}`}
+      className={styles.card}
+    >
       {mode === 'password' && <PasswordPanel />}
       {mode === 'passphrase' && <PassphrasePanel />}
       {mode === 'pin' && <PinPanel />}

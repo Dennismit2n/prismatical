@@ -38,12 +38,17 @@ export function SettingsDialog({ open, onClose }: { open: boolean; onClose: () =
         <Check
           label={t('settings.historyEnabled')}
           checked={s.historyEnabled}
-          onChange={(historyEnabled) => s.patch({ historyEnabled })}
+          onChange={(historyEnabled) =>
+            // Beim Abschalten auch das Persist-Opt-in zuruecknehmen, damit
+            // kein unsichtbar gesetztes localStorage-Opt-in zurueckbleibt.
+            s.patch(historyEnabled ? { historyEnabled } : { historyEnabled, historyPersist: false })
+          }
         />
         <Check
           label={t('settings.historyPersist')}
           hint={t('settings.historyPersistHint')}
-          checked={s.historyPersist && s.historyEnabled}
+          checked={s.historyPersist}
+          disabled={!s.historyEnabled}
           onChange={(historyPersist) => s.patch({ historyPersist })}
         />
         <button

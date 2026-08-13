@@ -158,7 +158,8 @@
     "downloadFile": "Guardar como archivo",
     "listLabel": "Contraseñas generadas",
     "error": "Con las opciones actuales no se puede generar ninguna lista.",
-    "hint": "La lista no se guarda en ningún sitio y se descarta al cerrar este diálogo."
+    "hint": "La lista no se guarda en ningún sitio y se descarta al cerrar este diálogo.",
+    "fileName": "prisma-contrasenas.txt"
   },
   "trainer": {
     "title": "Entrenador de memoria",

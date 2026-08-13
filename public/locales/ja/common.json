@@ -156,7 +156,8 @@
     "downloadFile": "ファイルとして保存",
     "listLabel": "生成されたパスワード",
     "error": "現在のオプションではリストを生成できません。",
-    "hint": "リストはどこにも保存されず、閉じると破棄されます。"
+    "hint": "リストはどこにも保存されず、閉じると破棄されます。",
+    "fileName": "prisma-passwords.txt"
   },
   "trainer": {
     "title": "暗記トレーナー",

@@ -158,7 +158,8 @@
     "downloadFile": "Dosya olarak kaydet",
     "listLabel": "Oluşturulan parolalar",
     "error": "Geçerli seçeneklerle liste oluşturulamıyor.",
-    "hint": "Liste hiçbir yerde saklanmaz ve pencereyi kapattığında silinir."
+    "hint": "Liste hiçbir yerde saklanmaz ve pencereyi kapattığında silinir.",
+    "fileName": "prisma-parolalar.txt"
   },
   "trainer": {
     "title": "Ezber antrenörü",

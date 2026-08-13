@@ -81,6 +81,9 @@ export function syncHistoryStorage(historyEnabled: boolean, historyPersist: bool
   if (!historyEnabled) {
     writeStore(sessionStorage, [])
     writeStore(localStorage, [])
+    // Auch den In-Memory-Verlauf leeren: sonst kaemen "geloeschte" Eintraege
+    // beim Re-Aktivieren wieder in den Speicher zurueck.
+    if (entries.length > 0) useHistory.getState().clear()
     return
   }
   if (historyPersist) {

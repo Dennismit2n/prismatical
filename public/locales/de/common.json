@@ -158,7 +158,8 @@
     "downloadFile": "Als Datei speichern",
     "listLabel": "Erzeugte Passwörter",
     "error": "Mit den aktuellen Optionen kann keine Liste erzeugt werden.",
-    "hint": "Die Liste wird nirgends gespeichert und beim Schließen verworfen."
+    "hint": "Die Liste wird nirgends gespeichert und beim Schließen verworfen.",
+    "fileName": "prisma-passwoerter.txt"
   },
   "trainer": {
     "title": "Merk-Trainer",

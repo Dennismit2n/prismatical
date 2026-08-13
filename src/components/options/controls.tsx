@@ -57,11 +57,13 @@ export function Check({
   checked,
   onChange,
   hint,
+  disabled = false,
 }: {
   label: string
   checked: boolean
   onChange: (v: boolean) => void
   hint?: string
+  disabled?: boolean
 }) {
   const id = useId()
   return (
@@ -70,6 +72,7 @@ export function Check({
         id={id}
         type="checkbox"
         checked={checked}
+        disabled={disabled}
         onChange={(e) => onChange(e.target.checked)}
       />
       <span>

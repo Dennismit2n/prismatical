@@ -69,7 +69,11 @@ export function PasswordCard({ onOpenDialog }: { onOpenDialog: (d: DialogId) => 
   return (
     <section className={styles.card} aria-label={t('display.label')}>
       <div className={styles.pwRow}>
-        <output className={styles.pw} aria-label={t('display.label')}>
+        {/* Bewusst ein neutrales <div> statt <output>: output ist implizit
+            role=status (aria-live) und wuerde bei jeder Options-Aenderung das
+            komplette Passwort zeichenweise vorlesen — die Ansage uebernimmt
+            die visually-hidden-Live-Region weiter unten. */}
+        <div className={styles.pw}>
           {value === '' && !error ? (
             <span className={styles.empty}>…</span>
           ) : revealed ? (
@@ -77,12 +81,12 @@ export function PasswordCard({ onOpenDialog }: { onOpenDialog: (d: DialogId) => 
           ) : (
             <span aria-hidden="true">{'•'.repeat(Math.min(value.length, 64))}</span>
           )}
-        </output>
+        </div>
         <div className={styles.actions}>
           <button
             type="button"
             className={styles.iconBtn}
-            aria-pressed={!revealed}
+            aria-pressed={revealed}
             onClick={() => setRevealed(!revealed)}
             title={revealed ? t('actions.hide') : t('actions.reveal')}
             aria-label={revealed ? t('actions.hide') : t('actions.reveal')}

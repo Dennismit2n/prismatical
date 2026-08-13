@@ -158,7 +158,8 @@
     "downloadFile": "Save as file",
     "listLabel": "Generated passwords",
     "error": "No list can be generated with the current options.",
-    "hint": "The list is stored nowhere and discarded when you close this dialog."
+    "hint": "The list is stored nowhere and discarded when you close this dialog.",
+    "fileName": "prisma-passwords.txt"
   },
   "trainer": {
     "title": "Memory trainer",

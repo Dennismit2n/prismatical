@@ -12,6 +12,14 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react'
 
+/**
+ * Modulweite Kopier-Generation: Es gibt mehrere Hook-Instanzen (Passwort-
+ * Karte, Verlauf, Bulk). Nur die Instanz, die zuletzt kopiert hat, darf die
+ * Zwischenablage leeren — sonst wuerde ein aelterer Countdown eine neuere
+ * Kopie (oder fremden Inhalt) vorzeitig vernichten.
+ */
+let globalCopyGeneration = 0
+
 export interface ClipboardApi {
   copy: (text: string) => Promise<boolean>
   /** Restsekunden bis zum Leeren, null = kein Countdown aktiv */
@@ -28,6 +36,7 @@ export function useClipboard(clearAfterSec: number): ClipboardApi {
   const [justCopied, setJustCopied] = useState(false)
   const [clearFailed, setClearFailed] = useState(false)
   const copyToken = useRef(0)
+  const myGeneration = useRef(0)
 
   const copy = useCallback(
     async (text: string): Promise<boolean> => {
@@ -37,6 +46,7 @@ export function useClipboard(clearAfterSec: number): ClipboardApi {
         return false
       }
       const token = ++copyToken.current
+      myGeneration.current = ++globalCopyGeneration
       setClearFailed(false)
       setJustCopied(true)
       setTimeout(() => {
@@ -64,10 +74,26 @@ export function useClipboard(clearAfterSec: number): ClipboardApi {
         setCountdown(remaining)
         return
       }
-      // Countdown abgelaufen: Zwischenablage ueberschreiben.
       setDeadline(null)
       setCountdown(null)
-      navigator.clipboard.writeText('').catch(() => setClearFailed(true))
+      // Nur leeren, wenn seitdem niemand anderes (andere Instanz) kopiert hat.
+      if (myGeneration.current !== globalCopyGeneration) return
+      // Countdown abgelaufen: Zwischenablage ueberschreiben. Schlaegt das fehl
+      // (Fenster nicht fokussiert), holen wir es beim naechsten Fokus nach.
+      navigator.clipboard.writeText('').catch(() => {
+        setClearFailed(true)
+        const retry = () => {
+          window.removeEventListener('focus', retry)
+          if (myGeneration.current !== globalCopyGeneration) return
+          navigator.clipboard
+            .writeText('')
+            .then(() => setClearFailed(false))
+            .catch(() => {
+              /* endgueltig fehlgeschlagen — Hinweis bleibt sichtbar */
+            })
+        }
+        window.addEventListener('focus', retry)
+      })
     }, 250)
     return () => clearInterval(interval)
   }, [deadline])

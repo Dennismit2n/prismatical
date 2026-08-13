@@ -158,7 +158,8 @@
     "downloadFile": "Salva come file",
     "listLabel": "Password generate",
     "error": "Con le opzioni attuali non è possibile generare alcun elenco.",
-    "hint": "L’elenco non viene salvato da nessuna parte e viene scartato alla chiusura."
+    "hint": "L’elenco non viene salvato da nessuna parte e viene scartato alla chiusura.",
+    "fileName": "prisma-password.txt"
   },
   "trainer": {
     "title": "Allenamento della memoria",

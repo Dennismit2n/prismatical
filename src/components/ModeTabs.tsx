@@ -50,6 +50,7 @@ export function ModeTabs() {
           key={m}
           type="button"
           role="tab"
+          id={`tab-${m}`}
           data-mode={m}
           aria-selected={mode === m}
           aria-controls="options-panel"

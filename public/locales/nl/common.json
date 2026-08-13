@@ -158,7 +158,8 @@
     "downloadFile": "Opslaan als bestand",
     "listLabel": "Gegenereerde wachtwoorden",
     "error": "Met de huidige opties kan er geen lijst worden gegenereerd.",
-    "hint": "De lijst wordt nergens opgeslagen en bij het sluiten gewist."
+    "hint": "De lijst wordt nergens opgeslagen en bij het sluiten gewist.",
+    "fileName": "prisma-wachtwoorden.txt"
   },
   "trainer": {
     "title": "Geheugentrainer",

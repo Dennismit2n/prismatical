@@ -158,7 +158,8 @@
     "downloadFile": "Enregistrer comme fichier",
     "listLabel": "Mots de passe générés",
     "error": "Impossible de générer une liste avec les options actuelles.",
-    "hint": "La liste n’est stockée nulle part et sera supprimée à la fermeture."
+    "hint": "La liste n’est stockée nulle part et sera supprimée à la fermeture.",
+    "fileName": "prisma-mots-de-passe.txt"
   },
   "trainer": {
     "title": "Entraîneur de mémorisation",
