@@ -3,15 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- Bewusst "nach dem ersten Besuch auch ohne Netz" statt "100 % offline":
+         der erste Aufruf braucht Netz, damit der Service Worker die Dateien
+         einmal holen kann. Ein Versprechen, das beim Nachprüfen kippt, kostet
+         mehr als es bringt. -->
     <meta
       name="description"
-      content="Prismatical – Passwort-Generator mit Live-Stärke-Spektrum. 100 % offline, ohne Tracking."
+      content="Prismatical – Passwort-Generator, bei dem die Farbe der Oberfläche die Stärke zeigt. Läuft in deinem Browser, ohne Konto; nach dem ersten Besuch auch ohne Netz."
     />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1c1b1f" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Link-Vorschau. og:image muss absolut sein — Crawler lösen relative
+         Pfade nicht auf. Das Bild wird im Launchkit gerendert und von
+         `make-bilder.mjs --verteilen` hierher gelegt, nicht von Hand gemalt. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dennismit2n.github.io/prismatical/" />
+    <meta property="og:title" content="Prismatical – Passwörter, deren Stärke man sieht" />
+    <meta
+      property="og:description"
+      content="Passwort-Generator, bei dem die Farbe der ganzen Oberfläche die Stärke ist – von Rot bis Violett, live beim Schieben. Im Browser, ohne Konto."
+    />
+    <meta property="og:image" content="https://dennismit2n.github.io/prismatical/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Dunkelblaue Grafik: das Symbol von Prismatical, darunter groß der Name „Prismatical“ und die Zeile „Passwörter, deren Stärke man sieht.“ Unten „Kostenlos, ohne Anmeldung, ohne Upload“."
+    />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <title>Prismatical – Passwort-Generator</title>
     <!-- Setzt Theme/Schema/Sprache VOR dem ersten Paint (eigene Datei statt Inline-Skript wegen CSP). -->
     <script src="/boot.js"></script>
