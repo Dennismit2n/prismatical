@@ -5,7 +5,7 @@
 Ein Passwort-Generator mit Live-Stärke-Spektrum: Die Akzentfarbe der gesamten
 Oberfläche IST die Stärke-Anzeige und wandert mit dem zxcvbn-Score von Rot
 (schwach) bis Violett (episch). Installierbare, offline-fähige PWA für Handy
-und Desktop. 12 Sprachen, Standardsprache Deutsch.
+und Desktop. 14 Sprachen, Standardsprache Deutsch.
 
 ## Sicherheitsprinzipien
 
@@ -86,7 +86,7 @@ npm run dev        # Dev-Server (Port 5199)
 npm test           # Vitest: Bias-, Regel-, Entropie-, HIBP-, Determinismus-Tests
 npm run lint       # ESLint (inkl. Math.random-Verbot)
 npm run build      # Produktions-Build inkl. Service Worker (Precache)
-node tools/check-locales.mjs    # Schlüssel-/Platzhalter-Parität aller 12 Sprachen
+node tools/check-locales.mjs    # Schlüssel-/Platzhalter-Parität aller 14 Sprachen
 node tools/check-contrast.mjs   # WCAG-Kontraste aller 6 Theme-Varianten
 ```
 

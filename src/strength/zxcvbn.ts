@@ -4,7 +4,7 @@
  * Woerterbuecher und Tastatur-Graphen werden lazy per dynamic import geladen
  * (eigene Chunks, praecached vom Service Worker → offline verfuegbar).
  * Pro UI-Sprache wird das passende Sprachpaket dazugemischt; fuer Sprachen
- * ohne Paket (ru, zh) gilt der dokumentierte Fallback auf Englisch.
+ * ohne Paket (ru, zh, hi, ko) gilt der dokumentierte Fallback auf Englisch.
  */
 
 import { ZxcvbnFactory } from '@zxcvbn-ts/core'
@@ -34,7 +34,7 @@ let factory: ZxcvbnFactory | null = null
 let factoryLang = ''
 let pending: Promise<void> | null = null
 
-/** Sprache mit zxcvbn-Paket? Sonst greift der en-Fallback (ru, zh). */
+/** Sprache mit zxcvbn-Paket? Sonst greift der en-Fallback (ru, zh, hi, ko). */
 export function zxcvbnLangFor(uiLang: string): string {
   return uiLang in PACK_LOADERS ? uiLang : 'en'
 }
