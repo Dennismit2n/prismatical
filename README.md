@@ -7,6 +7,8 @@ Oberfläche IST die Stärke-Anzeige und wandert mit dem zxcvbn-Score von Rot
 (schwach) bis Violett (episch). Installierbare, offline-fähige PWA für Handy
 und Desktop. 14 Sprachen, Standardsprache Deutsch.
 
+<img src="docs/screenshot-en.webp" alt="Prismatical im Theme Cyber: oben ein erzeugtes Passwort mit der höchsten Stärkestufe und 116 Bit Entropie, darunter die sechs Arten vom Passwort bis zum deterministischen Modus, Länge, Zeichenklassen und Regeln." width="420">
+
 ## Sicherheitsprinzipien
 
 1. **100 % lokal.** Erzeugung, Stärke-Analyse (zxcvbn-ts) und QR-Code laufen
