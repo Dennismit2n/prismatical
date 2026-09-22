@@ -15,9 +15,9 @@
   "scenario": {
     "onlineThrottled": "Çevrimiçi, kısıtlanmış (100/saat)",
     "onlineFast": "Çevrimiçi, kısıtlamasız (10/saniye)",
-    "offlineSlow": "Çevrimdışı, yavaş hash'ler (10⁴/saniye)",
-    "offlineFast": "Çevrimdışı, hızlı hash'ler (10¹⁰/saniye)"
+    "offlineSlow": "Çevrimdışı, yavaş hash’ler (10⁴/saniye)",
+    "offlineFast": "Çevrimdışı, hızlı hash’ler (10¹⁰/saniye)"
   },
   "privacyTitle": "Cihazından ne çıkıyor?",
-  "privacyBody": "Hiçbir şey. Oluşturma, analiz ve QR kodu tamamen yerel çalışır. Tek istisna: isteğe bağlı sızıntı kontrolü (ayarlardan etkinleştirilir), yerel olarak hesaplanan SHA-1 hash'inin ilk 5 karakterini gönderir – parolanın kendisini asla."
+  "privacyBody": "Hiçbir şey. Oluşturma, analiz ve QR kodu tamamen yerel çalışır. Tek istisna: isteğe bağlı sızıntı kontrolü (ayarlardan etkinleştirilir), yerel olarak hesaplanan SHA-1 hash’inin ilk 5 karakterini gönderir – parolanın kendisini asla."
 }

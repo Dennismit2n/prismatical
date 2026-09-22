@@ -93,7 +93,7 @@
     "pronounceableEntropy": "Pronounceable passwords carry much less entropy per character – make them longer.",
     "pinEntropy": "A PIN is only as safe as the lockout behind it.",
     "deterministicNoRecovery": "No recovery: without the master password this password cannot be recreated.",
-    "usernamePurpose": "Usernames are not passwords – don't use them as secrets."
+    "usernamePurpose": "Usernames are not passwords – don’t use them as secrets."
   },
   "errors": {
     "noClasses": "Select at least one character class.",
