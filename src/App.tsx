@@ -48,6 +48,7 @@ export default function App() {
       </main>
       <footer className={styles.footer}>
         <p>{t('footer.pledge')}</p>
+        <p>© 2026 Dennis_mit_2n</p>
       </footer>
 
       <SettingsDialog open={dialog === 'settings'} onClose={() => setDialog(null)} />
