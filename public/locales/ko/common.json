@@ -108,6 +108,7 @@
   "settings": {
     "title": "설정",
     "languageLabel": "언어",
+    "install": "설치",
     "theme": "테마",
     "themeClassic": "Classic Rainbow",
     "themeCyber": "Cyber",

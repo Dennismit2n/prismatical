@@ -64,3 +64,35 @@
   background: var(--accent-dim);
   color: var(--accent-text);
 }
+
+/* Knopf „Installieren“: Form der Symbol-Knoepfe, mit Text. Am Telefon eine eigene,
+   volle Zeile ueber den Waehlern. */
+.installBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.installBtn:hover {
+  background: var(--accent-dim);
+  color: var(--accent-text);
+}
+
+@media (max-width: 560px) {
+  .controls {
+    flex: 1 1 100%;
+  }
+
+  .installBtn {
+    flex: 1 1 100%;
+  }
+}

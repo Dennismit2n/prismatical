@@ -108,6 +108,7 @@
   "settings": {
     "title": "设置",
     "languageLabel": "语言",
+    "install": "安装",
     "theme": "主题",
     "themeClassic": "Classic Rainbow",
     "themeCyber": "Cyber",

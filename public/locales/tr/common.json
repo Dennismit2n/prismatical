@@ -108,6 +108,7 @@
   "settings": {
     "title": "Ayarlar",
     "languageLabel": "Dil",
+    "install": "Yükle",
     "theme": "Tema",
     "themeClassic": "Classic Rainbow",
     "themeCyber": "Cyber",

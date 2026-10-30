@@ -108,6 +108,7 @@
   "settings": {
     "title": "Einstellungen",
     "languageLabel": "Sprache",
+    "install": "Installieren",
     "theme": "Theme",
     "themeClassic": "Classic Rainbow",
     "themeCyber": "Cyber",

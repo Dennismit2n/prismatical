@@ -33,3 +33,14 @@
   root.dataset.theme = theme;
   root.dataset.scheme = scheme;
 })();
+
+/*
+ * Knopf „Installieren“: Chrome, Edge und Samsung Internet melden die Installierbarkeit
+ * mit beforeinstallprompt, manchmal bevor React laeuft. Das Ereignis bleibt hier liegen,
+ * bis die Kopfzeile es abholt (TopBar.tsx).
+ */
+window.addEventListener('beforeinstallprompt', function (e) {
+  e.preventDefault();
+  window.deferredInstall = e;
+  if (window.onInstallReady) window.onInstallReady();
+});

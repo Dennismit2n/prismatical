@@ -108,6 +108,7 @@
   "settings": {
     "title": "सेटिंग्स",
     "languageLabel": "भाषा",
+    "install": "इंस्टॉल करें",
     "theme": "थीम",
     "themeClassic": "Classic Rainbow",
     "themeCyber": "Cyber",
