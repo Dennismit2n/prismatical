@@ -118,3 +118,80 @@
   --accent-text-l: 0.78;
   color-scheme: dark;
 }
+
+/* ── Sehhilfen der Werkstatt (31.10.2026) ─────────────────────────────────
+ * Hoher Kontrast, Farbenblind, Umgekehrte Farben. Eine Wahl fuer alle Werkzeuge
+ * auf diesem Ursprung (werkstatt.darstellung, siehe useAppearance). data-scheme
+ * traegt hell/dunkel, data-vision contrast, cvd oder invert. Die sechs
+ * Varianten oben bleiben, wie sie sind.
+ *  - Hoher Kontrast ERSETZT das Theme: Schwarz bzw. Weiss, jede Schrift 7:1,
+ *    kein Leuchten. Die Staerkefarbe hebt spectrum.ts auf 7:1 fuer die Schrift
+ *    darauf an.
+ *  - Farbenblind tauscht nur das Staerke-Spektrum (spectrum.ts, ohne Rot-Gruen).
+ */
+:root[data-vision='contrast'][data-scheme='dark'][data-theme] {
+  --bg: #000000;
+  --surface: #000000;
+  --surface2: #121212;
+  --text: #e0e0e0;
+  --muted: #c4c4c4;
+  --border: #a0a0a0;
+  --char-digit: #8ab4ff;
+  --char-special: #f28bd9;
+  --warn-text: #f0c34e;
+  --error-text: #ff8a80;
+  --ok-text: #6fd388;
+  --accent-c-scale: 1;
+  --accent-text-l: 0.86;
+  --glow-sm: 0 0 0 rgba(0, 0, 0, 0);
+  --glow-text: none;
+  color-scheme: dark;
+}
+:root[data-vision='contrast'][data-scheme='light'][data-theme] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface2: #efefef;
+  --text: #000000;
+  --muted: #2b2b2b;
+  --border: #585757;
+  --char-digit: #1240c0;
+  --char-special: #960170;
+  --warn-text: #714400;
+  --error-text: #a00808;
+  --ok-text: #005b1d;
+  --accent-c-scale: 1;
+  --accent-text-l: 0.36;
+  --glow-sm: 0 0 0 rgba(0, 0, 0, 0);
+  --glow-text: none;
+  color-scheme: light;
+}
+
+/* Umgekehrte Farben wie der Farbfilter von Windows; gedruckt wird nie umgedreht */
+:root[data-vision='invert'] {
+  filter: invert(1);
+}
+:root[data-vision='invert'] :is(img:not([src*='.svg']), video, [data-echt]):not([data-echt] *) {
+  filter: invert(1);
+}
+@media print {
+  :root[data-vision='invert'],
+  :root[data-vision='invert'] :is(img:not([src*='.svg']), video, [data-echt]):not([data-echt] *) {
+    filter: none;
+  }
+}
+
+/* Umdrehen erhaelt den WCAG-Kontrast nicht. Bei dunklem System kaemen die
+   Zeichenfarben und die Akzentschrift umgedreht bis auf 2,83 bzw. 4,31; leicht
+   angehoben halten sie 4,6. Den Akzent des Knopfs rechnet spectrum.ts. */
+@media (prefers-color-scheme: dark) {
+  :root[data-vision='invert'][data-theme] {
+    --accent-text-l: 0.86;
+  }
+  :root[data-vision='invert'][data-theme='classic'] {
+    --char-digit: #79b4ff;
+    --char-special: #ff98ca;
+  }
+  :root[data-vision='invert'][data-theme='cyber'] {
+    --char-special: #ff88d9;
+  }
+}

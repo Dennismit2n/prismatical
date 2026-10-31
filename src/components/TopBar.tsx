@@ -142,6 +142,11 @@ export function TopBar({ onOpenDialog }: { onOpenDialog: (d: DialogId) => void }
             <option value="system">{t('settings.schemeSystem')}</option>
             <option value="light">{t('settings.schemeLight')}</option>
             <option value="dark">{t('settings.schemeDark')}</option>
+            <option value="hc-dark">{t('settings.schemeHcDark')}</option>
+            <option value="hc-light">{t('settings.schemeHcLight')}</option>
+            <option value="cvd-dark">{t('settings.schemeCvdDark')}</option>
+            <option value="cvd-light">{t('settings.schemeCvdLight')}</option>
+            <option value="invert">{t('settings.schemeInvert')}</option>
           </select>
         </label>
 

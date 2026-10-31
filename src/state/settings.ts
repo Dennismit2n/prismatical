@@ -25,7 +25,20 @@ import { DEFAULT_PRONOUNCEABLE_OPTIONS } from '../generator/pronounceable'
 import { DEFAULT_USERNAME_OPTIONS } from '../generator/username'
 
 export type ThemeId = 'classic' | 'cyber' | 'aurora'
-export type SchemeSetting = 'system' | 'light' | 'dark'
+/**
+ * System, Hell, Dunkel und die Sehhilfen der Werkstatt (31.10.2026): Hoher Kontrast
+ * und Farbenblind je hell oder dunkel, Umkehr folgt dem System. Die Wahl gilt in allen
+ * Werkzeugen auf diesem Ursprung (werkstatt.darstellung, siehe useAppearance).
+ */
+export type SchemeSetting =
+  | 'system'
+  | 'light'
+  | 'dark'
+  | 'hc-dark'
+  | 'hc-light'
+  | 'cvd-dark'
+  | 'cvd-light'
+  | 'invert'
 
 export interface SettingsState {
   language: string
