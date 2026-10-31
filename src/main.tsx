@@ -1,7 +1,7 @@
 import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { registerSW } from 'virtual:pwa-register'
-import { initI18n } from './i18n'
+import { applyTitle, initI18n } from './i18n'
 import { LANGUAGE_CODES } from './i18n/languages'
 import { useSettings } from './state/settings'
 import App from './App.tsx'
@@ -35,6 +35,7 @@ async function bootstrap(): Promise<void> {
   }
   await initI18n(lang)
   document.documentElement.lang = lang
+  applyTitle()
 
   // Service-Worker-Registrierung ueber das virtuelle Modul (kein Inline-Skript,
   // vertraegt sich mit der strikten CSP). autoUpdate laedt neue Versionen selbst.

@@ -35,4 +35,10 @@ export async function initI18n(initialLanguage: string): Promise<typeof i18n> {
 export async function changeLanguage(lng: string): Promise<void> {
   await i18n.changeLanguage(lng)
   document.documentElement.lang = lng
+  applyTitle()
+}
+
+/** Tab-Titel in der aktiven Sprache; im HTML steht nur die deutsche Fassung. */
+export function applyTitle(): void {
+  document.title = i18n.t('app.title')
 }

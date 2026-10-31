@@ -3,12 +3,14 @@
  *
  * Woerterbuecher und Tastatur-Graphen werden lazy per dynamic import geladen
  * (eigene Chunks, praecached vom Service Worker → offline verfuegbar).
- * Pro UI-Sprache wird das passende Sprachpaket dazugemischt; fuer Sprachen
- * ohne Paket (ru, zh, hi, ko) gilt der dokumentierte Fallback auf Englisch.
+ * Pro UI-Sprache wird das passende Sprachpaket dazugemischt; Sprachen ohne
+ * Paket (ru, zh, hi, ko) erkennen mit dem englischen Woerterbuch, ihre Texte
+ * (Warnungen, Vorschlaege, Zeitangaben) kommen aus zxcvbnTexte.ts.
  */
 
 import { ZxcvbnFactory } from '@zxcvbn-ts/core'
 import type { OptionsType, ZxcvbnResult } from '@zxcvbn-ts/core'
+import { EIGENE_TEXTE } from './zxcvbnTexte'
 
 export type { ZxcvbnResult }
 
@@ -34,7 +36,7 @@ let factory: ZxcvbnFactory | null = null
 let factoryLang = ''
 let pending: Promise<void> | null = null
 
-/** Sprache mit zxcvbn-Paket? Sonst greift der en-Fallback (ru, zh, hi, ko). */
+/** Sprache mit zxcvbn-Paket? Sonst greift das englische Woerterbuch (ru, zh, hi, ko). */
 export function zxcvbnLangFor(uiLang: string): string {
   return uiLang in PACK_LOADERS ? uiLang : 'en'
 }
@@ -46,8 +48,11 @@ export function zxcvbnLangFor(uiLang: string): string {
  */
 export function ensureChecker(uiLang: string): Promise<void> {
   const lang = zxcvbnLangFor(uiLang)
-  if (factory && factoryLang === lang) return Promise.resolve()
-  if (pending) return pending
+  // ru und en teilen das Woerterbuch, aber nicht die Texte: gemerkt wird deshalb die UI-Sprache
+  const key = uiLang in EIGENE_TEXTE ? uiLang : lang
+  if (factory && factoryLang === key) return Promise.resolve()
+  // Laeuft noch ein Aufbau fuer eine andere Sprache, danach fuer diese neu bauen
+  if (pending) return pending.then(() => ensureChecker(uiLang))
 
   pending = (async () => {
     const [common, en, pack] = await Promise.all([
@@ -56,7 +61,7 @@ export function ensureChecker(uiLang: string): Promise<void> {
       PACK_LOADERS[lang](),
     ])
     const options: OptionsType = {
-      translations: pack.translations,
+      translations: EIGENE_TEXTE[uiLang] ?? pack.translations,
       graphs: common.adjacencyGraphs,
       dictionary: {
         ...common.dictionary,
@@ -66,7 +71,7 @@ export function ensureChecker(uiLang: string): Promise<void> {
       useLevenshteinDistance: true,
     }
     factory = new ZxcvbnFactory(options)
-    factoryLang = lang
+    factoryLang = key
   })().finally(() => {
     pending = null
   })
