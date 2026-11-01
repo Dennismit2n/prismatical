@@ -90,14 +90,14 @@
     "crackOffline": "Offline aanval (snelle hashes)"
   },
   "warnings": {
-    "pronounceableEntropy": "Uitspreekbare wachtwoorden bevatten veel minder entropie per teken – maak ze langer.",
+    "pronounceableEntropy": "Uitspreekbare wachtwoorden bevatten veel minder entropie per teken, maak ze dus langer.",
     "pinEntropy": "Een pincode is maar zo veilig als de blokkering erachter.",
     "deterministicNoRecovery": "Geen herstel: zonder het hoofdwachtwoord kan dit wachtwoord niet opnieuw worden gemaakt.",
-    "usernamePurpose": "Gebruikersnamen zijn geen wachtwoorden – gebruik ze niet als geheim."
+    "usernamePurpose": "Gebruikersnamen zijn geen wachtwoorden, gebruik ze niet als geheim."
   },
   "errors": {
     "noClasses": "Kies minstens één tekenklasse.",
-    "emptyAlphabet": "Alle tekens zijn uitgesloten – het alfabet is leeg.",
+    "emptyAlphabet": "Alle tekens zijn uitgesloten, het alfabet is leeg.",
     "lengthOutOfRange": "De lengte valt buiten het toegestane bereik.",
     "minDigitsWithoutDigits": "Minimum aantal cijfers ingesteld, maar cijfers zijn uitgeschakeld.",
     "minSpecialWithoutSpecial": "Minimum aantal speciale tekens ingesteld, maar speciale tekens zijn uitgeschakeld.",
@@ -141,13 +141,13 @@
   "history": {
     "title": "Geschiedenis",
     "empty": "Nog geen items.",
-    "disabledHint": "De geschiedenis staat uit. Je kunt die in de instellingen inschakelen – pas dan wordt er iets bijgehouden.",
+    "disabledHint": "De geschiedenis staat uit. Je kunt die in de instellingen inschakelen, pas dan wordt er iets bijgehouden.",
     "clearAll": "Alle items verwijderen"
   },
   "hibp": {
     "checking": "Controleren op bekende lekken …",
-    "found_one": "Gevonden in {{count}} bekend lek – niet gebruiken!",
-    "found_other": "Gevonden in {{count}} bekende lekken – niet gebruiken!",
+    "found_one": "Gevonden in {{count}} bekend lek. Niet gebruiken!",
+    "found_other": "Gevonden in {{count}} bekende lekken. Niet gebruiken!",
     "notFound": "In geen enkel bekend lek gevonden.",
     "error": "Lekcontrole is momenteel niet bereikbaar."
   },
@@ -169,28 +169,28 @@
   },
   "trainer": {
     "title": "Geheugentrainer",
-    "intro": "Prent de wachtwoordzin in je geheugen. Elke ronde wordt één extra woord verborgen – typ telkens de volledige zin. Alles blijft op je apparaat.",
+    "intro": "Prent de wachtwoordzin in je geheugen. Elke ronde wordt één extra woord verborgen, typ telkens de volledige zin. Alles blijft op je apparaat.",
     "phraseLabel": "Wachtwoordzin met verborgen woorden",
     "round": "Ronde {{n}} van {{total}}",
     "typeHere": "Typ de volledige wachtwoordzin …",
     "checkBtn": "Controleren",
     "correct": "Goed! Volgende ronde.",
-    "wrong": "Nog niet helemaal – probeer het opnieuw.",
+    "wrong": "Nog niet helemaal, probeer het opnieuw.",
     "done": "Gelukt! De wachtwoordzin zit er goed in.",
     "restart": "Opnieuw beginnen"
   },
   "deterministic": {
     "master": "Hoofdwachtwoord",
-    "masterHint": "Wordt niet opgeslagen en niet verzonden – het bestaat alleen in dit formulier.",
+    "masterHint": "Wordt niet opgeslagen en niet verzonden, het bestaat alleen in dit formulier.",
     "site": "Website / domein",
     "login": "Login / gebruikersnaam",
     "counter": "Teller",
-    "warningTitle": "Stateless modus – geen herstel",
+    "warningTitle": "Stateless modus: geen herstel",
     "warningBody": "Uit hoofdwachtwoord + domein + login wordt altijd hetzelfde wachtwoord afgeleid (PBKDF2, 310.000 iteraties). Er wordt niets opgeslagen: wie het hoofdwachtwoord vergeet, kan de wachtwoorden niet herstellen.",
     "generateBtn": "Wachtwoord afleiden",
     "deriving": "Afleiden …"
   },
   "footer": {
-    "pledge": "100% offline · geen accounts · geen tracking – je wachtwoorden blijven op je apparaat."
+    "pledge": "100% offline · geen accounts · geen tracking. Je wachtwoorden blijven op je apparaat."
   }
 }

@@ -90,14 +90,14 @@
     "crackOffline": "Offline attack (fast hashes)"
   },
   "warnings": {
-    "pronounceableEntropy": "Pronounceable passwords carry much less entropy per character – make them longer.",
+    "pronounceableEntropy": "Pronounceable passwords carry much less entropy per character, so make them longer.",
     "pinEntropy": "A PIN is only as safe as the lockout behind it.",
     "deterministicNoRecovery": "No recovery: without the master password this password cannot be recreated.",
-    "usernamePurpose": "Usernames are not passwords – don’t use them as secrets."
+    "usernamePurpose": "Usernames are not passwords, don’t use them as secrets."
   },
   "errors": {
     "noClasses": "Select at least one character class.",
-    "emptyAlphabet": "All characters are excluded – the alphabet is empty.",
+    "emptyAlphabet": "All characters are excluded, the alphabet is empty.",
     "lengthOutOfRange": "Length is outside the allowed range.",
     "minDigitsWithoutDigits": "Digit minimum set, but digits are deselected.",
     "minSpecialWithoutSpecial": "Special-character minimum set, but specials are deselected.",
@@ -141,13 +141,13 @@
   "history": {
     "title": "History",
     "empty": "No entries yet.",
-    "disabledHint": "History is off. You can enable it in the settings – nothing is recorded until then.",
+    "disabledHint": "History is off. You can enable it in the settings, nothing is recorded until then.",
     "clearAll": "Delete all entries"
   },
   "hibp": {
     "checking": "Checking against known breaches …",
-    "found_one": "Found in {{count}} known breach – do not use!",
-    "found_other": "Found in {{count}} known breaches – do not use!",
+    "found_one": "Found in {{count}} known breach. Do not use!",
+    "found_other": "Found in {{count}} known breaches. Do not use!",
     "notFound": "Not found in any known breach.",
     "error": "Leak check is currently unreachable."
   },
@@ -169,28 +169,28 @@
   },
   "trainer": {
     "title": "Memory trainer",
-    "intro": "Memorize the passphrase. Each round hides one more word – type the full phrase every time. Everything stays on your device.",
+    "intro": "Memorize the passphrase. Each round hides one more word, type the full phrase every time. Everything stays on your device.",
     "phraseLabel": "Passphrase with hidden words",
     "round": "Round {{n}} of {{total}}",
     "typeHere": "Type the full passphrase …",
     "checkBtn": "Check",
     "correct": "Correct! Next round.",
-    "wrong": "Not quite – try again.",
+    "wrong": "Not quite, try again.",
     "done": "Done! The passphrase sticks.",
     "restart": "Start over"
   },
   "deterministic": {
     "master": "Master password",
-    "masterHint": "Never stored, never sent – it only lives in this form.",
+    "masterHint": "Never stored, never sent, it only lives in this form.",
     "site": "Website / domain",
     "login": "Login / username",
     "counter": "Counter",
-    "warningTitle": "Stateless mode – no recovery",
+    "warningTitle": "Stateless mode: no recovery",
     "warningBody": "Master password + domain + login always derive the same password (PBKDF2, 310,000 iterations). Nothing is stored: if you forget the master password, the derived passwords cannot be recovered.",
     "generateBtn": "Derive password",
     "deriving": "Deriving …"
   },
   "footer": {
-    "pledge": "100% offline · no accounts · no tracking – your passwords stay on your device."
+    "pledge": "100% offline · no accounts · no tracking. Your passwords stay on your device."
   }
 }

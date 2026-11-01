@@ -90,14 +90,14 @@
     "crackOffline": "Ataque offline (hashes rápidos)"
   },
   "warnings": {
-    "pronounceableEntropy": "Senhas pronunciáveis têm bem menos entropia por caractere – compense com um comprimento maior.",
+    "pronounceableEntropy": "Senhas pronunciáveis têm bem menos entropia por caractere, então compense com um comprimento maior.",
     "pinEntropy": "Um PIN só é tão seguro quanto o bloqueio que o protege.",
     "deterministicNoRecovery": "Sem recuperação: sem a senha mestra, esta senha não pode ser recriada.",
-    "usernamePurpose": "Nomes de usuário não são senhas – não os use como segredo."
+    "usernamePurpose": "Nomes de usuário não são senhas, não os use como segredo."
   },
   "errors": {
     "noClasses": "Selecione pelo menos uma classe de caracteres.",
-    "emptyAlphabet": "Todos os caracteres estão excluídos – o alfabeto está vazio.",
+    "emptyAlphabet": "Todos os caracteres estão excluídos, o alfabeto está vazio.",
     "lengthOutOfRange": "O comprimento está fora do intervalo permitido.",
     "minDigitsWithoutDigits": "Mínimo de dígitos definido, mas os dígitos estão desmarcados.",
     "minSpecialWithoutSpecial": "Mínimo de caracteres especiais definido, mas os especiais estão desmarcados.",
@@ -141,13 +141,13 @@
   "history": {
     "title": "Histórico",
     "empty": "Ainda não há entradas.",
-    "disabledHint": "O histórico está desativado. Você pode ativá-lo nas configurações – só a partir daí algo será gravado.",
+    "disabledHint": "O histórico está desativado. Você pode ativá-lo nas configurações, só a partir daí algo será gravado.",
     "clearAll": "Apagar todas as entradas"
   },
   "hibp": {
     "checking": "Procurando em vazamentos conhecidos…",
-    "found_one": "Encontrada em {{count}} vazamento conhecido – não use!",
-    "found_other": "Encontrada em {{count}} vazamentos conhecidos – não use!",
+    "found_one": "Encontrada em {{count}} vazamento conhecido. Não use!",
+    "found_other": "Encontrada em {{count}} vazamentos conhecidos. Não use!",
     "notFound": "Não encontrada em nenhum vazamento conhecido.",
     "error": "A verificação de vazamentos está indisponível no momento."
   },
@@ -169,28 +169,28 @@
   },
   "trainer": {
     "title": "Treinador de memorização",
-    "intro": "Memorize a frase secreta. A cada etapa, mais uma palavra é ocultada – digite sempre a frase completa. Tudo permanece no seu dispositivo.",
+    "intro": "Memorize a frase secreta. A cada etapa, mais uma palavra é ocultada, digite sempre a frase completa. Tudo permanece no seu dispositivo.",
     "phraseLabel": "Frase secreta com palavras ocultas",
     "round": "Etapa {{n}} de {{total}}",
     "typeHere": "Digite a frase secreta completa…",
     "checkBtn": "Verificar",
     "correct": "Correto! Próxima etapa.",
-    "wrong": "Quase lá – tente novamente.",
+    "wrong": "Quase lá, tente novamente.",
     "done": "Conseguiu! A frase secreta está memorizada.",
     "restart": "Começar de novo"
   },
   "deterministic": {
     "master": "Senha mestra",
-    "masterHint": "Nunca é salva nem enviada – existe apenas neste formulário.",
+    "masterHint": "Nunca é salva nem enviada, existe apenas neste formulário.",
     "site": "Site / domínio",
     "login": "Login / nome de usuário",
     "counter": "Contador",
-    "warningTitle": "Modo sem estado – sem recuperação",
+    "warningTitle": "Modo sem estado: sem recuperação",
     "warningBody": "De senha mestra + domínio + login deriva-se sempre a mesma senha (PBKDF2, 310.000 iterações). Nada é salvo: quem esquecer a senha mestra não poderá recuperar as senhas derivadas.",
     "generateBtn": "Derivar senha",
     "deriving": "Derivando…"
   },
   "footer": {
-    "pledge": "100% offline · sem contas · sem rastreamento – suas senhas ficam no seu dispositivo."
+    "pledge": "100% offline · sem contas · sem rastreamento. Suas senhas ficam no seu dispositivo."
   }
 }

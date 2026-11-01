@@ -90,14 +90,14 @@
     "crackOffline": "Offline-Angriff (schnelle Hashes)"
   },
   "warnings": {
-    "pronounceableEntropy": "Aussprechbare Passwörter haben deutlich weniger Entropie pro Zeichen – wähle sie länger.",
+    "pronounceableEntropy": "Aussprechbare Passwörter haben deutlich weniger Entropie pro Zeichen, wähle sie also länger.",
     "pinEntropy": "Eine PIN ist nur so sicher wie die Sperre dahinter.",
     "deterministicNoRecovery": "Kein Recovery: Ohne Master-Passwort lässt sich dieses Passwort nicht wiederherstellen.",
-    "usernamePurpose": "Nutzernamen sind keine Passwörter – nicht als Geheimnis verwenden."
+    "usernamePurpose": "Nutzernamen sind keine Passwörter, nicht als Geheimnis verwenden."
   },
   "errors": {
     "noClasses": "Wähle mindestens eine Zeichenklasse.",
-    "emptyAlphabet": "Alle Zeichen sind ausgeschlossen – Alphabet ist leer.",
+    "emptyAlphabet": "Alle Zeichen sind ausgeschlossen, das Alphabet ist leer.",
     "lengthOutOfRange": "Länge liegt außerhalb des erlaubten Bereichs.",
     "minDigitsWithoutDigits": "Ziffern-Minimum gesetzt, aber Ziffern sind abgewählt.",
     "minSpecialWithoutSpecial": "Sonderzeichen-Minimum gesetzt, aber Sonderzeichen sind abgewählt.",
@@ -141,13 +141,13 @@
   "history": {
     "title": "Verlauf",
     "empty": "Noch keine Einträge.",
-    "disabledHint": "Der Verlauf ist ausgeschaltet. Du kannst ihn in den Einstellungen aktivieren – erst dann wird etwas aufgezeichnet.",
+    "disabledHint": "Der Verlauf ist ausgeschaltet. Du kannst ihn in den Einstellungen einschalten, erst dann wird etwas aufgezeichnet.",
     "clearAll": "Alle Einträge löschen"
   },
   "hibp": {
     "checking": "Prüfe gegen bekannte Leaks …",
-    "found_one": "In {{count}} bekannten Leak gefunden – nicht verwenden!",
-    "found_other": "In {{count}} bekannten Leaks gefunden – nicht verwenden!",
+    "found_one": "In {{count}} bekannten Leak gefunden. Nicht verwenden!",
+    "found_other": "In {{count}} bekannten Leaks gefunden. Nicht verwenden!",
     "notFound": "In keinem bekannten Leak gefunden.",
     "error": "Leak-Check derzeit nicht erreichbar."
   },
@@ -169,28 +169,28 @@
   },
   "trainer": {
     "title": "Merk-Trainer",
-    "intro": "Präge dir die Passphrase ein. Pro Runde wird ein weiteres Wort ausgeblendet – tippe jedes Mal die vollständige Phrase. Alles bleibt auf deinem Gerät.",
+    "intro": "Präge dir die Passphrase ein. Pro Runde wird ein weiteres Wort ausgeblendet, tippe jedes Mal die vollständige Phrase. Alles bleibt auf deinem Gerät.",
     "phraseLabel": "Passphrase mit ausgeblendeten Wörtern",
     "round": "Runde {{n}} von {{total}}",
     "typeHere": "Vollständige Passphrase eintippen …",
     "checkBtn": "Prüfen",
     "correct": "Richtig! Nächste Runde.",
-    "wrong": "Noch nicht ganz – versuch es erneut.",
+    "wrong": "Noch nicht ganz, versuch es erneut.",
     "done": "Geschafft! Die Passphrase sitzt.",
     "restart": "Von vorn beginnen"
   },
   "deterministic": {
     "master": "Master-Passwort",
-    "masterHint": "Wird weder gespeichert noch gesendet – es bleibt nur in diesem Formular.",
+    "masterHint": "Wird weder gespeichert noch gesendet, es bleibt nur in diesem Formular.",
     "site": "Website / Domain",
     "login": "Login / Benutzername",
     "counter": "Zähler",
-    "warningTitle": "Zustandsloser Modus – kein Recovery",
+    "warningTitle": "Zustandsloser Modus: kein Recovery",
     "warningBody": "Aus Master-Passwort + Domain + Login wird immer dasselbe Passwort abgeleitet (PBKDF2, 310.000 Iterationen). Es wird nichts gespeichert: Wer das Master-Passwort vergisst, kann die Passwörter nicht wiederherstellen.",
     "generateBtn": "Passwort ableiten",
     "deriving": "Leite ab …"
   },
   "footer": {
-    "pledge": "100 % offline · keine Konten · kein Tracking – deine Passwörter bleiben auf deinem Gerät."
+    "pledge": "100 % offline · keine Konten · kein Tracking. Deine Passwörter bleiben auf deinem Gerät."
   }
 }

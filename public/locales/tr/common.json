@@ -90,14 +90,14 @@
     "crackOffline": "Çevrimdışı saldırı (hızlı hash’ler)"
   },
   "warnings": {
-    "pronounceableEntropy": "Telaffuz edilebilir parolaların karakter başına entropisi çok daha düşüktür – bu yüzden daha uzun seç.",
+    "pronounceableEntropy": "Telaffuz edilebilir parolaların karakter başına entropisi çok daha düşüktür, bu yüzden daha uzun seç.",
     "pinEntropy": "Bir PIN ancak arkasındaki kilit kadar güvenlidir.",
     "deterministicNoRecovery": "Kurtarma yok: Ana parola olmadan bu parola yeniden oluşturulamaz.",
-    "usernamePurpose": "Kullanıcı adları parola değildir – gizli bilgi olarak kullanma."
+    "usernamePurpose": "Kullanıcı adları parola değildir, gizli bilgi olarak kullanma."
   },
   "errors": {
     "noClasses": "En az bir karakter sınıfı seç.",
-    "emptyAlphabet": "Tüm karakterler hariç tutulmuş – alfabe boş.",
+    "emptyAlphabet": "Tüm karakterler hariç tutulmuş, alfabe boş.",
     "lengthOutOfRange": "Uzunluk izin verilen aralığın dışında.",
     "minDigitsWithoutDigits": "Rakam alt sınırı ayarlı ama rakamlar seçili değil.",
     "minSpecialWithoutSpecial": "Özel karakter alt sınırı ayarlı ama özel karakterler seçili değil.",
@@ -141,13 +141,13 @@
   "history": {
     "title": "Geçmiş",
     "empty": "Henüz kayıt yok.",
-    "disabledHint": "Geçmiş kapalı. Ayarlardan etkinleştirebilirsin – o zamana kadar hiçbir şey kaydedilmez.",
+    "disabledHint": "Geçmiş kapalı. Ayarlardan etkinleştirebilirsin, o zamana kadar hiçbir şey kaydedilmez.",
     "clearAll": "Tüm kayıtları sil"
   },
   "hibp": {
     "checking": "Bilinen sızıntılara karşı kontrol ediliyor…",
-    "found_one": "{{count}} bilinen sızıntıda bulundu – kullanma!",
-    "found_other": "{{count}} bilinen sızıntıda bulundu – kullanma!",
+    "found_one": "{{count}} bilinen sızıntıda bulundu. Kullanma!",
+    "found_other": "{{count}} bilinen sızıntıda bulundu. Kullanma!",
     "notFound": "Bilinen hiçbir sızıntıda bulunamadı.",
     "error": "Sızıntı kontrolüne şu anda ulaşılamıyor."
   },
@@ -169,28 +169,28 @@
   },
   "trainer": {
     "title": "Ezber antrenörü",
-    "intro": "Parola ifadesini ezberle. Her turda bir kelime daha gizlenir – her seferinde ifadenin tamamını yaz. Her şey cihazında kalır.",
+    "intro": "Parola ifadesini ezberle. Her turda bir kelime daha gizlenir, her seferinde ifadenin tamamını yaz. Her şey cihazında kalır.",
     "phraseLabel": "Kelimeleri gizlenmiş parola ifadesi",
     "round": "Tur {{n}} / {{total}}",
     "typeHere": "Parola ifadesinin tamamını yaz…",
     "checkBtn": "Kontrol et",
     "correct": "Doğru! Sıradaki tur.",
-    "wrong": "Tam olmadı – bir daha dene.",
+    "wrong": "Tam olmadı, bir daha dene.",
     "done": "Tamamdır! Parola ifadesi artık aklında.",
     "restart": "Baştan başla"
   },
   "deterministic": {
     "master": "Ana parola",
-    "masterHint": "Ne kaydedilir ne gönderilir – yalnızca bu formda kalır.",
+    "masterHint": "Ne kaydedilir ne gönderilir, yalnızca bu formda kalır.",
     "site": "Web sitesi / alan adı",
     "login": "Giriş / kullanıcı adı",
     "counter": "Sayaç",
-    "warningTitle": "Durumsuz mod – kurtarma yok",
+    "warningTitle": "Durumsuz mod: kurtarma yok",
     "warningBody": "Ana parola + alan adı + kullanıcı adından her zaman aynı parola türetilir (PBKDF2, 310.000 yineleme). Hiçbir şey kaydedilmez: Ana parolanı unutursan türetilen parolalar kurtarılamaz.",
     "generateBtn": "Parola türet",
     "deriving": "Türetiliyor…"
   },
   "footer": {
-    "pledge": "%100 çevrimdışı · hesap yok · takip yok – parolaların cihazında kalır."
+    "pledge": "%100 çevrimdışı · hesap yok · takip yok. Parolaların cihazında kalır."
   }
 }

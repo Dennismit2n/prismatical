@@ -90,14 +90,14 @@
     "crackOffline": "Atak offline (szybkie funkcje skrótu)"
   },
   "warnings": {
-    "pronounceableEntropy": "Wymawialne hasła mają znacznie mniej entropii na znak – wybieraj dłuższe.",
+    "pronounceableEntropy": "Wymawialne hasła mają znacznie mniej entropii na znak, więc wybieraj dłuższe.",
     "pinEntropy": "PIN jest tylko tak bezpieczny jak blokada, która za nim stoi.",
     "deterministicNoRecovery": "Brak odzyskiwania: bez hasła głównego tego hasła nie da się odtworzyć.",
-    "usernamePurpose": "Nazwy użytkownika to nie hasła – nie używaj ich jako sekretu."
+    "usernamePurpose": "Nazwy użytkownika to nie hasła, nie używaj ich jako sekretu."
   },
   "errors": {
     "noClasses": "Wybierz co najmniej jedną klasę znaków.",
-    "emptyAlphabet": "Wszystkie znaki są wykluczone – alfabet jest pusty.",
+    "emptyAlphabet": "Wszystkie znaki są wykluczone, alfabet jest pusty.",
     "lengthOutOfRange": "Długość wykracza poza dozwolony zakres.",
     "minDigitsWithoutDigits": "Ustawiono minimum cyfr, ale cyfry są odznaczone.",
     "minSpecialWithoutSpecial": "Ustawiono minimum znaków specjalnych, ale znaki specjalne są odznaczone.",
@@ -143,15 +143,15 @@
   "history": {
     "title": "Historia",
     "empty": "Na razie brak wpisów.",
-    "disabledHint": "Historia jest wyłączona. Możesz ją włączyć w ustawieniach – dopiero wtedy będzie zapisywana.",
+    "disabledHint": "Historia jest wyłączona. Możesz ją włączyć w ustawieniach, dopiero wtedy będzie zapisywana.",
     "clearAll": "Usuń wszystkie wpisy"
   },
   "hibp": {
     "checking": "Sprawdzanie w znanych wyciekach…",
-    "found_one": "Znaleziono w {{count}} znanym wycieku – nie używaj!",
-    "found_few": "Znaleziono w {{count}} znanych wyciekach – nie używaj!",
-    "found_many": "Znaleziono w {{count}} znanych wyciekach – nie używaj!",
-    "found_other": "Znaleziono w {{count}} znanego wycieku – nie używaj!",
+    "found_one": "Znaleziono w {{count}} znanym wycieku. Nie używaj!",
+    "found_few": "Znaleziono w {{count}} znanych wyciekach. Nie używaj!",
+    "found_many": "Znaleziono w {{count}} znanych wyciekach. Nie używaj!",
+    "found_other": "Znaleziono w {{count}} znanego wycieku. Nie używaj!",
     "notFound": "Nie znaleziono w żadnym znanym wycieku.",
     "error": "Kontrola wycieków jest obecnie niedostępna."
   },
@@ -173,28 +173,28 @@
   },
   "trainer": {
     "title": "Trener pamięci",
-    "intro": "Zapamiętaj frazę hasłową. W każdej rundzie ukrywane jest kolejne słowo – za każdym razem wpisz pełną frazę. Wszystko zostaje na Twoim urządzeniu.",
+    "intro": "Zapamiętaj frazę hasłową. W każdej rundzie ukrywane jest kolejne słowo, za każdym razem wpisz pełną frazę. Wszystko zostaje na Twoim urządzeniu.",
     "phraseLabel": "Fraza hasłowa z ukrytymi słowami",
     "round": "Runda {{n}} z {{total}}",
     "typeHere": "Wpisz pełną frazę hasłową…",
     "checkBtn": "Sprawdź",
     "correct": "Dobrze! Następna runda.",
-    "wrong": "Jeszcze nie do końca – spróbuj ponownie.",
+    "wrong": "Jeszcze nie do końca, spróbuj ponownie.",
     "done": "Udało się! Fraza siedzi w głowie.",
     "restart": "Zacznij od nowa"
   },
   "deterministic": {
     "master": "Hasło główne",
-    "masterHint": "Nie jest zapisywane ani wysyłane – istnieje tylko w tym formularzu.",
+    "masterHint": "Nie jest zapisywane ani wysyłane, istnieje tylko w tym formularzu.",
     "site": "Witryna / domena",
     "login": "Login / nazwa użytkownika",
     "counter": "Licznik",
-    "warningTitle": "Tryb bezstanowy – brak odzyskiwania",
+    "warningTitle": "Tryb bezstanowy: brak odzyskiwania",
     "warningBody": "Z hasła głównego + domeny + loginu zawsze wyprowadzane jest to samo hasło (PBKDF2, 310 000 iteracji). Nic nie jest zapisywane: kto zapomni hasła głównego, nie odzyska wyprowadzonych haseł.",
     "generateBtn": "Wyprowadź hasło",
     "deriving": "Wyprowadzanie…"
   },
   "footer": {
-    "pledge": "100% offline · bez kont · bez śledzenia – Twoje hasła zostają na Twoim urządzeniu."
+    "pledge": "100% offline · bez kont · bez śledzenia. Twoje hasła zostają na Twoim urządzeniu."
   }
 }

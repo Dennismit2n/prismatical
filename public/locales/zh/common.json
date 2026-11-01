@@ -90,14 +90,14 @@
     "crackOffline": "离线攻击（快速哈希）"
   },
   "warnings": {
-    "pronounceableEntropy": "可发音密码每个字符的熵要低得多——请把它设得更长。",
+    "pronounceableEntropy": "可发音密码每个字符的熵要低得多，所以请把它设得更长。",
     "pinEntropy": "PIN的安全性完全取决于其背后的锁定机制。",
     "deterministicNoRecovery": "无法找回：没有主密码，此密码将无法重新生成。",
-    "usernamePurpose": "用户名不是密码——请勿当作机密使用。"
+    "usernamePurpose": "用户名不是密码，请勿当作机密使用。"
   },
   "errors": {
     "noClasses": "请至少选择一种字符类别。",
-    "emptyAlphabet": "所有字符均已被排除——字母表为空。",
+    "emptyAlphabet": "所有字符均已被排除，字母表为空。",
     "lengthOutOfRange": "长度超出允许范围。",
     "minDigitsWithoutDigits": "已设置数字下限，但数字类别未被选中。",
     "minSpecialWithoutSpecial": "已设置特殊字符下限，但特殊字符类别未被选中。",
@@ -140,12 +140,12 @@
   "history": {
     "title": "历史记录",
     "empty": "暂无记录。",
-    "disabledHint": "历史记录已关闭。你可以在设置中开启——在此之前不会记录任何内容。",
+    "disabledHint": "历史记录已关闭。你可以在设置中开启，在此之前不会记录任何内容。",
     "clearAll": "删除所有记录"
   },
   "hibp": {
     "checking": "正在比对已知泄露……",
-    "found_other": "在{{count}}起已知泄露中发现——请勿使用！",
+    "found_other": "在{{count}}起已知泄露中发现。请勿使用！",
     "notFound": "未在任何已知泄露中发现。",
     "error": "泄露检查服务当前不可用。"
   },
@@ -167,7 +167,7 @@
   },
   "trainer": {
     "title": "记忆训练器",
-    "intro": "记住这条密码短语。每一轮会多隐藏一个单词——请每次输入完整短语。一切都保留在你的设备上。",
+    "intro": "记住这条密码短语。每一轮会多隐藏一个单词，请每次输入完整短语。一切都保留在你的设备上。",
     "phraseLabel": "隐藏了部分单词的密码短语",
     "round": "第{{n}}轮，共{{total}}轮",
     "typeHere": "输入完整的密码短语……",
@@ -179,16 +179,16 @@
   },
   "deterministic": {
     "master": "主密码",
-    "masterHint": "既不会保存也不会发送——只存在于此表单中。",
+    "masterHint": "既不会保存也不会发送，只存在于此表单中。",
     "site": "网站/域名",
     "login": "登录名/用户名",
     "counter": "计数器",
-    "warningTitle": "无状态模式——无法找回",
+    "warningTitle": "无状态模式：无法找回",
     "warningBody": "由主密码+域名+登录名总是派生出同一个密码（PBKDF2，310,000次迭代）。不保存任何数据：忘记主密码，就无法找回这些密码。",
     "generateBtn": "派生密码",
     "deriving": "派生中……"
   },
   "footer": {
-    "pledge": "100%离线·无账户·无跟踪——你的密码始终留在你的设备上。"
+    "pledge": "100%离线·无账户·无跟踪。你的密码始终留在你的设备上。"
   }
 }

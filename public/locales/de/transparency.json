@@ -6,8 +6,8 @@
   "entropyTitle": "Rohe Entropie",
   "entropyChars": "Alphabet: {{pool}} Zeichen, Länge: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} Bit. So viele Versuche bräuchte ein Angreifer, der das Verfahren kennt und alles durchprobiert.",
   "entropyWords": "Wortliste: {{pool}} Wörter → Wortanzahl × log₂({{pool}}) ≈ {{bits}} Bit (Extras wie Ziffern werden exakt aufaddiert).",
-  "entropyGeneric": "Kombinatorische Entropie dieses Modus: ≈ {{bits}} Bit – jede einzelne Zufallsentscheidung (Wortwahl, Ziffern, Zeichen) wird exakt aufaddiert.",
-  "constrainedNote": "Aktive Zusatzregeln (Minima, Klassenzwang, keine Wiederholungen) reduzieren die tatsächliche Entropie geringfügig – die Formel ist dann eine leichte Obergrenze.",
+  "entropyGeneric": "Kombinatorische Entropie dieses Modus: ≈ {{bits}} Bit. Jede einzelne Zufallsentscheidung (Wortwahl, Ziffern, Zeichen) wird exakt aufaddiert.",
+  "constrainedNote": "Aktive Zusatzregeln (Minima, Klassenzwang, keine Wiederholungen) reduzieren die tatsächliche Entropie geringfügig, die Formel ist dann eine leichte Obergrenze.",
   "zxcvbnTitle": "Muster-Analyse (zxcvbn)",
   "zxcvbnBody": "zxcvbn sucht nach Wörterbuch-Treffern, Tastaturmustern, Wiederholungen und Datumsangaben. Ergebnis: Score {{score}} von 4, geschätzte Rateversuche 10^{{guesses}}.",
   "zxcvbnLoading": "Die Wörterbücher werden noch geladen …",
@@ -19,5 +19,5 @@
     "offlineFast": "Offline, schnelle Hashes (10¹⁰/Sekunde)"
   },
   "privacyTitle": "Was verlässt dein Gerät?",
-  "privacyBody": "Nichts. Erzeugung, Analyse und QR-Code laufen komplett lokal. Einzige Ausnahme: der optionale Leak-Check (Opt-in in den Einstellungen) sendet die ersten 5 Zeichen des lokal gebildeten SHA-1-Hashs – nie das Passwort selbst."
+  "privacyBody": "Nichts. Erzeugung, Analyse und QR-Code laufen komplett lokal. Einzige Ausnahme: Der optionale Leak-Check (Opt-in in den Einstellungen) sendet die ersten 5 Zeichen des lokal gebildeten SHA-1-Hashs, nie das Passwort selbst."
 }

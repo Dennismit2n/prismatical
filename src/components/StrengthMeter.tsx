@@ -35,7 +35,7 @@ export function StrengthMeter() {
         aria-valuemin={0}
         aria-valuemax={4}
         aria-valuenow={strength?.score ?? 0}
-        aria-valuetext={`${label} – ${bitsText}`}
+        aria-valuetext={`${label}, ${bitsText}`}
         aria-label={t('strength.title')}
       >
         <div className={styles.fill} style={{ width: `${(fraction * 100).toFixed(1)}%` }} />

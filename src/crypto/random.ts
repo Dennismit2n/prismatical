@@ -22,7 +22,7 @@ function getCrypto(): Crypto {
   if (!c || typeof c.getRandomValues !== 'function') {
     // Ohne CSPRNG erzeugen wir grundsaetzlich nichts — lieber ein harter
     // Fehler als ein unsicheres Passwort.
-    throw new Error('Web Crypto API nicht verfügbar – keine sichere Zufallsquelle.')
+    throw new Error('Web Crypto API nicht verfügbar, keine sichere Zufallsquelle.')
   }
   return c
 }

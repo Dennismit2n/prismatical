@@ -6,8 +6,8 @@
   "entropyTitle": "Ruwe entropie",
   "entropyChars": "Alfabet: {{pool}} tekens, lengte: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bits. Zoveel pogingen zou een aanvaller die de methode kent nodig hebben om alles door te proberen.",
   "entropyWords": "Woordenlijst: {{pool}} woorden → aantal woorden × log₂({{pool}}) ≈ {{bits}} bits (extra’s zoals cijfers worden exact opgeteld).",
-  "entropyGeneric": "Combinatorische entropie van deze modus: ≈ {{bits}} bits – elke afzonderlijke toevalskeuze (woord, cijfers, tekens) wordt exact opgeteld.",
-  "constrainedNote": "Actieve extra regels (minima, klassenverplichting, geen herhalingen) verlagen de werkelijke entropie licht – de formule is dan een lichte overschatting.",
+  "entropyGeneric": "Combinatorische entropie van deze modus: ≈ {{bits}} bits. Elke afzonderlijke toevalskeuze (woord, cijfers, tekens) wordt exact opgeteld.",
+  "constrainedNote": "Actieve extra regels (minima, klassenverplichting, geen herhalingen) verlagen de werkelijke entropie licht, de formule is dan een lichte overschatting.",
   "zxcvbnTitle": "Patroonanalyse (zxcvbn)",
   "zxcvbnBody": "zxcvbn zoekt naar woordenboektreffers, toetsenbordpatronen, herhalingen en datums. Resultaat: score {{score}} van 4, geschat aantal raadpogingen 10^{{guesses}}.",
   "zxcvbnLoading": "De woordenboeken worden nog geladen …",
@@ -19,5 +19,5 @@
     "offlineFast": "Offline, snelle hashes (10¹⁰/seconde)"
   },
   "privacyTitle": "Wat verlaat je apparaat?",
-  "privacyBody": "Niets. Generatie, analyse en de QR-code draaien volledig lokaal. Enige uitzondering: de optionele lekcontrole (opt-in in de instellingen) stuurt de eerste 5 tekens van de lokaal berekende SHA-1-hash – nooit het wachtwoord zelf."
+  "privacyBody": "Niets. Generatie, analyse en de QR-code draaien volledig lokaal. Enige uitzondering: de optionele lekcontrole (opt-in in de instellingen) stuurt de eerste 5 tekens van de lokaal berekende SHA-1-hash, nooit het wachtwoord zelf."
 }

@@ -90,14 +90,14 @@
     "crackOffline": "Attaque hors ligne (hachages rapides)"
   },
   "warnings": {
-    "pronounceableEntropy": "Les mots de passe prononçables ont bien moins d’entropie par caractère – choisissez-les plus longs.",
+    "pronounceableEntropy": "Les mots de passe prononçables ont bien moins d’entropie par caractère, choisissez-les donc plus longs.",
     "pinEntropy": "Un PIN n’est aussi sûr que le blocage qui le protège.",
     "deterministicNoRecovery": "Aucune récupération : sans le mot de passe maître, ce mot de passe ne peut pas être régénéré.",
-    "usernamePurpose": "Les noms d’utilisateur ne sont pas des mots de passe – ne les utilisez pas comme secrets."
+    "usernamePurpose": "Les noms d’utilisateur ne sont pas des mots de passe, ne les utilisez pas comme secrets."
   },
   "errors": {
     "noClasses": "Sélectionnez au moins une classe de caractères.",
-    "emptyAlphabet": "Tous les caractères sont exclus – l’alphabet est vide.",
+    "emptyAlphabet": "Tous les caractères sont exclus, l’alphabet est vide.",
     "lengthOutOfRange": "La longueur est hors de la plage autorisée.",
     "minDigitsWithoutDigits": "Minimum de chiffres défini, mais les chiffres sont désélectionnés.",
     "minSpecialWithoutSpecial": "Minimum de caractères spéciaux défini, mais les caractères spéciaux sont désélectionnés.",
@@ -141,13 +141,13 @@
   "history": {
     "title": "Historique",
     "empty": "Aucune entrée pour l’instant.",
-    "disabledHint": "L’historique est désactivé. Vous pouvez l’activer dans les paramètres – rien n’est enregistré avant cela.",
+    "disabledHint": "L’historique est désactivé. Vous pouvez l’activer dans les paramètres, rien n’est enregistré avant cela.",
     "clearAll": "Supprimer toutes les entrées"
   },
   "hibp": {
     "checking": "Vérification dans les fuites connues…",
-    "found_one": "Trouvé dans {{count}} fuite connue – ne pas utiliser !",
-    "found_other": "Trouvé dans {{count}} fuites connues – ne pas utiliser !",
+    "found_one": "Trouvé dans {{count}} fuite connue. Ne pas utiliser !",
+    "found_other": "Trouvé dans {{count}} fuites connues. Ne pas utiliser !",
     "notFound": "Introuvable dans les fuites connues.",
     "error": "Vérification de fuites actuellement indisponible."
   },
@@ -169,28 +169,28 @@
   },
   "trainer": {
     "title": "Entraîneur de mémorisation",
-    "intro": "Mémorisez la phrase de passe. À chaque tour, un mot de plus est masqué – saisissez chaque fois la phrase complète. Tout reste sur votre appareil.",
+    "intro": "Mémorisez la phrase de passe. À chaque tour, un mot de plus est masqué, saisissez chaque fois la phrase complète. Tout reste sur votre appareil.",
     "phraseLabel": "Phrase de passe avec mots masqués",
     "round": "Tour {{n}} sur {{total}}",
     "typeHere": "Saisissez la phrase de passe complète…",
     "checkBtn": "Vérifier",
     "correct": "Correct ! Tour suivant.",
-    "wrong": "Pas tout à fait – réessayez.",
+    "wrong": "Pas tout à fait, réessayez.",
     "done": "Bravo ! La phrase de passe est bien ancrée.",
     "restart": "Recommencer"
   },
   "deterministic": {
     "master": "Mot de passe maître",
-    "masterHint": "Il n’est ni stocké ni envoyé – il n’existe que dans ce formulaire.",
+    "masterHint": "Il n’est ni stocké ni envoyé, il n’existe que dans ce formulaire.",
     "site": "Site web / domaine",
     "login": "Identifiant / nom d’utilisateur",
     "counter": "Compteur",
-    "warningTitle": "Mode sans état – aucune récupération",
+    "warningTitle": "Mode sans état : aucune récupération",
     "warningBody": "Mot de passe maître + domaine + identifiant produisent toujours le même mot de passe (PBKDF2, 310 000 itérations). Rien n’est stocké : en cas d’oubli du mot de passe maître, les mots de passe dérivés sont irrécupérables.",
     "generateBtn": "Dériver le mot de passe",
     "deriving": "Dérivation…"
   },
   "footer": {
-    "pledge": "100 % hors ligne · aucun compte · aucun pistage – vos mots de passe restent sur votre appareil."
+    "pledge": "100 % hors ligne · aucun compte · aucun pistage. Vos mots de passe restent sur votre appareil."
   }
 }

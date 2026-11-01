@@ -6,8 +6,8 @@
   "entropyTitle": "Surowa entropia",
   "entropyChars": "Alfabet: {{pool}} znaków, długość: {{length}} → {{length}} × log₂({{pool}}) ≈ {{bits}} bitów. Tylu prób potrzebowałby atakujący, który zna metodę i sprawdza wszystkie kombinacje.",
   "entropyWords": "Lista słów: {{pool}} słów → liczba słów × log₂({{pool}}) ≈ {{bits}} bitów (dodatki, np. cyfry, są doliczane dokładnie).",
-  "entropyGeneric": "Entropia kombinatoryczna tego trybu: ≈ {{bits}} bitów – każda pojedyncza losowa decyzja (słowo, cyfry, znaki) jest dokładnie sumowana.",
-  "constrainedNote": "Aktywne dodatkowe reguły (minima, wymóg klas, brak powtórzeń) nieznacznie zmniejszają rzeczywistą entropię – wzór daje wtedy nieco zawyżony wynik.",
+  "entropyGeneric": "Entropia kombinatoryczna tego trybu: ≈ {{bits}} bitów. Każda pojedyncza losowa decyzja (słowo, cyfry, znaki) jest dokładnie sumowana.",
+  "constrainedNote": "Aktywne dodatkowe reguły (minima, wymóg klas, brak powtórzeń) nieznacznie zmniejszają rzeczywistą entropię, wzór daje wtedy nieco zawyżony wynik.",
   "zxcvbnTitle": "Analiza wzorców (zxcvbn)",
   "zxcvbnBody": "zxcvbn szuka trafień słownikowych, wzorców klawiaturowych, powtórzeń i dat. Wynik: ocena {{score}} na 4, szacowana liczba prób 10^{{guesses}}.",
   "zxcvbnLoading": "Słowniki wciąż się ładują…",
@@ -19,5 +19,5 @@
     "offlineFast": "Offline, szybkie funkcje skrótu (10¹⁰/s)"
   },
   "privacyTitle": "Co opuszcza Twoje urządzenie?",
-  "privacyBody": "Nic. Generowanie, analiza i kod QR działają w całości lokalnie. Jedyny wyjątek: opcjonalne sprawdzanie wycieków (opt-in w ustawieniach) wysyła pierwsze 5 znaków lokalnie obliczonego hasha SHA-1 – nigdy samo hasło."
+  "privacyBody": "Nic. Generowanie, analiza i kod QR działają w całości lokalnie. Jedyny wyjątek: opcjonalne sprawdzanie wycieków (opt-in w ustawieniach) wysyła pierwsze 5 znaków lokalnie obliczonego hasha SHA-1, nigdy samo hasło."
 }
