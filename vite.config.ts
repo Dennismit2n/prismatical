@@ -88,6 +88,9 @@ export default defineConfig({
         // Kompletter App-Shell-Precache inkl. aller Sprach-JSONs und Wortlisten:
         // echtes Offline-First, nichts wird zur Laufzeit aus dem Netz nachgeladen.
         globPatterns: ['**/*.{js,css,html,svg,png,ico,json,txt}'],
+        // Die Werbebilder ruft nur ein Crawler oder GitHub ab, nie die App selbst. Im
+        // Precache kosteten sie jede Installation rund 700 KB.
+        globIgnores: ['**/node_modules/**/*', 'og.png', 'instagram.png', 'github-social.png'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: 'index.html',
       },
