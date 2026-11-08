@@ -1,11 +1,11 @@
-# Prismatical – Passwort-Generator
+# Prismatical · Passwort-Generator
 
 **Live: https://dennismit2n.github.io/prismatical/**
 
 Ein Passwort-Generator mit Live-Stärke-Spektrum: Die Akzentfarbe der gesamten
 Oberfläche IST die Stärke-Anzeige und wandert mit dem zxcvbn-Score von Rot
-(schwach) bis Violett (episch). Installierbare, offline-fähige PWA für Handy
-und Desktop. 14 Sprachen, Standardsprache Deutsch.
+(schwach) bis Violett (episch). Installierbare PWA für Handy und Desktop, nach
+dem ersten Besuch auch ohne Netz. 14 Sprachen, Standardsprache Deutsch.
 
 <img src="docs/screenshot-en.webp" alt="Prismatical im Theme Cyber: oben ein erzeugtes Passwort mit der höchsten Stärkestufe und 116 Bit Entropie, darunter die sechs Arten vom Passwort bis zum deterministischen Modus, Länge, Zeichenklassen und Regeln." width="420">
 
@@ -13,17 +13,17 @@ und Desktop. 14 Sprachen, Standardsprache Deutsch.
 
 1. **100 % lokal.** Erzeugung, Stärke-Analyse (zxcvbn-ts) und QR-Code laufen
    vollständig auf dem Gerät. Im Standardzustand macht die App **keinerlei
-   externe Netzwerk-Requests** – kein Tracking, keine Analytics, keine CDNs.
+   externe Netzwerk-Requests**: kein Tracking, keine Analytics, keine CDNs.
 2. **Kryptografisch sicherer Zufall.** Alle Zufälle stammen aus
    `crypto.getRandomValues()`. `Math.random()` ist per ESLint-Regel verboten.
 3. **Kein Modulo-Bias.** Zufallswerte werden per **Rejection-Sampling** auf
    Alphabete abgebildet (Werte ≥ 256 − (256 mod n) bzw. ≥ 2³² − (2³² mod n)
    werden verworfen und neu gezogen). Ein Chi-Quadrat-Test in der Testsuite
-   belegt die Gleichverteilung – und dass naives Modulo durchfallen würde.
+   belegt die Gleichverteilung, und dass naives Modulo durchfallen würde.
 4. **Nichts wird ungefragt gespeichert.** Passwörter existieren nur im
    Arbeitsspeicher. Der Verlauf ist ein doppeltes Opt-in: erst „aufzeichnen“
    (Sitzung, beim Schließen weg), dann optional „dauerhaft speichern“.
-   Jederzeit löschbar. Der deterministische Modus speichert nichts – auch
+   Jederzeit löschbar. Der deterministische Modus speichert nichts, auch
    nicht Domain oder Login.
 5. **Leak-Check nur per Opt-in.** Der optionale HaveIBeenPwned-Check nutzt
    k-Anonymity: SHA-1 wird lokal gebildet, nur die **ersten 5 Hex-Zeichen**
@@ -39,16 +39,16 @@ und Desktop. 14 Sprachen, Standardsprache Deutsch.
 
 ## Modi
 
-- **Passwort** – Zeichenklassen, Länge 4–128 (Slider + Zahlenfeld), Ausschluss
+- **Passwort:** Zeichenklassen, Länge 4–128 (Slider + Zahlenfeld), Ausschluss
   mehrdeutiger Zeichen, „mind. X Ziffern/Sonderzeichen“, „jede Klasse mindestens
   einmal“, „keine Wiederholungen“, anpassbarer Sonderzeichensatz, Ausschlussliste.
-- **Passphrase (Diceware)** – EFF-Langliste (7.776 Wörter) + deutsche Liste
+- **Passphrase (Diceware):** EFF-Langliste (7.776 Wörter) + deutsche Liste
   (dys2p, CC0); 3–12 Wörter, Trennzeichen (auch Zufallsziffer), Großschreibung,
   Ziffer/Sonderzeichen einstreuen. Entropie = Wörter × log₂(Listengröße).
-- **PIN** – 3–12 Stellen, mit ehrlichem Hinweis zur Sperren-Abhängigkeit.
-- **Aussprechbar** – Konsonant-Vokal-Silben, mit sichtbarer Entropie-Warnung.
-- **Nutzername** – Adjektiv + Substantiv, optional Leetify und Ziffern.
-- **Deterministisch** – LessPass-Prinzip: Master-Passwort + Domain + Login +
+- **PIN:** 3–12 Stellen, mit ehrlichem Hinweis zur Sperren-Abhängigkeit.
+- **Aussprechbar:** Konsonant-Vokal-Silben, mit sichtbarer Entropie-Warnung.
+- **Nutzername:** Adjektiv + Substantiv, optional Leetify und Ziffern.
+- **Deterministisch:** LessPass-Prinzip: Master-Passwort + Domain + Login +
   Zähler → reproduzierbares Passwort via PBKDF2-SHA-256 (310.000 Iterationen).
   Deutlicher Hinweis: kein Recovery.
 
@@ -61,7 +61,7 @@ und Desktop. 14 Sprachen, Standardsprache Deutsch.
 - **Spectrum-Flow**: animierter Regenbogen-Ring (`linear-gradient(in oklch
   longer hue, …)`), respektiert `prefers-reduced-motion`.
 - **Website-Regel-Presets** (Standard, NIST-lang, nur Buchstaben+Ziffern,
-  max. 16, Bank-typisch) – erweiterbar in `src/features/presets/presets.ts`.
+  max. 16, Bank-typisch), erweiterbar in `src/features/presets/presets.ts`.
 - **Krypto-Transparenz-Panel**: Alphabetgröße, Entropieformel, Zufallsquelle,
   zxcvbn-Details, alle 4 Knackzeit-Szenarien.
 - **Merk-Trainer** für Passphrasen (blendet Wörter rundenweise aus, rein lokal).
@@ -71,9 +71,9 @@ und Desktop. 14 Sprachen, Standardsprache Deutsch.
 
 3 Themes × Hell/Dunkel, unabhängig wählbar, `prefers-color-scheme` als Default:
 
-- **Classic Rainbow** – warmes Creme / tiefes Anthrazit, volles Spektrum.
-- **Cyber** – Neon-Prisma mit Glow, maximale Sättigung.
-- **Aurora** – Nordlicht-Pastell, gedämpfte Chroma.
+- **Classic Rainbow:** warmes Creme / tiefes Anthrazit, volles Spektrum.
+- **Cyber:** Neon-Prisma mit Glow, maximale Sättigung.
+- **Aurora:** Nordlicht-Pastell, gedämpfte Chroma.
 
 Alle Farbtoken liegen in `src/styles/themes.css`; die WCAG-AA-Konformität
 (Text ≥ 4.5:1, Grafik ≥ 3:1) prüft `node tools/check-contrast.mjs` rechnerisch
@@ -99,5 +99,8 @@ lazy; ru/zh fallen dokumentiert auf en zurück).
 
 ## Lizenz-Hinweise
 
+- Code: MIT, siehe [LICENSE](LICENSE).
 - EFF Large Wordlist: CC-BY 3.0, © Electronic Frontier Foundation.
 - Deutsche Diceware-Liste: CC0, dys2p (`wordlists-de`).
+
+© 2026 Dennis_mit_2n · Teil der [Werkstatt](https://dennismit2n.github.io/)
