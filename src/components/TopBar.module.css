@@ -96,3 +96,43 @@
     flex: 1 1 100%;
   }
 }
+
+/* Beschlag (12.11.2026): Bauteile dieser Datei. Schrauben und --beschlag stehen in der globalen Datei. */
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .selectWrap { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.selectWrap {
+  --bi: 2.5px;
+  --bg: 4px;
+  --ba: 0.5px;
+  background: var(--beschlag), var(--surface);
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .iconBtn { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.iconBtn {
+  --bi: 2.5px;
+  --bg: 4px;
+  --ba: 0.5px;
+  background: var(--beschlag), var(--surface);
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+.iconBtn:hover { background: var(--beschlag), var(--accent-dim); }
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .installBtn { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.installBtn {
+  --bi: 2.5px;
+  --bg: 4px;
+  --ba: 0.5px;
+  background: var(--beschlag), var(--surface);
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+.installBtn:hover { background: var(--beschlag), var(--accent-dim); }
+/* Hoher Kontrast kennt keine Schatten, der Beschlag bleibt. Gedruckt wird ohne beides. */
+:root[data-vision="contrast"] :is(.selectWrap, .iconBtn, .installBtn) { box-shadow: none; }
+@media print {
+  .selectWrap, .iconBtn, .installBtn { background-image: none !important; box-shadow: none !important; }
+}
+/* Ende Beschlag */

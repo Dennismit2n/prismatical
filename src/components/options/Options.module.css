@@ -157,3 +157,40 @@
   font-weight: 650;
   box-shadow: var(--glow-sm);
 }
+
+/* Beschlag (12.11.2026): Bauteile dieser Datei. Schrauben und --beschlag stehen in der globalen Datei. */
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .card { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.card {
+  --bi: 6px;
+  --bg: 8px;
+  --ba: 2.5px;
+  background: var(--beschlag), var(--surface);
+  box-shadow: -12px 14px 30px -6px rgba(0, 0, 0, 0.34);
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .fieldset { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.fieldset {
+  --bi: 4.5px;
+  --bg: 5px;
+  --ba: 1.5px;
+  background: var(--beschlag), transparent;
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .inlineIconBtn { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.inlineIconBtn {
+  --bi: 2.5px;
+  --bg: 4px;
+  --ba: 0.5px;
+  background: var(--beschlag), var(--surface2);
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+/* Hoher Kontrast kennt keine Schatten, der Beschlag bleibt. Gedruckt wird ohne beides. */
+:root[data-vision="contrast"] :is(.card, .inlineIconBtn) { box-shadow: none; }
+@media print {
+  .card, .fieldset, .inlineIconBtn { background-image: none !important; box-shadow: none !important; }
+}
+/* Ende Beschlag */

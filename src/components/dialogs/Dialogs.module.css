@@ -249,3 +249,42 @@
 .trainerRow input {
   flex: 1;
 }
+
+/* Beschlag (12.11.2026): Bauteile dieser Datei. Schrauben und --beschlag stehen in der globalen Datei. */
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .dialog { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.dialog {
+  --bi: 6px;
+  --bg: 8px;
+  --ba: 2.5px;
+  background: var(--beschlag), var(--surface);
+  box-shadow: -12px 14px 30px -6px rgba(0, 0, 0, 0.34);
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .subtleBtn, .bulkControls button { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.subtleBtn,
+.bulkControls button {
+  --bi: 2.5px;
+  --bg: 4px;
+  --ba: 0.5px;
+  background: var(--beschlag), var(--surface2);
+  box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+@supports (color: color-mix(in srgb, red 50%, transparent)) {
+  .historyItem, .trainerPhrase { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+}
+.historyItem,
+.trainerPhrase {
+  --bi: 4.5px;
+  --bg: 4px;
+  --ba: 0.5px;
+  background: var(--beschlag), var(--surface2);
+}
+/* Hoher Kontrast kennt keine Schatten, der Beschlag bleibt. Gedruckt wird ohne beides. */
+:root[data-vision="contrast"] :is(.dialog, .subtleBtn, .bulkControls button) { box-shadow: none; }
+@media print {
+  .dialog, .subtleBtn, .bulkControls button, .historyItem, .trainerPhrase { background-image: none !important; box-shadow: none !important; }
+}
+/* Ende Beschlag */
