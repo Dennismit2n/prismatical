@@ -77,12 +77,12 @@
 
 /* Beschlag (12.11.2026): Bauteile dieser Datei. Schrauben und --beschlag stehen in der globalen Datei. */
 @supports (color: color-mix(in srgb, red 50%, transparent)) {
-  .panel { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+  .panel { --bsl-l: color-mix(in srgb, var(--accent) 45%, transparent); }
 }
 .panel {
-  --bi: 6px;
-  --bg: 8px;
-  --ba: 2.5px;
+  --bsl-i: 6px;
+  --bsl-g: 8px;
+  --bsl-a: 2.5px;
   background: var(--beschlag), var(--surface);
   box-shadow: -6px 8px 18px -8px rgba(0, 0, 0, 0.42);
 }

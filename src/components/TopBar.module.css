@@ -99,33 +99,33 @@
 
 /* Beschlag (12.11.2026): Bauteile dieser Datei. Schrauben und --beschlag stehen in der globalen Datei. */
 @supports (color: color-mix(in srgb, red 50%, transparent)) {
-  .selectWrap { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+  .selectWrap { --bsl-l: color-mix(in srgb, var(--accent) 45%, transparent); }
 }
 .selectWrap {
-  --bi: 2.5px;
-  --bg: 4px;
-  --ba: 0.5px;
+  --bsl-i: 2.5px;
+  --bsl-g: 4px;
+  --bsl-a: 0.5px;
   background: var(--beschlag), var(--surface);
   box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
 }
 @supports (color: color-mix(in srgb, red 50%, transparent)) {
-  .iconBtn { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+  .iconBtn { --bsl-l: color-mix(in srgb, var(--accent) 45%, transparent); }
 }
 .iconBtn {
-  --bi: 2.5px;
-  --bg: 4px;
-  --ba: 0.5px;
+  --bsl-i: 2.5px;
+  --bsl-g: 4px;
+  --bsl-a: 0.5px;
   background: var(--beschlag), var(--surface);
   box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
 }
 .iconBtn:hover { background: var(--beschlag), var(--accent-dim); }
 @supports (color: color-mix(in srgb, red 50%, transparent)) {
-  .installBtn { --bl: color-mix(in srgb, var(--accent) 45%, transparent); }
+  .installBtn { --bsl-l: color-mix(in srgb, var(--accent) 45%, transparent); }
 }
 .installBtn {
-  --bi: 2.5px;
-  --bg: 4px;
-  --ba: 0.5px;
+  --bsl-i: 2.5px;
+  --bsl-g: 4px;
+  --bsl-a: 0.5px;
   background: var(--beschlag), var(--surface);
   box-shadow: -3px 4px 8px -4px rgba(0, 0, 0, 0.5);
 }
